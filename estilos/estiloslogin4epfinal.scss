@@ -1,0 +1,33 @@
+/* --- SECCION LOGIN--- */
+
+.login__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: .5rem;
+  }
+  
+  .login__datos {
+    background-color: #C80425;
+    border-radius: 0.5rem;
+    padding: 2%;
+    line-height: 150%;
+    margin-bottom: 1rem;
+  }
+  
+  .login__datos--estilos {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .login__input {
+    color: #212529;
+    text-align: center;
+  }
+  
+  .login__recordar-pass {
+    font-weight: 400;
+  }
+  
+  /* ---FIN LOGIN--- */

@@ -1,0 +1,164 @@
+@import "reseteo";
+
+@import "variables";
+
+/* ---SECCION SOBRE MI--- */
+
+.sobremi__contenedor {
+  display: flex;
+  flex-direction: row;
+  margin: 0 $rem-standard*2;
+  box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
+  padding: $rem-standard*2;
+  background-color: $color-blanco;
+  border-radius: $rem-standard;
+  margin-top: $rem-standard*3;
+  &--foto {
+    width: 40%;
+    background-image: url(../imagenes/fotosobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $rem-standard;
+    transition: 1s;
+    &:hover{
+      filter: sepia(1);
+    }
+  }
+}
+
+.sobremi__texto {
+  width: 65%;
+  color: $color-oscuro;
+  font-weight: 300;
+  font-style: italic;
+  padding: $rem-standard*2;
+  font-size: $rem-standard*3;
+  &--estilos {
+    text-align: right;
+    align-content: center;
+  }
+}
+
+/* ---FIN SECCION SOBRE MI--- */
+
+/* ADAPTACION A DISPOSITIVOS */
+
+@media only screen and (max-width: 360px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sobremi__texto {
+    width: 100%;
+    font-size: ($rem-standard*2)+.1;
+  }
+
+  .sobremi__contenedor-foto {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 360px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sobremi__texto {
+    width: 100%;
+    font-size: ($rem-standard*2)+.1;
+  }
+
+  .sobremi__contenedor-foto {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sobremi__contenedor-foto {
+    width: 40%;
+    background-image: url(../imagenes/fotosobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $rem-standard;
+    display: inherit;
+  }
+
+  .sobremi__texto {
+    width: 65%;
+    font-size: ($rem-standard*2)+.1;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sobremi__contenedor-foto {
+    width: 40%;
+    background-image: url(../imagenes/fotosobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $rem-standard;
+  }
+
+  .sobremi__texto {
+    width: 65%;
+    font-size: ($rem-standard*2)+.3;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sobremi__contenedor-foto {
+    width: 40%;
+    background-image: url(../imagenes/fotosobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $rem-standard;
+  }
+
+  .sobremi__texto {
+    width: 65%;
+    font-size: $rem-standard*3;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sobremi__contenedor-foto {
+    width: 40%;
+    background-image: url(../imagenes/fotosobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $rem-standard;
+  }
+
+  .sobremi__texto {
+    width: 65%;
+    font-size: $rem-standard*3;
+  }
+}

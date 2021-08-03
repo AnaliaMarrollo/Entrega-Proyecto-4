@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+
+@import "variables";
+
+.error {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error__contenedor {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    background-color: $color-blanco;
+    color: $color-oscuro;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error__titulo {
+    font-size: 4rem;
+    padding: .5rem;
+}
+
+.error__contenido {
+    font-size: 5rem;
+    margin: 1rem;
+    &--sm {
+        font-size: 2rem;
+        color: $color-blanco;
+        text-align: center;
+    }
+}
+
+.mancuerna {
+    width: 20%;
+    height: 20%;
+    margin-bottom: 2rem;
+    background-image: url(../imagenes/barbell.png);
+    background-position: center;
+    background-size: cover;
+    transition: 2s;
+    &:hover {
+        transform: rotate(180deg);}
+
+}
+
+.boton__link--error {
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+

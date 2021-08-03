@@ -1,0 +1,264 @@
+@import "reseteo";
+
+@import "variables";
+
+@import "breadcrumb";
+
+html {
+  font-size: 100%;
+}
+
+/* -----------BODY------------ */
+
+.body {
+  @extend %body;
+  &--color {
+    background-color: $color-oscuro;
+  }
+}
+
+/* ---------FIN BODY----------- */
+
+/* ----------BARRA NAVEGACIÓN------- */
+
+.navbar-brand p {
+  color: $color-blanco;
+  line-height: $rem-standard;
+  font-size: $fuente-normal;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .125rem;
+}
+
+.nav-link {
+  &.active {
+    text-decoration: overline;
+  }
+
+  &:hover {
+    background-color: $color-rojo-hover;
+  }
+}
+
+.active:hover {
+  background-color: $color-rojo-hover;
+}
+
+/* --------FIN BARRA NAVEGACIÓN------ */
+
+/* -------TAMAÑO DEL MAIN----------- */
+
+.main {
+  margin-bottom: $rem-standard*4;
+
+  &--color {
+    color: $color-oscuro;
+  }
+}
+
+/* ---------FIN MAIN---------- */
+
+/* -----------SECCION PRINCIPAL-------------- */
+
+.seccion--font600 {
+  font-weight: 600;
+}
+
+.seccion--font400 {
+  font-weight: 400;
+}
+
+/* -------ESTILOS AL CAROUSEL----- */
+
+.carousel-inner {
+  height: 50vh;
+}
+
+.seccionppal {
+  &__titulo {
+    padding: $rem-standard;
+    color: $color-blanco;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+    font-size: $fuente-normal*3;
+    letter-spacing: $rem-standard;
+    word-spacing: $rem-standard+.2;
+  }
+
+  &__foto {
+    &1 {
+      background-image: url(../imagenes/fila-mancuernas.jpg);
+    }
+
+    &2 {
+      background-image: url(../imagenes/hombre-barra.jpg);
+    }
+
+    &3 {
+      background-image: url(../imagenes/mujer-barra.jpg);
+    }
+
+    &--fondo {
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.bordes-redondeados {
+  border-radius: $rem-standard;
+
+  &--100 {
+    border-radius: $rem-standard*4;
+  }
+}
+
+/* -------FIN ESTILOS CAROUSEL------ */
+
+/* ----------- FIN SECCION PRINCIPAL-------------- */
+
+/* ----------------SECCION PLANES--------------- */
+
+.seccion {
+  background-color: $color-oscuro;
+  color: $color-blanco;
+
+  &__titulo {
+    background-color: $color-rojo;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: overline;
+    padding: $rem-standard;
+  }
+
+  &__contenedor {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.planes__contenedor {
+  &-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-blanco;
+    color: $color-oscuro;
+    line-height: 1.2rem;
+    box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
+    border-radius: $rem-standard;
+    transition: 1.5s;
+    margin: 0 $rem-standard;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  &-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $rem-standard*2;
+  }
+
+  &-saber-mas {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: $rem-standard*2;
+  }
+}
+
+.planes__titulo-contenedor {
+  width: 100%;
+  font-weight: 600;
+  text-decoration: overline;
+  font-size: $rem-standard*3;
+  padding: $rem-standard;
+  border: $color-oscuro solid;
+  text-align: center;
+  color: $color-oscuro;
+}
+
+.planes__contenido {
+  &--negrita {
+    font-weight: bolder;
+  }
+
+  &-lista {
+    list-style: square;
+    color: $color-oscuro;
+    font-weight: 400;
+    line-height: $rem-standard*2;
+  }
+}
+
+.boton {
+  padding: $rem-standard;
+  border-style: none;
+  background-color: $color-rojo;
+  border-radius: $rem-standard;
+
+  &:hover {
+    background-color: $color-rojo-hover;
+  }
+
+  &__link {
+    width: 100%;
+    text-decoration: none;
+    font-size: $rem-standard*2;
+    color: $color-blanco;
+    font-weight: bolder;
+
+    &:hover {
+      color: $color-blanco;
+    }
+  }
+}
+
+/* --------------FIN SECCION PLANES--------------- */
+
+// --------LOGO DE WHATSAPP--------
+
+.seccion__whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #01E675;
+  border: solid #01E675 $rem-standard/4;
+  padding: 0 $rem-standard*2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:hover {
+    color: $color-blanco;
+    border: solid $color-blanco $rem-standard/4;
+  }
+}
+
+.boton__whatsapp  {
+  &--hola {
+  font-size: 1rem;
+  color: $color-blanco;
+  text-decoration: none;
+  &:hover {
+    color: $color-blanco;
+    text-decoration: none;
+  }
+  }
+
+ &--logo {
+   font-size: 2rem;
+   color: $color-blanco;
+}
+}
+
+
+@import "footer"

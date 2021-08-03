@@ -1,0 +1,27 @@
+$color-blanco: white;
+$color-oscuro: #212529;
+$color-rojo: #C80425;
+$color-rojo-hover: #D90429;
+$rem-standard: .5rem;
+$fuente-normal: 1rem;
+
+// placeholders
+
+%body {
+    min-width: 360px;
+    max-width: 1500px;
+    min-height: 100vh;
+}
+
+%reseteo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+// Variables Bootstrap 
+
+

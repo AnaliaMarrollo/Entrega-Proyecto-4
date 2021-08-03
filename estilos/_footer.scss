@@ -1,0 +1,166 @@
+/* ---------------FOOTER-------------- */
+
+.footer__contenedor {
+  display: grid;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  background-color: $color-oscuro;
+  padding: $rem-standard*2 0;
+  grid-template-columns: (1fr);
+  grid-template-rows: (2fr 1fr 1fr 1fr);
+}
+
+.footer__mancuerna {
+  background-image: url(../imagenes/barbell.png);
+  background-size: $rem-standard*5 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row: 1/2;
+  padding-bottom: $rem-standard*3;
+}
+
+.footer__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/3;
+}
+
+.footer__redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 3/4;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-row: 4/5;
+  padding-top: $rem-standard*2;
+}
+
+.footer__link {
+  color: $color-blanco;
+  font-size: $rem-standard*2;
+  text-decoration: none;
+  border-left: solid $color-blanco .15rem;
+  margin-left: $rem-standard;
+  padding-left: $rem-standard;
+
+  &:hover {
+    color: $color-rojo-hover;
+  }
+
+  &--sin-borde {
+    border: none;
+  }
+
+  &-redes {
+    background-color: $color-rojo;
+    color: $color-blanco;
+    font-size: $rem-standard*2.5;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
+    margin: 0 $rem-standard;
+
+    &:hover {
+      background-color: $color-rojo-hover;
+      color: $color-blanco;
+    }
+  }
+}
+
+/* ADAPTACION A DISPOSITIVOS */
+
+@media only screen and (max-width: 360px) {
+  .footer {
+    display: grid;
+    grid-template-columns: (1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    &__mancuerna {
+      grid: 1/2 1/2;
+    }
+
+    &__titulo {
+      grid: 1/2 2/3;
+    }
+
+    &__redes {
+      grid: 1/2 3/4;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .footer {
+    display: grid;
+    grid-template-columns: (1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    &__mancuerna {
+      grid: 1/2 1/2;
+    }
+
+    &__titulo {
+      grid: 1/2 2/3;
+    }
+
+    &__redes {
+      grid: 1/2 3/4;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  .footer {
+    display: grid;
+    grid-template-columns: (1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        grid: 1/2 4/5;
+        padding-top: $rem-standard*2;
+    }
+
+    &__link {
+      margin-left: $rem-standard;
+      padding-left: $rem-standard;
+      padding: 0 $rem-standard;
+      border-left: solid $color-blanco .15rem;
+
+      &--sin-borde {
+        border: none;
+      }
+    }
+  }
+}
+
+  @media only screen and (min-width: 600px) {
+    .footer {
+      &__menu {
+        flex-wrap: wrap;
+    }
+    }
+  }
+

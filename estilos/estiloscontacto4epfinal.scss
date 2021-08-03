@@ -1,0 +1,101 @@
+/* ---SECCION CONTACTO--- */
+
+.contacto__contenedor {
+    width: 80%;
+    display: flex;
+    margin: 1% 0 0 0.5%;
+    text-align: left;
+    justify-content: center;
+  }
+  
+  .contacto__datos-contacto {
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    line-height: 150%;
+    margin-right: 3%;
+  }
+  
+  .contacto__datos-contacto--fuente {
+    color: white;
+    font-weight: 600;
+    background-color: #C80425;
+  }
+  
+  .contacto__input-contacto {
+    color: #212529;
+  }
+  
+  .contacto__input-select {
+    color: #212529;
+  }
+  
+  .contacto__contenedor-sexo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contacto__datos-contacto-sexo {
+    border-radius: 0.5rem;
+    padding: 1%;
+    margin: 1rem 1rem 1rem 0;
+  }
+  
+  .contacto__consulta {
+    color: #212529;
+  }
+  
+  .contacto__promociones {
+    color: white;
+    font-weight: 400;
+  }
+  
+  .boton__link--mt {
+    margin-top: .5rem;
+  }
+  
+  /* ---FIN SECCION CONTACTO--- */
+  
+  /* ADAPTACION A DISPOSITIVOS */
+  
+  @media only screen and (max-width: 360px) {
+    .contacto__contenedor {
+      width: 70%;
+      margin: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 360px) {
+    .contacto__contenedor {
+      width: 70%;
+      margin: auto;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .contacto__contenedor {
+      width: 80%;
+      margin: auto;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .contacto__contenedor {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .contacto__contenedor {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .contacto__contenedor {
+      width: 100%;
+    }
+  }
