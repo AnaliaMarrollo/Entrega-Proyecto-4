@@ -54,7 +54,7 @@
     margin-top: .5rem;
   }
   
-  /* ---FIN SECCION CONTACTO--- */
+  /* ---FIN SECCION CONTACTO--- *s/
   
   /* ADAPTACION A DISPOSITIVOS */
   
@@ -70,18 +70,9 @@
       width: 70%;
       margin: auto;
     }
-  
   }
   
   @media only screen and (min-width: 480px) {
-    .contacto__contenedor {
-      width: 80%;
-      margin: auto;
-    }
-  
-  }
-  
-  @media only screen and (min-width: 600px) {
     .contacto__contenedor {
       width: 80%;
       margin: auto;
@@ -94,8 +85,3 @@
     }
   }
   
-  @media only screen and (min-width: 1024px) {
-    .contacto__contenedor {
-      width: 100%;
-    }
-  }

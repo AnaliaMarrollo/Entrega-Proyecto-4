@@ -71,33 +71,6 @@
 }
 }
 
-// .planes__contenido--aqui:hover {
-//     text-decoration: none;
-//     color: $color-blanco;
-//     background-color: $color-rojo-hover;
-// }
-
-// .planes__contenido {
-//     &--size {
-//     font-size: 1rem;
-// }
-// &--mt {
-//     margin-top: 1.5rem;
-
-// }
-// &--ml {
-//     margin-left: 1.5rem; 
-// }
-// }
-
-// .planes__contenido--mt {
-//     margin-top: 1.5rem;
-// }
-
-// .planes__contenido--ml {
-//     margin-left: 1.5rem;
-// }
-
 /* ---FIN SECCION PLANES---- */
 
 /* ADAPTACION A DISPOSITIVOS */
@@ -134,49 +107,13 @@
     }
 }
 
-@media only screen and (min-width: 480px) {
-    .planes__titulo-contenedor--50 {
-        width: 100%;
-        margin: auto;
-    }
-
-    .planes__contenedor {
-        width: 90%;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .boton--planes {
-        margin: .5rem .5rem 0 .5rem;
-    }
-
-}
-
 @media only screen and (min-width: 600px) {
-    .planes__titulo-contenedor--50 {
-        width: 100%;
-        margin: auto;
-    }
-
-    .planes__contenedor {
-        width: 90%;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
     .boton--planes {
         margin: 1rem 0 0 0;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .planes__titulo-contenedor--50 {
-        width: 100%;
-        margin: auto;
-    }
-
     .planes__contenedor {
         width: 80%;
         margin: auto;
@@ -200,10 +137,6 @@
         margin: auto;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-
     }
 
-    .boton--planes {
-        margin: .5rem .5rem 0 .5rem;
-    }
 }

@@ -514,4 +514,62 @@ html {
         flex-wrap: wrap;
   }
 }
+
+/* ADAPTACION A DISPOSITIVOS */
+@media only screen and (max-width: 360px) {
+  .seccion__whatsapp {
+    bottom: 6.5rem;
+    right: 2rem;
+    padding: 0 0.25rem;
+    border: solid #01E675 0.125rem;
+  }
+  .seccion__whatsapphover {
+    border: solid white 0.125rem;
+  }
+  .boton__whatsapp--hola {
+    display: none;
+  }
+  .boton__whatsapp:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .seccion__whatsapp {
+    bottom: 6.5rem;
+    right: 2rem;
+    padding: 0 0.25rem;
+    border: solid #01E675 0.125rem;
+  }
+  .seccion__whatsapphover {
+    border: solid white 0.125rem;
+  }
+  .boton__whatsapp--hola {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .seccion__whatsapp {
+    padding: 0 0.25rem;
+    border: solid #01E675 0.125rem;
+  }
+  .seccion__whatsapphover {
+    border: solid white 0.125rem;
+  }
+  .boton__whatsapp--hola {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .seccion__whatsapp {
+    bottom: 4rem;
+    right: 2rem;
+  }
+  .boton__whatsapp--hola {
+    display: inherit;
+  }
+}
 /*# sourceMappingURL=estilos4epfinal.css.map */

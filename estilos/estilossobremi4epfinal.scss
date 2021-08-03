@@ -58,7 +58,6 @@
   .sobremi__contenedor-foto {
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 360px) {
@@ -96,69 +95,5 @@
   .sobremi__texto {
     width: 65%;
     font-size: ($rem-standard*2)+.1;
-  }
-
-}
-
-@media only screen and (min-width: 600px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .sobremi__contenedor-foto {
-    width: 40%;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: $rem-standard;
-  }
-
-  .sobremi__texto {
-    width: 65%;
-    font-size: ($rem-standard*2)+.3;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .sobremi__contenedor-foto {
-    width: 40%;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: $rem-standard;
-  }
-
-  .sobremi__texto {
-    width: 65%;
-    font-size: $rem-standard*3;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .sobremi__contenedor-foto {
-    width: 40%;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: $rem-standard;
-  }
-
-  .sobremi__texto {
-    width: 65%;
-    font-size: $rem-standard*3;
   }
 }
