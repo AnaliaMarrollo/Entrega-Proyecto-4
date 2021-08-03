@@ -1,21 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ---SECCION CONTACTO--- */
 .contacto__contenedor {
-  width: 80%;
+  width: 50%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1% 0 0 0.5%;
-  text-align: left;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
+  background-color: white;
 }
 
 .contacto__datos-contacto {
-  border-radius: 0.5rem;
-  padding: 0.25rem;
-  line-height: 150%;
-  margin-right: 3%;
+  width: 28%;
+  padding: 0.5rem;
+  line-height: 1rem;
+  color: #C80425;
 }
 
 .contacto__datos-contacto--fuente {
@@ -25,84 +39,78 @@
 }
 
 .contacto__input-contacto {
+  width: 68%;
   color: #212529;
+  border: solid #C80425 0.125rem;
+  padding-left: 0.5rem;
+  padding: 0.16667rem;
+  margin-left: 0.5rem;
 }
 
 .contacto__input-select {
-  color: #212529;
-}
-
-.contacto__contenedor-sexo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacto__datos-contacto-sexo {
-  border-radius: 0.5rem;
-  padding: 1%;
-  margin: 1rem 1rem 1rem 0;
+  width: 68%;
+  color: #C80425;
+  border: solid #C80425 0.125rem;
+  padding-left: 0.5rem;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
 }
 
 .contacto__consulta {
   color: #212529;
+  border: solid #C80425 0.125rem;
+  padding: 0.5rem;
 }
 
-.contacto__promociones {
-  color: white;
-  font-weight: 400;
+.contenedor__promociones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.promociones {
+  color: #212529;
+  margin-right: 0.5rem;
 }
 
 .boton__link--mt {
   margin-top: .5rem;
 }
 
-/* ---FIN SECCION CONTACTO--- */
-/* ADAPTACION A DISPOSITIVOS */
-@media only screen and (max-width: 360px) {
-  .contacto__contenedor {
-    width: 70%;
-    margin: auto;
+/* ---FIN SECCION CONTACTO--- *s/
+  
+  /* ADAPTACION A DISPOSITIVOS */
+/* ---adaptacion realizar nuevamente 
+  @media only screen and (max-width: 360px) {
+    .contacto__contenedor {
+      width: 70%;
+      margin: auto;
+    }
   }
-}
-
-@media only screen and (min-width: 360px) {
-  .contacto__contenedor {
-    width: 70%;
-    margin: auto;
+  
+  @media only screen and (min-width: 360px) {
+    .contacto__contenedor {
+      width: 70%;
+      margin: auto;
+    }
   }
-}
-
-@media only screen and (min-width: 480px) {
-  .contacto__contenedor {
-    width: 80%;
-    margin: auto;
+  
+  @media only screen and (min-width: 480px) {
+    .contacto__contenedor {
+      width: 80%;
+      margin: auto;
+    }
   }
-}
-
-@media only screen and (min-width: 600px) {
-  .contacto__contenedor {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .contacto__contenedor {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacto__contenedor {
-    width: 100%;
-  }
-}
+  
+  @media only screen and (min-width: 768px) {
+    .contacto__contenedor {
+      width: 100%;
+    }
+  } 
+ --- */
 /*# sourceMappingURL=estiloscontacto4epfinal.css.map */

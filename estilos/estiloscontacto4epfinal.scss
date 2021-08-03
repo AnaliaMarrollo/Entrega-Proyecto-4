@@ -1,53 +1,67 @@
+@import "reseteo";
+
+@import "variables";
+
 /* ---SECCION CONTACTO--- */
 
 .contacto__contenedor {
-    width: 80%;
+    width: 50%;
+    margin: auto;
     display: flex;
-    margin: 1% 0 0 0.5%;
-    text-align: left;
+    margin-top: $rem-standard;
+    padding-top: $rem-standard*2;
     justify-content: center;
+    text-align: left;
+    background-color: $color-blanco;
   }
   
   .contacto__datos-contacto {
-    border-radius: 0.5rem;
-    padding: 0.25rem;
-    line-height: 150%;
-    margin-right: 3%;
+    width: 28%;
+    padding: $rem-standard;
+    line-height: $rem-standard*2;
+    color: $color-rojo;
   }
   
   .contacto__datos-contacto--fuente {
-    color: white;
+    color: $color-blanco;
     font-weight: 600;
-    background-color: #C80425;
+    background-color: $color-rojo;
   }
-  
+
   .contacto__input-contacto {
-    color: #212529;
+    width: 68%;
+    color: $color-oscuro;
+    border: solid $color-rojo $rem-standard/4;
+    padding-left: $rem-standard;
+    padding: $rem-standard/3;
+    margin-left: $rem-standard;
   }
   
   .contacto__input-select {
-    color: #212529;
+    width: 68%;
+    color: $color-rojo;
+    border: solid $color-rojo $rem-standard/4;
+    padding-left: $rem-standard;
+    padding: $rem-standard/2;
+    margin-left: $rem-standard;
   }
-  
-  .contacto__contenedor-sexo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .contacto__datos-contacto-sexo {
-    border-radius: 0.5rem;
-    padding: 1%;
-    margin: 1rem 1rem 1rem 0;
-  }
-  
+ 
   .contacto__consulta {
-    color: #212529;
+    color: $color-oscuro;
+    border: solid $color-rojo $rem-standard/4;
+    padding: $rem-standard;
   }
   
-  .contacto__promociones {
-    color: white;
-    font-weight: 400;
+  .contenedor__promociones {
+    display: flex;
+    justify-content: center;
+    padding-bottom: $rem-standard*2;
+    font-weight: 500;
+  }
+
+  .promociones {
+    color: $color-oscuro;
+    margin-right: $rem-standard;
   }
   
   .boton__link--mt {
@@ -57,7 +71,7 @@
   /* ---FIN SECCION CONTACTO--- *s/
   
   /* ADAPTACION A DISPOSITIVOS */
-  
+  /* ---adaptacion realizar nuevamente 
   @media only screen and (max-width: 360px) {
     .contacto__contenedor {
       width: 70%;
@@ -83,5 +97,5 @@
     .contacto__contenedor {
       width: 100%;
     }
-  }
-  
+  } 
+ --- */
