@@ -47,6 +47,8 @@
   }
  
   .contacto__consulta {
+    width: 100%;
+    height: 12%;
     color: $color-oscuro;
     border: solid $color-rojo $rem-standard/4;
     padding: $rem-standard;
@@ -86,9 +88,6 @@
       width: 68%;
       margin-right: $rem-standard/2;
     }
-    .contacto__consulta {
-      margin: 0 $rem-standard*4;
-    }
 
     .contacto__input-select {
       width: 68%;
@@ -109,6 +108,7 @@
       width: 25%;
       margin-left: $rem-standard/2;
     }
+
     .contacto__input-contacto {
       width: 68%;
       margin-right: $rem-standard/2;
@@ -117,6 +117,12 @@
     .contacto__input-select {
       width: 68%;
     }
+
+    .contacto__consulta {
+      width: 95%;
+      margin-left: $rem-standard;
+    }
+
     .boton__link--mt {
       width: 95%;
       margin-left: $rem-standard;
@@ -131,10 +137,12 @@
       margin: auto;
       font-size: $rem-standard*2;
     }
+
     .contacto__datos-contacto {
       width: 30%;
       margin-left: $rem-standard/2;
     }
+
     .contacto__input-contacto {
       width: 62%;
       margin-right: $rem-standard/2;
@@ -144,8 +152,8 @@
       width: 62%;
     }
 
-   .contacto__consulta {
-      margin: 0 $rem-standard*2;
+    .contacto__consulta {
+      width: 100%;
     }
 
     .boton__link--mt {
@@ -174,7 +182,6 @@
     .boton__link--mt {
       width: 100%;
     }
-
 
   } 
 

@@ -58,6 +58,8 @@
 }
 
 .contacto__consulta {
+  width: 100%;
+  height: 12%;
   color: #212529;
   border: solid #C80425 0.125rem;
   padding: 0.5rem;
@@ -100,9 +102,6 @@
     width: 68%;
     margin-right: 0.25rem;
   }
-  .contacto__consulta {
-    margin: 0 2rem;
-  }
   .contacto__input-select {
     width: 68%;
   }
@@ -127,6 +126,10 @@
   }
   .contacto__input-select {
     width: 68%;
+  }
+  .contacto__consulta {
+    width: 95%;
+    margin-left: 0.5rem;
   }
   .boton__link--mt {
     width: 95%;
@@ -153,7 +156,7 @@
     width: 62%;
   }
   .contacto__consulta {
-    margin: 0 1rem;
+    width: 100%;
   }
   .boton__link--mt {
     width: 95%;
