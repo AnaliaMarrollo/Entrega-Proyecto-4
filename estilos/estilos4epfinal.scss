@@ -233,10 +233,11 @@ html {
   right: 2rem;
   background-color: #01E675;
   border: solid #01E675 $rem-standard/4;
-  padding: 0 $rem-standard*2;
+  padding: 0 $rem-standard*2.5;
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-shadow: $rem-standard/2 $rem-standard/2 $rem-standard black;
   &:hover {
     color: $color-blanco;
     border: solid $color-blanco $rem-standard/4;
@@ -248,16 +249,16 @@ html {
   font-size: 1rem;
   color: $color-blanco;
   text-decoration: none;
+  transition: 1s;
   &:hover {
     color: $color-blanco;
     text-decoration: none;
+    }
   }
-  }
-
  &--logo {
    font-size: 2rem;
    color: $color-blanco;
-}
+  }
 }
 
 @import "footer";
@@ -268,7 +269,7 @@ html {
   .seccion__whatsapp {
     bottom: 6.5rem;
     right: 2rem;
-    padding: 0 $rem-standard/2;
+    padding: 0 $rem-standard/2.1;
     border: solid #01E675 $rem-standard/4;
     &hover {
       border: solid $color-blanco $rem-standard/4;
@@ -322,6 +323,7 @@ html {
 
 @media only screen and (min-width: 768px) {
   .seccion__whatsapp {
+    padding: 0 $rem-standard*2.1;
     bottom: 4rem;
     right: 2rem;
   }

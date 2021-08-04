@@ -11,11 +11,11 @@
     margin-top: $rem-standard;
     padding-top: $rem-standard*2;
     justify-content: center;
+    font-size: $rem-standard*2;
     text-align: left;
     background-color: $color-blanco;
   }
-  
-  .contacto__datos-contacto {
+    .contacto__datos-contacto {
     width: 28%;
     padding: $rem-standard;
     line-height: $rem-standard*2;
@@ -70,32 +70,118 @@
   
   /* ---FIN SECCION CONTACTO--- *s/
   
-  /* ADAPTACION A DISPOSITIVOS */
-  /* ---adaptacion realizar nuevamente 
+  // /* ADAPTACION A DISPOSITIVOS */
+
   @media only screen and (max-width: 360px) {
     .contacto__contenedor {
-      width: 70%;
+      width: 90%;
       margin: auto;
+      font-size: $rem-standard*1.5;
+    }
+    .contacto__datos-contacto {
+      width: 25%;
+      margin-left: $rem-standard/2;
+    }
+    .contacto__input-contacto {
+      width: 68%;
+      margin-right: $rem-standard/2;
+    }
+    .contacto__consulta {
+      margin: 0 $rem-standard*4;
+    }
+
+    .contacto__input-select {
+      width: 68%;
+    }
+
+    .boton__link--mt {
+      width: 95%;
     }
   }
   
   @media only screen and (min-width: 360px) {
     .contacto__contenedor {
-      width: 70%;
+      width: 95%;
       margin: auto;
+      font-size: $rem-standard*1.5;
     }
+    .contacto__datos-contacto {
+      width: 25%;
+      margin-left: $rem-standard/2;
+    }
+    .contacto__input-contacto {
+      width: 68%;
+      margin-right: $rem-standard/2;
+    }
+
+    .contacto__input-select {
+      width: 68%;
+    }
+    .boton__link--mt {
+      width: 95%;
+      margin-left: $rem-standard;
+      margin-right: $rem-standard;
+    }
+
   }
   
   @media only screen and (min-width: 480px) {
     .contacto__contenedor {
-      width: 80%;
+      width: 85%;
       margin: auto;
+      font-size: $rem-standard*2;
+    }
+    .contacto__datos-contacto {
+      width: 30%;
+      margin-left: $rem-standard/2;
+    }
+    .contacto__input-contacto {
+      width: 62%;
+      margin-right: $rem-standard/2;
+    }
+
+    .contacto__input-select {
+      width: 62%;
+    }
+
+   .contacto__consulta {
+      margin: 0 $rem-standard*2;
+    }
+
+    .boton__link--mt {
+      width: 95%;
     }
   }
+
   
   @media only screen and (min-width: 768px) {
     .contacto__contenedor {
+      width: 60%;
+      margin: auto;
+    }
+    .contacto__datos-contacto {
+      width: 28%;
+      margin-left: $rem-standard/2;
+    }
+    .contacto__input-contacto {
+      width: 65%;
+      margin-right: $rem-standard/2;
+    }
+    .contacto__input-select {
+      width: 65%;
+    }
+
+    .boton__link--mt {
       width: 100%;
     }
+
+
   } 
- --- */
+
+  @media only screen and (min-width: 1024px) {
+    .contacto__contenedor {
+      width: 50%;
+      margin: auto;
+    }
+
+  } 
