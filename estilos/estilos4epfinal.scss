@@ -238,6 +238,7 @@ html {
   flex-direction: row;
   align-items: center;
   box-shadow: $rem-standard/2 $rem-standard/2 $rem-standard black;
+  z-index: 100;
   &:hover {
     color: $color-blanco;
     border: solid $color-blanco $rem-standard/4;
@@ -267,8 +268,8 @@ html {
   
 @media only screen and (max-width: 360px) {
   .seccion__whatsapp {
-    bottom: 6.5rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: $rem-standard;
     padding: 0 $rem-standard/2.1;
     border: solid #01E675 $rem-standard/4;
     &hover {
@@ -289,8 +290,8 @@ html {
 
 @media only screen and (min-width: 360px) {
   .seccion__whatsapp {
-    bottom: 6.5rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: $rem-standard;
     padding: 0 $rem-standard/2;
     border: solid #01E675 $rem-standard/4;
     &hover {
@@ -325,7 +326,7 @@ html {
   .seccion__whatsapp {
     padding: 0 $rem-standard*2.1;
     bottom: 4rem;
-    right: 2rem;
+    right: $rem-standard;
   }
 
   .boton__whatsapp {

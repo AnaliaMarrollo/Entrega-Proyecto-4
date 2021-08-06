@@ -292,6 +292,7 @@ html {
           align-items: center;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
           box-shadow: 0.25rem 0.25rem 0.5rem black;
+  z-index: 100;
 }
 
 .seccion__whatsapp:hover {
@@ -522,8 +523,8 @@ html {
 /* ADAPTACION A DISPOSITIVOS */
 @media only screen and (max-width: 360px) {
   .seccion__whatsapp {
-    bottom: 6.5rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: 0.5rem;
     padding: 0 0.2381rem;
     border: solid #01E675 0.125rem;
   }
@@ -541,8 +542,8 @@ html {
 
 @media only screen and (min-width: 360px) {
   .seccion__whatsapp {
-    bottom: 6.5rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: 0.5rem;
     padding: 0 0.25rem;
     border: solid #01E675 0.125rem;
   }
@@ -571,7 +572,7 @@ html {
   .seccion__whatsapp {
     padding: 0 1.05rem;
     bottom: 4rem;
-    right: 2rem;
+    right: 0.5rem;
   }
   .boton__whatsapp--hola {
     display: inherit;
