@@ -1,23 +1,51 @@
-/* --- SECCION LOGIN--- */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.login__contenedor {
+  background-color: white;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
 .login__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.login__contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* --- SECCION LOGIN--- */
+.login__contenedor {
+  width: 50%;
+  margin: auto;
   text-align: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .login__datos {
+  width: 100%;
   background-color: #C80425;
-  border-radius: 0.5rem;
-  padding: 2%;
-  line-height: 150%;
+  padding: 0.5rem;
+  line-height: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -27,8 +55,12 @@
 }
 
 .login__input {
+  width: 100%;
   color: #212529;
   text-align: center;
+  border: solid #9A9C9E 0.125rem;
+  padding-left: 0.25rem;
+  padding: 0.125rem;
 }
 
 .login__recordar-pass {

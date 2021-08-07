@@ -9,17 +9,21 @@
   color: inherit;
 }
 
+.planes__contenedor {
+  background-color: white;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
 /* ---SECCION PLANES--- */
 .planes__contenedor {
   width: 50%;
   margin: auto;
-  background-color: white;
-  color: #212529;
-  padding: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
-          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .planes__titulo-contenedor--50 {

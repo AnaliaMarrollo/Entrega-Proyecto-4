@@ -18,30 +18,36 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.contacto__contenedor {
+.contenedor__promociones, .contacto__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contenedor__promociones {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacto__contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ---SECCION CONTACTO--- */
 .contacto__contenedor {
-  width: 50%;
-  margin: auto;
   margin-top: 0.5rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-size: 1rem;
   text-align: left;
 }
 
 .contacto__datos-contacto {
-  width: 28%;
   padding: 0.5rem;
   line-height: 1rem;
   color: #C80425;
@@ -54,16 +60,30 @@
 }
 
 .contacto__input-contacto {
-  width: 68%;
   color: #212529;
-  border: solid #C80425 0.125rem;
-  padding-left: 0.5rem;
+  border: solid #212529 0.125rem;
+  padding-left: 1rem;
   padding: 0.16667rem;
   margin-left: 0.5rem;
 }
 
+.contacto__input-contacto::-webkit-input-placeholder {
+  color: #C80425;
+}
+
+.contacto__input-contacto:-ms-input-placeholder {
+  color: #C80425;
+}
+
+.contacto__input-contacto::-ms-input-placeholder {
+  color: #C80425;
+}
+
+.contacto__input-contacto::placeholder {
+  color: #C80425;
+}
+
 .contacto__input-select {
-  width: 68%;
   color: #C80425;
   border: solid #C80425 0.125rem;
   padding-left: 0.5rem;
@@ -72,20 +92,12 @@
 }
 
 .contacto__consulta {
-  width: 100%;
-  height: 12%;
   color: #212529;
   border: solid #C80425 0.125rem;
   padding: 0.5rem;
 }
 
 .contenedor__promociones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 1rem;
   font-weight: 500;
 }
@@ -193,8 +205,11 @@
   .contacto__input-select {
     width: 65%;
   }
+  .contacto__consulta {
+    width: 95%;
+  }
   .boton__link--mt {
-    width: 100%;
+    width: 95%;
   }
 }
 

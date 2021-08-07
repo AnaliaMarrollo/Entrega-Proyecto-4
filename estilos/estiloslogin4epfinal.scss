@@ -1,19 +1,27 @@
+@import "reseteo";
+
+@import "variables";
+
 /* --- SECCION LOGIN--- */
 
 .login__contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  margin: auto;
+  @extend %caja-blanca;
+  @extend %caja-flex-centrada;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     text-align: center;
-    margin-top: .5rem;
+    margin-top: $rem-standard;
   }
   
   .login__datos {
-    background-color: #C80425;
-    border-radius: 0.5rem;
-    padding: 2%;
-    line-height: 150%;
-    margin-bottom: 1rem;
+    width: 100%;
+    background-color: $color-rojo;
+    padding: $rem-standard;
+    line-height: $rem-standard*2;
+    margin-bottom: $rem-standard*2;
   }
   
   .login__datos--estilos {
@@ -22,8 +30,12 @@
   }
   
   .login__input {
-    color: #212529;
+    width: 100%;
+    color: $color-oscuro;
     text-align: center;
+    border: solid #9A9C9E $rem-standard/4;
+    padding-left: $rem-standard/2;
+    padding: $rem-standard/4;
   }
   
   .login__recordar-pass {
