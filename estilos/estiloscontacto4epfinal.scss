@@ -7,13 +7,15 @@
 .contacto__contenedor {
     width: 50%;
     margin: auto;
-    display: flex;
+    @extend %caja-blanca;
+    @extend %caja-flex-centradax;
+    // display: flex;
     margin-top: $rem-standard;
     padding-top: $rem-standard*2;
-    justify-content: center;
+    // justify-content: center;
     font-size: $rem-standard*2;
     text-align: left;
-    background-color: $color-blanco;
+    // background-color: $color-blanco;
   }
     .contacto__datos-contacto {
     width: 28%;

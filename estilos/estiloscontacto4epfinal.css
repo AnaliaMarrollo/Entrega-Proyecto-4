@@ -9,21 +9,35 @@
   color: inherit;
 }
 
+.contacto__contenedor {
+  background-color: white;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+.contacto__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacto__contenedor {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* ---SECCION CONTACTO--- */
 .contacto__contenedor {
   width: 50%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 0.5rem;
   padding-top: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 1rem;
   text-align: left;
-  background-color: white;
 }
 
 .contacto__datos-contacto {

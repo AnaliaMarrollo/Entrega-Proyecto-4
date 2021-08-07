@@ -63,7 +63,7 @@
     background-color: $color-rojo;
     color: $color-blanco;
     font-size: $rem-standard*2.5;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     text-align: center;
     padding: .5rem;
@@ -82,7 +82,7 @@
   .footer {
     display: grid;
     grid-template-columns: (1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: (1fr 1fr 1fr);
 
     &__mancuerna {
       grid: 1/2 1/2;
@@ -106,7 +106,7 @@
   .footer {
     display: grid;
     grid-template-columns: (1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: (1fr 1fr 1fr);
 
     &__mancuerna {
       grid: 1/2 1/2;
@@ -131,7 +131,7 @@
   .footer {
     display: grid;
     grid-template-columns: (1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: (1fr 1fr 1fr 1fr);
 
     &__menu {
         display: flex;

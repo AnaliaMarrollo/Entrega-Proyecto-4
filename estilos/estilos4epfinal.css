@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
 .body {
   min-width: 360px;
   max-width: 1500px;
@@ -17,38 +16,32 @@
   color: inherit;
 }
 
-.body {
-  min-width: 360px;
-  max-width: 1500px;
-  min-height: 100vh;
+.planes__contenedor-index {
+  background-color: white;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  text-decoration: none;
-  color: inherit;
+.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.breadcrumb {
-  background-color: #2c3237;
-  margin: 0;
+.planes__contenedor-index, .planes__contenedor-contenido {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.breadcrumb-item {
-  margin-left: 1rem;
-}
-
-.breadcrumb-item-link {
-  text-decoration: none;
-  color: white;
-}
-
-.active-breadcrumb:hover {
-  background-color: #2c3237;
+.seccion__contenedor, .planes__contenedor-contenido, .planes__contenedor-saber-mas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html {
@@ -109,6 +102,8 @@ html {
 }
 
 .seccionppal__titulo {
+  width: 70%;
+  margin: auto;
   padding: 0.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
@@ -164,34 +159,16 @@ html {
 .seccion__contenedor {
   width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .planes__contenedor-index {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
-  color: #212529;
   line-height: 1.2rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
-          box-shadow: 0.25rem 0.25rem 0.5rem black;
-  border-radius: 0.5rem;
+  margin: 0 0.5rem;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  margin: 0 0.5rem;
 }
 
 .planes__contenedor-index:hover {
@@ -199,32 +176,16 @@ html {
 }
 
 .planes__contenedor-contenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 1rem;
 }
 
 .planes__contenedor-saber-mas {
-  width: 70%;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  height: 25%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .planes__titulo-contenedor {
@@ -415,7 +376,7 @@ html {
   background-color: #C80425;
   color: white;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   text-align: center;
   padding: .5rem;
@@ -434,8 +395,8 @@ html {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
   .footer__mancuerna {
     grid: 1/2 1/2;
@@ -457,8 +418,8 @@ html {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
   .footer__mancuerna {
     grid: 1/2 1/2;
@@ -480,8 +441,8 @@ html {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .footer__menu {
     display: -webkit-box;

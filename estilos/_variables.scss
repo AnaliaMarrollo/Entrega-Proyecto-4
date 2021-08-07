@@ -31,14 +31,38 @@ $fuente-normal: 1rem;
 }
 
 %caja-flex {
-&-row {
     display: flex;
+}
+
+%caja-flex-row {
+    @extend %caja-flex;
     flex-direction: row;
 }
-&-column {
-    display: flex;
+
+%caja-flex-column {
+    @extend %caja-flex;
     flex-direction: column;
 }
+
+%caja-flex-centradax {
+    @extend %caja-flex;
+    justify-content: center;
+}
+
+%caja-flex-centraday {
+    @extend %caja-flex;
+    align-items: center;
+}
+
+%caja-flex-centrada {
+    @extend %caja-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%caja-flex-yfin {
+    @extend %caja-flex;
+    align-items: flex-end;
 }
 
 

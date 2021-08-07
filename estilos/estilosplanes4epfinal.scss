@@ -7,12 +7,13 @@
 .planes__contenedor {
     width: 50%;
     margin: auto;
-    background-color: $color-blanco;
-    color: $color-oscuro;
-    padding: $rem-standard*2;
+    @extend %caja-blanca;
+    // background-color: $color-blanco;
+    // color: $color-oscuro;
+    // padding: $rem-standard*2;
     margin-top: $rem-standard*3;
     margin-bottom: $rem-standard*3;
-    box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
+    // box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
 }
 
 .planes__titulo-contenedor--50 {

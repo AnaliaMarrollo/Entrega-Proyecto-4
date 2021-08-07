@@ -2,7 +2,6 @@
 
 @import "variables";
 
-@import "breadcrumb";
 
 html {
   font-size: 100%;
@@ -76,6 +75,8 @@ html {
 
 .seccionppal {
   &__titulo {
+    width: 70%;
+    margin: auto;
     padding: $rem-standard;
     color: $color-blanco;
     background-color: rgba(0, 0, 0, 0.3);
@@ -136,44 +137,53 @@ html {
   &__contenedor {
     width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: center;
+    @extend %caja-flex-centradax;
+    // display: flex;
+    // justify-content: center;
   }
 }
 
 .planes__contenedor {
+
   &-index {
-    display: flex;
-    flex-direction: column;
+    @extend %caja-blanca;
+    @extend %caja-flex-column;
     align-items: center;
-    background-color: $color-blanco;
-    color: $color-oscuro;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // background-color: $color-blanco;
+    // color: $color-oscuro;
+    // box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
     line-height: 1.2rem;
-    box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
-    border-radius: $rem-standard;
-    transition: 1.5s;
+    // border-radius: $rem-standard;
     margin: 0 $rem-standard;
+    transition: 1.5s;
 
     &:hover {
       scale: 1.05;
     }
+
   }
 
   &-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %caja-flex-column;
+    @extend %caja-flex-centradax;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     padding: $rem-standard*2;
   }
 
-  &-saber-mas {
-    width: 70%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: $rem-standard*2;
-  }
+&-saber-mas {
+  width: 100%;
+  height: 25%;
+@extend %caja-flex-centradax;
+  // display: flex;
+  // justify-content: center;
+align-items: flex-end;
+padding-bottom: $rem-standard;
+}
 }
 
 .planes__titulo-contenedor {
