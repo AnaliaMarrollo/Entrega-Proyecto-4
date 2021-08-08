@@ -1,0 +1,23 @@
+{
+  "name": "WEBPROFETRONK.4EPFINAL.MARROLLO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaliaMarrollo/Entrega-Proyecto-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaliaMarrollo/Entrega-Proyecto-4/issues"
+  },
+  "homepage": "https://github.com/AnaliaMarrollo/Entrega-Proyecto-4#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}

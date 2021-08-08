@@ -83,6 +83,22 @@
   margin-left: 1.5rem;
 }
 
+/* ---ESTILOS AL ACCORDION BOOSTRAP DE PREGUNTAS FRECUENTES---- */
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #eff1f3 !important;
+  color: #212529 !important;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 /* ---FIN SECCION PLANES---- */
 /* ADAPTACION A DISPOSITIVOS */
 @media only screen and (max-width: 360px) {
