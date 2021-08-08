@@ -18,14 +18,26 @@
     .contacto__datos-contacto {
     padding: $rem-standard;
     line-height: $rem-standard*2;
-    color: $color-rojo;
+    color: $color-oscuro;
+    font-weight: 600;
+    text-decoration: overline;
+    border: solid $color-oscuro $rem-standard/4;
+    &--preferencia {
+      margin: auto;
+      border: solid $color-oscuro $rem-standard/4;
+      padding: $rem-standard/2;
+      text-align: center;
+      background-color: $color-oscuro;
+      color: $color-blanco;
+    }
   }
   
-  .contacto__datos-contacto--fuente {
-    color: $color-blanco;
-    font-weight: 600;
-    background-color: $color-rojo;
-  }
+  // .contacto__datos-contacto--fuente {
+  //   // color: $color-oscuro;
+  //   // font-weight: 600;
+  //   // border: solid $color-oscuro $rem-standard/4;
+  //   // background-color: $color-rojo;
+  // }
 
   .contacto__input-contacto {
     color: $color-oscuro;
@@ -33,44 +45,114 @@
     padding-left: $rem-standard*2;
     padding: $rem-standard/3;
     margin-left: $rem-standard;
-    &::placeholder {
-      color: $color-rojo;
-    }
+    // &::placeholder {
+    //   color: $color-osc;
+    // }
   }
   
   .contacto__input-select {
-    color: $color-rojo;
-    border: solid $color-rojo $rem-standard/4;
+    color: $color-oscuro;
+    border: solid $color-oscuro $rem-standard/4;
     padding-left: $rem-standard;
     padding: $rem-standard/2;
     margin-left: $rem-standard;
+    &--preferencia {
+      text-align: center;
+      margin-top: $rem-standard;
+    }
   }
  
   .contacto__consulta {
     color: $color-oscuro;
-    border: solid $color-rojo $rem-standard/4;
+    border: solid $color-oscuro $rem-standard/4;
     padding: $rem-standard;
+    margin-top: $rem-standard*2;
   }
-  
-  .contenedor__promociones {
+
+  .contenedor__preferencia {
+    @extend %caja-flex-column;
     @extend %caja-flex-centradax;
+    margin: $rem-standard 0;
+  }
+
+  .contenedor__promociones {
+    @extend %caja-flex-centrada;
     // display: flex;
     // justify-content: center;
     padding-bottom: $rem-standard*2;
-    font-weight: 500;
   }
 
-  .promociones {
+  .label__promociones {
     color: $color-oscuro;
     margin-right: $rem-standard;
+    font-weight: 400;
   }
   
   .boton__link--mt {
     margin-top: .5rem;
   }
+
+
+  // ----estilos al checkbox-----
+
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+
+  .checkbox__promociones{
+    display: inline-block;
+    position: relative;
+    width: $rem-standard*8;
+    height: $rem-standard*4;
+    background: $color-blanco;
+    border-radius: $rem-standard*4;
+    border: solid $rem-standard/5 $color-oscuro; 
+  }
+
+  .checkbox__promociones .checkbox__label {
+    display: block;
+    width: $rem-standard*2.5;
+	  height: $rem-standard*2.5;
+	  border-radius: $rem-standard*4;
+	  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.35);
+	  background-color: $color-rojo;
+    cursor: pointer;
+    position: absolute;
+    top: $rem-standard/1.5;
+    left: $rem-standard/1.5;
+    z-index: 1;
+    transition: all .4s ease;
+  }
+
+.checkbox__promociones input[type=checkbox]:checked + .checkbox__label {
+  left: auto;
+  right: $rem-standard/1.5;
+  }
+
+  .checkbox__promociones:after {
+    content: 'NO';
+    font-size: $rem-standard*1.5;
+    font-weight: 600;
+    color: $color-rojo-hover;
+    position: absolute;
+    right: $rem-standard/1.2;
+    top: $rem-standard/1.2;
+    z-index: 0;
+  }
+
+  .checkbox__promociones:before {
+    content: 'SI';
+    font-size: $rem-standard*1.5;
+    font-weight: 600;
+    color: $color-oscuro;
+    position: absolute;
+    left: $rem-standard;
+    top: $rem-standard/1.2;
+    z-index: 0;
+  }
   
-  /* ---FIN SECCION CONTACTO--- *s/
-  
+  /* ---FIN SECCION CONTACTO---* /
+
   // /* ADAPTACION A DISPOSITIVOS */
 
   @media only screen and (max-width: 360px) {
@@ -82,6 +164,11 @@
     .contacto__datos-contacto {
       width: 25%;
       margin-left: $rem-standard/2;
+      &--preferencia {
+          width: 96%;
+          margin: auto;
+          margin-bottom: $rem-standard;
+      }
     }
     .contacto__input-contacto {
       width: 68%;
@@ -90,6 +177,9 @@
 
     .contacto__input-select {
       width: 68%;
+      &--preferencia {
+        width: 96%;
+      }
     }
 
     .boton__link--mt {
@@ -106,7 +196,12 @@
     .contacto__datos-contacto {
       width: 25%;
       margin-left: $rem-standard/2;
+      &--preferencia {
+        width: 96%;
+        margin-bottom: $rem-standard;
     }
+  }
+    
 
     .contacto__input-contacto {
       width: 68%;
@@ -115,6 +210,10 @@
 
     .contacto__input-select {
       width: 68%;
+      &--preferencia {
+        width: 96%;
+        margin: auto;
+      }
     }
 
     .contacto__consulta {
@@ -149,6 +248,9 @@
 
     .contacto__input-select {
       width: 62%;
+      &--preferencia {
+        width: 95%;
+      }
     }
 
     .contacto__consulta {
@@ -176,6 +278,9 @@
     }
     .contacto__input-select {
       width: 65%;
+      &--preferencia {
+        width: 95%;
+      }
     }
 
     .contacto__consulta {

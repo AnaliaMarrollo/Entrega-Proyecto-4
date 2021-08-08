@@ -18,19 +18,26 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.contenedor__promociones, .contacto__contenedor {
+.contenedor__preferencia, .contacto__contenedor, .contenedor__promociones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contenedor__promociones {
+.contenedor__preferencia {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedor__preferencia {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.contacto__contenedor {
+.contacto__contenedor, .contenedor__promociones {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -50,13 +57,19 @@
 .contacto__datos-contacto {
   padding: 0.5rem;
   line-height: 1rem;
-  color: #C80425;
+  color: #212529;
+  font-weight: 600;
+  text-decoration: overline;
+  border: solid #212529 0.125rem;
 }
 
-.contacto__datos-contacto--fuente {
+.contacto__datos-contacto--preferencia {
+  margin: auto;
+  border: solid #212529 0.125rem;
+  padding: 0.25rem;
+  text-align: center;
+  background-color: #212529;
   color: white;
-  font-weight: 600;
-  background-color: #C80425;
 }
 
 .contacto__input-contacto {
@@ -67,52 +80,104 @@
   margin-left: 0.5rem;
 }
 
-.contacto__input-contacto::-webkit-input-placeholder {
-  color: #C80425;
-}
-
-.contacto__input-contacto:-ms-input-placeholder {
-  color: #C80425;
-}
-
-.contacto__input-contacto::-ms-input-placeholder {
-  color: #C80425;
-}
-
-.contacto__input-contacto::placeholder {
-  color: #C80425;
-}
-
 .contacto__input-select {
-  color: #C80425;
-  border: solid #C80425 0.125rem;
+  color: #212529;
+  border: solid #212529 0.125rem;
   padding-left: 0.5rem;
   padding: 0.25rem;
   margin-left: 0.5rem;
 }
 
+.contacto__input-select--preferencia {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 .contacto__consulta {
   color: #212529;
-  border: solid #C80425 0.125rem;
+  border: solid #212529 0.125rem;
   padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contenedor__preferencia {
+  margin: 0.5rem 0;
 }
 
 .contenedor__promociones {
   padding-bottom: 1rem;
-  font-weight: 500;
 }
 
-.promociones {
+.label__promociones {
   color: #212529;
   margin-right: 0.5rem;
+  font-weight: 400;
 }
 
 .boton__link--mt {
   margin-top: .5rem;
 }
 
-/* ---FIN SECCION CONTACTO--- *s/
-  
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.checkbox__promociones {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  background: white;
+  border-radius: 2rem;
+  border: solid 0.1rem #212529;
+}
+
+.checkbox__promociones .checkbox__label {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  background-color: #C80425;
+  cursor: pointer;
+  position: absolute;
+  top: 0.33333rem;
+  left: 0.33333rem;
+  z-index: 1;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.checkbox__promociones input[type=checkbox]:checked + .checkbox__label {
+  left: auto;
+  right: 0.33333rem;
+}
+
+.checkbox__promociones:after {
+  content: 'NO';
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #D90429;
+  position: absolute;
+  right: 0.41667rem;
+  top: 0.41667rem;
+  z-index: 0;
+}
+
+.checkbox__promociones:before {
+  content: 'SI';
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #212529;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.41667rem;
+  z-index: 0;
+}
+
+/* ---FIN SECCION CONTACTO---* /
+
   // /* ADAPTACION A DISPOSITIVOS */
 @media only screen and (max-width: 360px) {
   .contacto__contenedor {
@@ -124,12 +189,20 @@
     width: 25%;
     margin-left: 0.25rem;
   }
+  .contacto__datos-contacto--preferencia {
+    width: 96%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
   .contacto__input-contacto {
     width: 68%;
     margin-right: 0.25rem;
   }
   .contacto__input-select {
     width: 68%;
+  }
+  .contacto__input-select--preferencia {
+    width: 96%;
   }
   .boton__link--mt {
     width: 95%;
@@ -146,12 +219,20 @@
     width: 25%;
     margin-left: 0.25rem;
   }
+  .contacto__datos-contacto--preferencia {
+    width: 96%;
+    margin-bottom: 0.5rem;
+  }
   .contacto__input-contacto {
     width: 68%;
     margin-right: 0.25rem;
   }
   .contacto__input-select {
     width: 68%;
+  }
+  .contacto__input-select--preferencia {
+    width: 96%;
+    margin: auto;
   }
   .contacto__consulta {
     width: 95%;
@@ -181,6 +262,9 @@
   .contacto__input-select {
     width: 62%;
   }
+  .contacto__input-select--preferencia {
+    width: 95%;
+  }
   .contacto__consulta {
     width: 100%;
   }
@@ -204,6 +288,9 @@
   }
   .contacto__input-select {
     width: 65%;
+  }
+  .contacto__input-select--preferencia {
+    width: 95%;
   }
   .contacto__consulta {
     width: 95%;
