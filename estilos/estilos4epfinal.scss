@@ -158,10 +158,10 @@ html {
     line-height: 1.2rem;
     // border-radius: $rem-standard;
     margin: 0 $rem-standard;
-    transition: 1.5s;
+   transition: 1.5s;
 
-    &:hover {
-      scale: 1.05;
+   &:hover {
+     scale: 1.05;
     }
 
   }
@@ -249,9 +249,11 @@ padding-bottom: $rem-standard;
   align-items: center;
   box-shadow: $rem-standard/2 $rem-standard/2 $rem-standard black;
   z-index: 100;
+  animation: flipInX;
+  animation-duration: 2s;
   &:hover {
     color: $color-blanco;
-    border: solid $color-blanco $rem-standard/4;
+    background-color: darken(#01E675,5%);
   }
 }
 

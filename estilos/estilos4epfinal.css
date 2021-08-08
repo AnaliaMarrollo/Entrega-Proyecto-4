@@ -254,11 +254,15 @@ html {
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
           box-shadow: 0.25rem 0.25rem 0.5rem black;
   z-index: 100;
+  -webkit-animation: flipInX;
+          animation: flipInX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .seccion__whatsapp:hover {
   color: white;
-  border: solid white 0.125rem;
+  background-color: #01cd68;
 }
 
 .boton__whatsapp--hola {
