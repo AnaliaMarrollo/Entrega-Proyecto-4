@@ -37,6 +37,8 @@
     font-size: $fuente-normal+.2;
     font-weight: 600;
     margin-left: $rem-standard+.2;
+    animation: shakeX;
+    animation-duration: 2s;
 }
 
 .boton--planes {

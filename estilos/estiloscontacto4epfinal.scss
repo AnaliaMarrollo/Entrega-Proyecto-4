@@ -111,7 +111,7 @@
     visibility: hidden;
   }
 
-  .checkbox__promociones{
+  .checkbox__personalizado {
     display: inline-block;
     position: relative;
     width: $rem-standard*8;
@@ -121,7 +121,7 @@
     border: solid $rem-standard/5 $color-oscuro; 
   }
 
-  .checkbox__promociones .checkbox__label {
+  .checkbox__personalizado .checkbox__label {
     display: block;
     width: $rem-standard*2.5;
 	  height: $rem-standard*2.5;
@@ -136,12 +136,12 @@
     transition: all .4s ease;
   }
 
-.checkbox__promociones input[type=checkbox]:checked + .checkbox__label {
+  .checkbox__personalizado input[type=checkbox]:checked + .checkbox__label {
   left: auto;
   right: $rem-standard/1.5;
   }
 
-  .checkbox__promociones:after {
+  .checkbox__personalizado:after {
     content: 'NO';
     font-size: $rem-standard*1.5;
     font-weight: 600;
@@ -152,7 +152,7 @@
     z-index: 0;
   }
 
-  .checkbox__promociones:before {
+  .checkbox__personalizado:before {
     content: 'SI';
     font-size: $rem-standard*1.5;
     font-weight: 600;

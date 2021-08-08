@@ -1,45 +1,50 @@
 @import "reseteo";
 
-@import "variables";
+@import "variables-propias";
 
 /* --- SECCION LOGIN--- */
 
-.login__contenedor {
-  width: 50%;
+.login {
+&__contenedor {
+  width: 30%;
   margin: auto;
   @extend %caja-blanca;
   @extend %caja-flex-centrada;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    text-align: center;
-    margin-top: $rem-standard;
+  text-align: center;
+  margin-top: $rem-standard*2;
   }
   
-  .login__datos {
-    width: 100%;
-    background-color: $color-rojo;
+  &__datos {
+    width: 50%;
     padding: $rem-standard;
     line-height: $rem-standard*2;
+    margin-bottom: $rem-standard;
+    color: $color-oscuro;
+    font-weight: 600;
+    text-decoration: overline;
+    border: solid $rem-standard/4 $color-oscuro;
+  }
+  
+  &__input {
+    width: 50%;
+    color: $color-oscuro;
+    text-align: center;
+    border: solid $rem-standard/4 $color-oscuro;
+    padding: $rem-standard/4;
+    padding-left: $rem-standard/2;
+    border-radius: $rem-standard/2;
     margin-bottom: $rem-standard*2;
   }
   
-  .login__datos--estilos {
-    color: white;
-    font-weight: 600;
-  }
-  
-  .login__input {
-    width: 100%;
-    color: $color-oscuro;
-    text-align: center;
-    border: solid #9A9C9E $rem-standard/4;
-    padding-left: $rem-standard/2;
-    padding: $rem-standard/4;
-  }
-  
-  .login__recordar-pass {
+  &__recordar-pass {
     font-weight: 400;
+    margin: $rem-standard 0;
   }
-  
+  &__boton {
+    width: 65%;
+    margin: auto;
+    padding: $rem-standard;
+  }
+}
+
   /* ---FIN LOGIN--- */

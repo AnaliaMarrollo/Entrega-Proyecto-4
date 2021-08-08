@@ -35,36 +35,43 @@
 
 /* --- SECCION LOGIN--- */
 .login__contenedor {
-  width: 50%;
+  width: 30%;
   margin: auto;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .login__datos {
-  width: 100%;
-  background-color: #C80425;
+  width: 50%;
   padding: 0.5rem;
   line-height: 1rem;
-  margin-bottom: 1rem;
-}
-
-.login__datos--estilos {
-  color: white;
+  margin-bottom: 0.5rem;
+  color: #212529;
   font-weight: 600;
+  text-decoration: overline;
+  border: solid 0.125rem #212529;
 }
 
 .login__input {
-  width: 100%;
+  width: 50%;
   color: #212529;
   text-align: center;
-  border: solid #9A9C9E 0.125rem;
-  padding-left: 0.25rem;
+  border: solid 0.125rem #212529;
   padding: 0.125rem;
+  padding-left: 0.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .login__recordar-pass {
   font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.login__boton {
+  width: 65%;
+  margin: auto;
+  padding: 0.5rem;
 }
 
 /* ---FIN LOGIN--- */

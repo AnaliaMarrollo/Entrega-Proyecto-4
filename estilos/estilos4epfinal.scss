@@ -148,21 +148,12 @@ html {
     @extend %caja-blanca;
     @extend %caja-flex-column;
     align-items: center;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // background-color: $color-blanco;
-    // color: $color-oscuro;
-    // box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
     line-height: 1.2rem;
-    // border-radius: $rem-standard;
     margin: 0 $rem-standard;
-   transition: 1.5s;
-
+    transition: 1.5s;
    &:hover {
      scale: 1.05;
     }
-
   }
 
   &-contenido {

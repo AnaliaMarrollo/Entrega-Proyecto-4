@@ -51,6 +51,10 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-left: 0.7rem;
+  -webkit-animation: shakeX;
+          animation: shakeX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .boton--planes {
