@@ -1,6 +1,6 @@
 @import "reseteo";
 
-@import "variables";
+@import "variables-propias";
 
 /* ---SECCION PLANES--- */
 
@@ -8,17 +8,12 @@
     width: 50%;
     margin: auto;
     @extend %caja-blanca;
-    // background-color: $color-blanco;
-    // color: $color-oscuro;
-    // padding: $rem-standard*2;
     margin-top: $rem-standard*3;
     margin-bottom: $rem-standard*3;
-    // box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
 }
 
 .planes__titulo-contenedor--50 {
     width: 50%;
-    // padding: $rem-standard;
     margin: auto;
 }
 
@@ -71,6 +66,26 @@
     margin-left: $rem-standard*3; 
 }
 }
+
+/* ---ESTILOS AL ACCORDION BOOSTRAP DE PREGUNTAS FRECUENTES---- */
+
+.accordion-button {
+     font-weight: 600;
+     }
+    
+  .accordion-button:not(.collapsed) {
+  background-color: lighten($color-oscuro, 80%) !important;
+  color: $color-oscuro !important;
+ }
+
+.accordion-button:focus {
+          border: none !important;
+
+    box-shadow: none !important;
+
+}
+
+
 
 /* ---FIN SECCION PLANES---- */
 
