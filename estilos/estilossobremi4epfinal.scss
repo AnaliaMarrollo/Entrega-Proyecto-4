@@ -31,12 +31,10 @@
 .sobremi__texto {
   width: 65%;
   color: $color-oscuro;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
   padding: $rem-standard*2;
-  font-size: $rem-standard*3;
   &--estilos {
-    text-align: right;
+    text-align: justify;
     align-content: center;
   }
 }
@@ -53,7 +51,7 @@
 
   .sobremi__texto {
     width: 100%;
-    font-size: ($rem-standard*2)+.1;
+    font-size: $rem-standard*2;
   }
 
   .sobremi__contenedor-foto {
@@ -69,7 +67,7 @@
 
   .sobremi__texto {
     width: 100%;
-    font-size: ($rem-standard*2)+.1;
+    font-size: $rem-standard*2;
   }
 
   .sobremi__contenedor-foto {
@@ -95,14 +93,10 @@
 
   .sobremi__texto {
     width: 65%;
-    font-size: ($rem-standard*2)+.1;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .sobremi__texto {
-    font-size: $rem-standard*3;
-}
 .sobremi__contenedor-foto {
   background-position: top;
 }

@@ -46,14 +46,12 @@
 .sobremi__texto {
   width: 65%;
   color: #212529;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
   padding: 1rem;
-  font-size: 1.5rem;
 }
 
 .sobremi__texto--estilos {
-  text-align: right;
+  text-align: justify;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -72,7 +70,7 @@
   }
   .sobremi__texto {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .sobremi__contenedor-foto {
     display: none;
@@ -91,7 +89,7 @@
   }
   .sobremi__texto {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .sobremi__contenedor-foto {
     display: none;
@@ -119,14 +117,10 @@
   }
   .sobremi__texto {
     width: 65%;
-    font-size: 1.1rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .sobremi__texto {
-    font-size: 1.5rem;
-  }
   .sobremi__contenedor-foto {
     background-position: top;
   }
