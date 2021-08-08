@@ -75,17 +75,19 @@
 .contacto__input-contacto {
   color: #212529;
   border: solid #212529 0.125rem;
-  padding-left: 1rem;
-  padding: 0.16667rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
   margin-left: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .contacto__input-select {
   color: #212529;
   border: solid #212529 0.125rem;
   padding-left: 0.5rem;
-  padding: 0.25rem;
+  padding: 0.38462rem;
   margin-left: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .contacto__input-select--preferencia {
@@ -98,10 +100,18 @@
   border: solid #212529 0.125rem;
   padding: 0.5rem;
   margin-top: 1rem;
+  border-radius: 0.25rem;
 }
 
 .contenedor__preferencia {
   margin: 0.5rem 0;
+}
+
+.form-select {
+  width: 96% !important;
+  margin: auto !important;
+  margin-top: 0.5rem;
+  border: solid #212529 0.125rem !important;
 }
 
 .contenedor__promociones {
@@ -181,7 +191,7 @@ input[type=checkbox] {
   // /* ADAPTACION A DISPOSITIVOS */
 @media only screen and (max-width: 360px) {
   .contacto__contenedor {
-    width: 90%;
+    width: 95%;
     margin: auto;
     font-size: 0.75rem;
   }
@@ -191,7 +201,6 @@ input[type=checkbox] {
   }
   .contacto__datos-contacto--preferencia {
     width: 96%;
-    margin: auto;
     margin-bottom: 0.5rem;
   }
   .contacto__input-contacto {
@@ -203,9 +212,21 @@ input[type=checkbox] {
   }
   .contacto__input-select--preferencia {
     width: 96%;
+    margin: auto;
+  }
+  .contacto__consulta {
+    width: 95%;
+    margin-left: 0.5rem;
+  }
+  .form-select {
+    width: 95% !important;
+    margin: auto !important;
+    font-size: 0.75rem !important;
   }
   .boton__link--mt {
     width: 95%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -238,6 +259,11 @@ input[type=checkbox] {
     width: 95%;
     margin-left: 0.5rem;
   }
+  .form-select {
+    width: 95% !important;
+    margin: auto !important;
+    font-size: 0.75rem !important;
+  }
   .boton__link--mt {
     width: 95%;
     margin-left: 0.5rem;
@@ -266,7 +292,12 @@ input[type=checkbox] {
     width: 95%;
   }
   .contacto__consulta {
-    width: 100%;
+    width: 95%;
+  }
+  .form-select {
+    width: 95% !important;
+    margin: auto !important;
+    font-size: 1rem !important;
   }
   .boton__link--mt {
     width: 95%;
@@ -294,6 +325,10 @@ input[type=checkbox] {
   }
   .contacto__consulta {
     width: 95%;
+  }
+  .form-select {
+    width: 95% !important;
+    margin: auto !important;
   }
   .boton__link--mt {
     width: 95%;

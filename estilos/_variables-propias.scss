@@ -1,0 +1,68 @@
+$color-blanco: white;
+$color-oscuro: #212529;
+$color-rojo: #C80425;
+$color-rojo-hover: #D90429;
+$rem-standard: .5rem;
+$fuente-normal: 1rem;
+
+// -----placeholders------
+
+%body {
+    min-width: 360px;
+    max-width: 1500px;
+    min-height: 100vh;
+}
+
+%reseteo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+%caja-blanca {
+    background-color: $color-blanco;
+    color: $color-oscuro;
+    border-radius: $rem-standard;
+    padding: $rem-standard*2;
+    box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
+}
+
+%caja-flex {
+    display: flex;
+}
+
+%caja-flex-row {
+    @extend %caja-flex;
+    flex-direction: row;
+}
+
+%caja-flex-column {
+    @extend %caja-flex;
+    flex-direction: column;
+}
+
+%caja-flex-centradax {
+    @extend %caja-flex;
+    justify-content: center;
+}
+
+%caja-flex-centraday {
+    @extend %caja-flex;
+    align-items: center;
+}
+
+%caja-flex-centrada {
+    @extend %caja-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%caja-flex-yfin {
+    @extend %caja-flex;
+    align-items: flex-end;
+}
+
+

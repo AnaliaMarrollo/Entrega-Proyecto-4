@@ -1,6 +1,6 @@
 @import "reseteo";
 
-@import "variables";
+@import "variables-propias";
 
 /* ---SECCION CONTACTO--- */
 
@@ -42,9 +42,10 @@
   .contacto__input-contacto {
     color: $color-oscuro;
     border: solid $color-oscuro $rem-standard/4;
-    padding-left: $rem-standard*2;
-    padding: $rem-standard/3;
+    padding: $rem-standard/2;
+    padding-left: $rem-standard;
     margin-left: $rem-standard;
+    border-radius: $rem-standard/2;
     // &::placeholder {
     //   color: $color-osc;
     // }
@@ -54,8 +55,9 @@
     color: $color-oscuro;
     border: solid $color-oscuro $rem-standard/4;
     padding-left: $rem-standard;
-    padding: $rem-standard/2;
+    padding: $rem-standard/1.3;
     margin-left: $rem-standard;
+    border-radius: $rem-standard/2;
     &--preferencia {
       text-align: center;
       margin-top: $rem-standard;
@@ -67,12 +69,20 @@
     border: solid $color-oscuro $rem-standard/4;
     padding: $rem-standard;
     margin-top: $rem-standard*2;
+    border-radius: $rem-standard/2;
   }
 
-  .contenedor__preferencia {
-    @extend %caja-flex-column;
-    @extend %caja-flex-centradax;
-    margin: $rem-standard 0;
+ .contenedor__preferencia {
+ @extend %caja-flex-column;
+ @extend %caja-flex-centradax;
+  margin: $rem-standard 0;
+   }
+
+  .form-select {
+    width: 96% !important;
+    margin: auto !important;
+    margin-top: $rem-standard;
+    border: solid $color-oscuro $rem-standard/4 !important;
   }
 
   .contenedor__promociones {
@@ -157,7 +167,7 @@
 
   @media only screen and (max-width: 360px) {
     .contacto__contenedor {
-      width: 90%;
+      width: 95%;
       margin: auto;
       font-size: $rem-standard*1.5;
     }
@@ -165,11 +175,11 @@
       width: 25%;
       margin-left: $rem-standard/2;
       &--preferencia {
-          width: 96%;
-          margin: auto;
-          margin-bottom: $rem-standard;
-      }
+        width: 96%;
+        margin-bottom: $rem-standard;
     }
+  }
+    
     .contacto__input-contacto {
       width: 68%;
       margin-right: $rem-standard/2;
@@ -179,12 +189,27 @@
       width: 68%;
       &--preferencia {
         width: 96%;
+        margin: auto;
       }
+    }
+
+    .contacto__consulta {
+      width: 95%;
+      margin-left: $rem-standard;
+    }
+
+    .form-select {
+      width: 95% !important;
+      margin: auto !important;
+      font-size: $rem-standard*1.5 !important;
     }
 
     .boton__link--mt {
       width: 95%;
+      margin-left: $rem-standard;
+      margin-right: $rem-standard;
     }
+
   }
   
   @media only screen and (min-width: 360px) {
@@ -202,7 +227,6 @@
     }
   }
     
-
     .contacto__input-contacto {
       width: 68%;
       margin-right: $rem-standard/2;
@@ -219,6 +243,12 @@
     .contacto__consulta {
       width: 95%;
       margin-left: $rem-standard;
+    }
+
+    .form-select {
+      width: 95% !important;
+      margin: auto !important;
+      font-size: $rem-standard*1.5 !important;
     }
 
     .boton__link--mt {
@@ -254,7 +284,13 @@
     }
 
     .contacto__consulta {
-      width: 100%;
+      width: 95%;
+    }
+
+    .form-select {
+      width: 95% !important;
+      margin: auto !important;
+      font-size: $rem-standard*2 !important;
     }
 
     .boton__link--mt {
@@ -285,6 +321,11 @@
 
     .contacto__consulta {
       width: 95%;
+    }
+
+    .form-select {
+      width: 95% !important;
+      margin: auto !important;
     }
 
     .boton__link--mt {

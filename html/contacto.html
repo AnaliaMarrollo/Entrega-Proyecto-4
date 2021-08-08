@@ -96,12 +96,12 @@
                     <textarea class="contacto__consulta" name="consulta" id="consulta"
                         placeholder=" Enviame tu consulta" required></textarea><br>
                         <div class="contenedor__preferencia">
-                            <label class="contacto__datos-contacto--preferencia" for="forma-de-contacto">CÓMO PREFERÍS QUE TE CONTACTEMOS?</label>
-                            <select class="contacto__input-select contacto__input-select--preferencia" name="tipodecontacto" id="tipodecontacto" required>
-                                <option>WHATSAPP</option>
-                                <option>LLAMADA TELEFÓNICA</option>
-                                <option>EMAIL</option>
-                            </select>
+                        <select class="form-select" aria-label="Default select example" required>
+                            <option selected>CÓMO PREFERÍS QUE TE CONTACTEMOS?</option>
+                            <option value="1">WHATSAPP</option>
+                            <option value="2">LLAMADA TELEFÓNICA</option>
+                            <option value="3">EMAIL</option>
+                          </select>
                         </div>
                     <input class="boton boton__link boton__link--mt" type="submit" value="ENVIAR CONSULTA">
                     <input class="boton boton__link boton__link--mt" type="reset" value="LIMPIAR FORMULARIO"><br><br>
