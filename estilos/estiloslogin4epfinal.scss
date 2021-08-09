@@ -4,10 +4,9 @@
 
 /* --- SECCION LOGIN--- */
 
+
 .login {
 &__contenedor {
-  width: 30%;
-  margin: auto;
   @extend %caja-blanca;
   @extend %caja-flex-centrada;
   text-align: center;
@@ -15,7 +14,6 @@
   }
   
   &__datos {
-    width: 50%;
     padding: $rem-standard;
     line-height: $rem-standard*2;
     margin-bottom: $rem-standard;
@@ -26,7 +24,6 @@
   }
   
   &__input {
-    width: 50%;
     color: $color-oscuro;
     text-align: center;
     border: solid $rem-standard/4 $color-oscuro;
@@ -40,11 +37,92 @@
     font-weight: 400;
     margin: $rem-standard 0;
   }
+
   &__boton {
-    width: 65%;
-    margin: auto;
     padding: $rem-standard;
   }
 }
+@media only screen and (min-width: 360px) and (max-width:600px) {
+  .login {
+    &__contenedor {
+      width: 80%;
+      margin: auto;
+      }
+      
+      &__datos {
+        width: 80%;
+        margin: auto;
+      }
+      
+      &__input {
+        width: 80%;
+        margin: auto;
+      }
+    
+      &__boton {
+        width: 70%;
+        margin: auto;
+      }
+    }
+}
 
+@media only screen and (min-width: 600px) {
+  .login {
+    &__contenedor {
+      width: 50%;
+      }
+      
+      &__datos {
+        width: 70%;
+      }
+      
+      &__input {
+        width: 70%;
+      }
+    
+      &__boton {
+        width: 65%;
+      }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .login {
+    &__contenedor {
+      width: 40%;
+      }
+      
+      &__datos {
+        width: 70%;
+      }
+      
+      &__input {
+        width: 70%;
+      }
+    
+      &__boton {
+        width: 65%;
+      }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .login {
+    &__contenedor {
+      width: 30%;
+      }
+      
+      &__datos {
+        width: 70%;
+      }
+      
+      &__input {
+        width: 70%;
+      }
+    
+      &__boton {
+        width: 65%;
+      }
+    }
+}
   /* ---FIN LOGIN--- */
