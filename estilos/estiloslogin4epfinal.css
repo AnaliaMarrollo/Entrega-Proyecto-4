@@ -42,7 +42,6 @@
 .login__datos {
   padding: 0.5rem;
   line-height: 1rem;
-  margin-bottom: 0.5rem;
   color: #212529;
   font-weight: 600;
   text-decoration: overline;
@@ -56,7 +55,6 @@
   padding: 0.125rem;
   padding-left: 0.25rem;
   border-radius: 0.25rem;
-  margin-bottom: 1rem;
 }
 
 .login__recordar-pass {
@@ -68,7 +66,7 @@
   padding: 0.5rem;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
   .login__contenedor {
     width: 80%;
     margin: auto;
@@ -76,13 +74,57 @@
   .login__datos {
     width: 80%;
     margin: auto;
+    margin-bottom: 0.5rem;
   }
   .login__input {
     width: 80%;
     margin: auto;
+    margin-bottom: 0.5rem;
   }
   .login__boton {
     width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .login__contenedor {
+    width: 80%;
+    margin: auto;
+  }
+  .login__datos {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+  .login__input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+  .login__boton {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 468px) {
+  .login__contenedor {
+    width: 60%;
+    margin: auto;
+  }
+  .login__datos {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+  .login__input {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+  .login__boton {
+    width: 65%;
     margin: auto;
   }
 }
@@ -90,45 +132,20 @@
 @media only screen and (min-width: 600px) {
   .login__contenedor {
     width: 50%;
+    margin: auto;
   }
   .login__datos {
-    width: 70%;
+    margin-bottom: 1rem;
   }
   .login__input {
-    width: 70%;
-  }
-  .login__boton {
-    width: 65%;
+    margin-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .login__contenedor {
-    width: 40%;
-  }
-  .login__datos {
-    width: 70%;
-  }
-  .login__input {
-    width: 70%;
-  }
-  .login__boton {
-    width: 65%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .login__contenedor {
     width: 30%;
-  }
-  .login__datos {
-    width: 70%;
-  }
-  .login__input {
-    width: 70%;
-  }
-  .login__boton {
-    width: 65%;
+    margin: auto;
   }
 }
 

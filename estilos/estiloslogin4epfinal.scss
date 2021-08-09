@@ -16,7 +16,6 @@
   &__datos {
     padding: $rem-standard;
     line-height: $rem-standard*2;
-    margin-bottom: $rem-standard;
     color: $color-oscuro;
     font-weight: 600;
     text-decoration: overline;
@@ -30,7 +29,6 @@
     padding: $rem-standard/4;
     padding-left: $rem-standard/2;
     border-radius: $rem-standard/2;
-    margin-bottom: $rem-standard*2;
   }
   
   &__recordar-pass {
@@ -42,7 +40,8 @@
     padding: $rem-standard;
   }
 }
-@media only screen and (min-width: 360px) and (max-width:600px) {
+
+@media only screen and (max-width: 360px) {
   .login {
     &__contenedor {
       width: 80%;
@@ -52,15 +51,69 @@
       &__datos {
         width: 80%;
         margin: auto;
+        margin-bottom: $rem-standard;
       }
       
       &__input {
         width: 80%;
         margin: auto;
+        margin-bottom: $rem-standard;
       }
     
       &__boton {
         width: 70%;
+        margin: auto;
+      }
+    }
+}
+
+@media only screen and (min-width: 360px) {
+  .login {
+    &__contenedor {
+      width: 80%;
+      margin: auto;
+      }
+      
+      &__datos {
+        width: 80%;
+        margin: auto;
+        margin-bottom: $rem-standard;
+      }
+      
+      &__input {
+        width: 80%;
+        margin: auto;
+        margin-bottom: $rem-standard;
+      }
+    
+      &__boton {
+        width: 70%;
+        margin: auto;
+      }
+    }
+}
+
+@media only screen and (min-width: 468px) {
+  .login {
+    &__contenedor {
+      width: 60%;
+      margin: auto;
+      }
+      
+      &__datos {
+        width: 70%;
+        margin: auto;
+        margin-bottom: $rem-standard;
+      }
+      
+      &__input {
+        width: 70%;
+        margin: auto;
+        margin-bottom: $rem-standard;
+      }
+    
+      &__boton {
+        width: 65%;
         margin: auto;
       }
     }
@@ -70,18 +123,15 @@
   .login {
     &__contenedor {
       width: 50%;
+      margin: auto;
       }
       
       &__datos {
-        width: 70%;
+        margin-bottom: $rem-standard*2;
       }
       
       &__input {
-        width: 70%;
-      }
-    
-      &__boton {
-        width: 65%;
+        margin-bottom: $rem-standard*2;
       }
     }
 }
@@ -89,39 +139,8 @@
 @media only screen and (min-width: 768px) {
   .login {
     &__contenedor {
-      width: 40%;
-      }
-      
-      &__datos {
-        width: 70%;
-      }
-      
-      &__input {
-        width: 70%;
-      }
-    
-      &__boton {
-        width: 65%;
-      }
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-  .login {
-    &__contenedor {
       width: 30%;
-      }
-      
-      &__datos {
-        width: 70%;
-      }
-      
-      &__input {
-        width: 70%;
-      }
-    
-      &__boton {
-        width: 65%;
+      margin: auto;
       }
     }
 }
