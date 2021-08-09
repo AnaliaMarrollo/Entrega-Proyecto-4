@@ -2,8 +2,7 @@
 
 @import "variables-propias";
 
-/* --- SECCION LOGIN--- */
-
+/* --INICIO SECCION LOGIN---------- */
 
 .login {
 &__contenedor {
@@ -40,6 +39,8 @@
     padding: $rem-standard;
   }
 }
+
+// --ADAPTACION A DISPOSITIVOS------------
 
 @media only screen and (max-width: 360px) {
   .login {
@@ -139,9 +140,19 @@
 @media only screen and (min-width: 768px) {
   .login {
     &__contenedor {
+      width: 40%;
+      margin: auto;
+      }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .login {
+    &__contenedor {
       width: 30%;
       margin: auto;
       }
     }
 }
-  /* ---FIN LOGIN--- */
+// -- FIN ADAPTACION A DISPOSITIVOS------
+//  ---FIN LOGIN------------------

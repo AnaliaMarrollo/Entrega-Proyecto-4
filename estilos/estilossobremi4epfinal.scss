@@ -2,102 +2,89 @@
 
 @import "variables-propias";
 
+/* -- INICIO SECCION SOBRE MI------- */
 
-/* ---SECCION SOBRE MI--- */
+.sobremi {
+  &__contenedor {
+    @extend %caja-blanca;
+    margin: 0 $rem-standard*2;
+    margin-top: $rem-standard*3;
+  }
 
-.sobremi__contenedor {
-  display: flex;
-  flex-direction: row;
-  margin: 0 $rem-standard*2;
-  box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
-  padding: $rem-standard*2;
-  background-color: $color-blanco;
-  border-radius: $rem-standard;
-  margin-top: $rem-standard*3;
-  &--foto {
-    width: 40%;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: $rem-standard;
-    transition: 1s;
-    &:hover{
-      filter: sepia(1);
+  &__texto {
+    padding: $rem-standard*2;
+
+    &--estilos {
+      font-size: $fuente-normal;
+      text-align: left;
     }
   }
 }
 
-.sobremi__texto {
-  width: 65%;
-  color: $color-oscuro;
-  font-weight: 400;
-  padding: $rem-standard*2;
-  &--estilos {
-    text-align: justify;
-    align-content: center;
-  }
-}
-
-/* ---FIN SECCION SOBRE MI--- */
-
-/* ADAPTACION A DISPOSITIVOS */
+/*-- ADAPTACION A DISPOSITIVOS------- */
 
 @media only screen and (max-width: 360px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sobremi__texto {
-    width: 100%;
-    font-size: $rem-standard*2;
-  }
-
-  .sobremi__contenedor-foto {
-    display: none;
+  .sobremi {
+    &__contenedor {
+      display: flex;
+      flex-direction: column;
+    }
+    &__texto {
+      width: 100%;
+    }
   }
 }
+
 
 @media only screen and (min-width: 360px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: column;
+  .sobremi {
+    &__contenedor {
+      display: flex;
+      flex-direction: column;
+    }
+      &__texto {
+        width: 100%;
+      }
+  }
+} 
+
+  @media only screen and (min-width: 480px) {
+    .sobremi {
+      &__contenedor {
+        display: flex;
+        flex-direction: row;
+
+        &-foto {
+          width: 40%;
+          background-image: url(../imagenes/fotosobremi.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: $rem-standard;
+          display: inherit;
+          transition: 1s;
+
+          &:hover {
+            filter: sepia(1);
+          }
+        }
+      }
+
+      &__texto {
+        width: 65%;
+
+        &--estilos {
+          font-size: $fuente-normal+.1;
+        }
+      }
+    }
   }
 
-  .sobremi__texto {
-    width: 100%;
-    font-size: $rem-standard*2;
+  @media only screen and (min-width: 768px) {
+    .sobremi__contenedor-foto {
+      background-position: top;
+    }
   }
 
-  .sobremi__contenedor-foto {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .sobremi__contenedor-foto {
-    width: 40%;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: $rem-standard;
-    display: inherit;
-  }
-
-  .sobremi__texto {
-    width: 65%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-.sobremi__contenedor-foto {
-  background-position: top;
-}
-}
+  /* -- FIN ADAPTACIÓN A DISPOSITIVOS---------- */
+  /* -- FIN SECCION SOBRE MI---------- */

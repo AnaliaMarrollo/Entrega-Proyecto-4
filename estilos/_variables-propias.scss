@@ -1,11 +1,16 @@
+// COLORES----------------
+
 $color-blanco: white;
 $color-oscuro: #212529;
 $color-rojo: #C80425;
 $color-rojo-hover: #D90429;
+
+// TAMAÑOS-------------
+
 $rem-standard: .5rem;
 $fuente-normal: 1rem;
 
-// -----placeholders------
+// -----PROPIEDADES PARA USO DE EXTENDS------
 
 %body {
     min-width: 360px;
@@ -21,6 +26,8 @@ $fuente-normal: 1rem;
     text-decoration: none;
     color: inherit;
 }
+
+// contenedores---------------
 
 %caja-blanca {
     background-color: $color-blanco;

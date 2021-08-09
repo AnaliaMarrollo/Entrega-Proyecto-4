@@ -33,7 +33,7 @@
           align-items: center;
 }
 
-/* --- SECCION LOGIN--- */
+/* --INICIO SECCION LOGIN---------- */
 .login__contenedor {
   text-align: center;
   margin-top: 1rem;
@@ -144,10 +144,15 @@
 
 @media only screen and (min-width: 768px) {
   .login__contenedor {
-    width: 30%;
+    width: 40%;
     margin: auto;
   }
 }
 
-/* ---FIN LOGIN--- */
+@media only screen and (min-width: 1024px) {
+  .login__contenedor {
+    width: 30%;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=estiloslogin4epfinal.css.map */

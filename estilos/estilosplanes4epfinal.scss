@@ -4,157 +4,157 @@
 
 /* ---SECCION PLANES--- */
 
-.planes__contenedor {
-    width: 50%;
-    margin: auto;
-    @extend %caja-blanca;
-    margin-top: $rem-standard*3;
-    margin-bottom: $rem-standard*3;
-}
+.planes {
+    &__contenedor {
+        @extend %caja-blanca;
+        margin-top: $rem-standard*3;
+        margin-bottom: $rem-standard*3;
 
-.planes__titulo-contenedor--50 {
-    width: 50%;
-    margin: auto;
-}
-
-.planes__contenido {
-    font-weight: 500;
-    line-height: $rem-standard*3;
-    margin: $rem-standard $rem-standard*3;
-}
-
-.planes__lista-opcionales {
-    list-style: none;
-    line-height: $rem-standard*3;
-}
-
-.planes__contenedor-elegir {
-    padding: $rem-standard*2;
-    margin-top: $rem-standard*2;
-}
-
-.planes__elegir {
-    font-size: $fuente-normal+.2;
-    font-weight: 600;
-    margin-left: $rem-standard+.2;
-    animation: shakeX;
-    animation-duration: 2s;
-}
-
-.boton--planes {
-    margin: $rem-standard $rem-standard*2 0 $rem-standard*2;
-}
-
-.planes__contenido {
-    &--aqui {
-    text-decoration: none;
-    color: $color-rojo;
-    padding: .25rem;
-    border: solid $color-rojo .1rem;
-    margin-left: .1rem;
-    &:hover {
-        text-decoration: none;
-        color: $color-blanco;
-        background-color: $color-rojo-hover;
+        &-elegir {
+            padding: $rem-standard*2;
+            margin-top: $rem-standard*2;
+        }
     }
-}
-&--size {
-    font-size: $rem-standard*2;
-}
-&--mt {
-    margin-top: $rem-standard*3;
-}
-&--ml {
-    margin-left: $rem-standard*3; 
-}
+
+    &__contenido {
+        font-weight: 500;
+        line-height: $rem-standard*3;
+        margin: $rem-standard $rem-standard*3;
+        &--mt {
+            margin-top: $rem-standard*3;
+        }
+    }
+
+    &__elegir {
+        font-size: $fuente-normal+.2;
+        font-weight: 600;
+        margin-left: $rem-standard+.2;
+        animation: shakeX;
+        animation-duration: 2s;
+    }
+
+    &__preguntas-frecuentes {
+        color: $color-oscuro;
+        text-decoration: none;
+        border: $rem-standard/4 solid $color-oscuro;
+        padding: $rem-standard/1.5;
+        &:hover {
+            color: $color-rojo-hover;
+            border: $rem-standard/4 solid $color-rojo-hover;
+            background-color: $color-blanco;
+        }
+    }
 }
 
 /* ---ESTILOS AL ACCORDION BOOSTRAP DE PREGUNTAS FRECUENTES---- */
 
 .accordion-button {
-     font-weight: 600;
-     }
-    
-  .accordion-button:not(.collapsed) {
-  background-color: lighten($color-oscuro, 80%) !important;
-  color: $color-oscuro !important;
- }
-
-.accordion-button:focus {
-          border: none !important;
-
-    box-shadow: none !important;
-
+    font-weight: 600;
 }
 
+.accordion-button:not(.collapsed) {
+        background-color: lighten($color-oscuro, 80%) !important;
+        color: $color-oscuro !important;
+}
 
+.accordion-button:focus {
+        border: none !important;
+        box-shadow: none !important;
+}
 
-/* ---FIN SECCION PLANES---- */
+// --FIN ESTILOS ACCORDION DE BOOTSTRAP DE PREGUNTAS FRECUENTES------
 
-/* ADAPTACION A DISPOSITIVOS */
+/* --ADAPTACION A DISPOSITIVOS----- */
 
 @media only screen and (max-width: 360px) {
-    .planes__titulo-contenedor--50 {
-        width: 100%;
-        margin: auto;
-    }
+    .planes {
+        &__contenedor {
+            width: 90%;
+            margin: auto;
+            margin-top: $rem-standard*3;
+            margin-bottom: $rem-standard*3;
 
-    .planes__contenedor {
-        width: 80%;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+            &-titulo--50 {
+                width: 100%;
+                margin: auto;
+                margin-bottom: $rem-standard;
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 360px) {
-    .planes__titulo-contenedor--50 {
-        width: 100%;
-        margin: auto;
-    }
+    .planes {
+        &__contenedor {
+            width: 90%;
+            margin: auto;
+            margin-top: $rem-standard*3;
+            margin-bottom: $rem-standard*3;
 
-    .planes__contenedor {
-        width: 90%;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+            &-titulo--50 {
+                width: 100%;
+                margin: auto;
+                margin-bottom: $rem-standard;
+            }
+        }
     }
 
     .boton--planes {
-        margin: .5rem .5rem 0 .5rem;
+        margin: $rem-standard $rem-standard 0 $rem-standard;
     }
 }
 
+@media only screen and (min-width: 468px) {
+    .planes {
+         &__contenedor-titulo--50 {
+            width: 70%;
+            margin: auto;
+        }
+}   
+}
+
 @media only screen and (min-width: 600px) {
+    .planes {
+    &__contenedor-titulo--50 {
+        width: 60%;
+        margin: auto;
+    }
+}
+
     .boton--planes {
-        margin: 1rem 0 0 0;
+        margin: $rem-standard*2 0 0 0;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .planes__contenedor {
-        width: 80%;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+    .planes {
+        &__contenedor {
+            width: 80%;
+            margin: auto;
+            margin-top: $rem-standard*3;
+            margin-bottom: $rem-standard*3;
+        }
     }
 
     .boton--planes {
-        margin: .5rem .5rem 0 .5rem;
+        margin: $rem-standard $rem-standard 0 $rem-standard;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .planes__titulo-contenedor--50 {
-        width: 50%;
-        margin: auto;
+    .planes {
+        &__contenedor {
+            width: 60%;
+            margin: auto;
+            margin-top: $rem-standard*3;
+            margin-bottom: $rem-standard*3;
+        }
     }
 
-    .planes__contenedor {
-        width: 60%;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+    .boton--planes {
+        margin: $rem-standard $rem-standard*2 0 $rem-standard*2;
     }
-
 }
+
+/* ---FIN ADAPTACION A DISPOSITIVOS---- */
+/* ---FIN SECCION PLANES---- */

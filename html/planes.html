@@ -26,8 +26,8 @@
     <!-- estilos -->
     <link rel="stylesheet" href="../estilos/estilos4epfinal.css">
     <link rel="stylesheet" href="../estilos/estilosplanes4epfinal.css">
-        <!-- animaciones WOW -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- animaciones WOW -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -62,10 +62,17 @@
     </header>
 
     <main class="main main--color">
-        <section class="seccion seccion--font400 planes">
+            <!-- bradcrumb para SEO -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">INICIO</a></li>
+                <li class="breadcrumb-item active active-breadcrumb" aria-current="page">PLANES</li>
+            </ol>
+        </nav>
+        <section class="seccion planes">
             <h1 class="seccion__titulo">PLANES</h1>
             <div class="planes__contenedor bordes-redondeados">
-                <h2 class="planes__titulo-contenedor planes__titulo-contenedor--50" id="plan-week">PLAN A DISTANCIA</h2>
+                <h2 class="planes__contenedor-titulo planes__contenedor-titulo--50" id="plan-week">PLAN A DISTANCIA</h2>
                 <p class="planes__contenido">Este plan es apto para todos los niveles
                     y se adapta a vos.</p>
                 <p class="planes__contenido">Es <span class="planes__contenido--negrita">100%
@@ -76,6 +83,9 @@
                 <p class="planes__contenido"> <span class="planes__contenido--negrita">Coaching
                         online</span> para que
                     despejes todas tus dudas durante las semanas de entrenamiento.</p>
+                <p class="planes__contenido planes__contenido--mt"><a href="../html/preguntas.html"
+                        class="planes__preguntas-frecuentes planes__contenido--negrita bordes-redondeados"
+                        title="preguntas frecuentes">PREGUNTAS FRECUENTES</a></p>
                 <div class="planes__contenedor-elegir">
                     <h3 class="planes__elegir animate__shakeX">ELEGÍ TU PLAN</h3>
                     <button class="boton boton--planes"><a class="boton__link"
@@ -90,12 +100,15 @@
                 </div>
             </div>
             <div class="planes__contenedor bordes-redondeados" id="plan-conmigo">
-                <h3 class="planes__titulo-contenedor planes__titulo-contenedor--50">ENTRENÁ CONMIGO</h3>
+                <h3 class="planes__contenedor-titulo planes__contenedor-titulo--50">ENTRENÁ CONMIGO</h3>
                 <p class="planes__contenido">Entrenamos juntos en forma online o presencial.</p>
                 <p class="planes__contenido">Si elegís el plan online, lo hacemos por videollamada y podés hacerlo desde
                     tu casa o en el gimnasio al que asistas.</p>
                 <p class="planes__contenido">Si elegís entrenar presencial, lo hacemos en el gimnasio (consultar zonas
                     de trabajo).</p>
+                <p class="planes__contenido planes__contenido--mt"><a href="../html/preguntas.html"
+                        class="planes__preguntas-frecuentes planes__contenido--negrita bordes-redondeados"
+                        title="preguntas frecuentes">PREGUNTAS FRECUENTES</a></p>
                 <div class="planes__contenedor-elegir">
                     <h3 class="planes__elegir">ELEGÍ TU PLAN</h3>
                     <button class="boton boton--planes"><a class="boton__link"
@@ -106,11 +119,14 @@
             </div>
             <h2 class="seccion__titulo ">POTENCIÁ TUS RESULTADOS</h2>
             <div class="planes__contenedor bordes-redondeados" id="plan-nutri">
-                <h3 class="planes__titulo-contenedor planes__titulo-contenedor--50">PLAN NUTRICIONAL</h3>
+                <h3 class="planes__contenedor-titulo planes__contenedor-titulo--50">PLAN NUTRICIONAL</h3>
                 <p class="planes__contenido">Este plan es el complemento ideal para tu entrenamiento.</p>
                 <p class="planes__contenido">Es elaborado por un licenciado en nutrición.</p>
                 <p class="planes__contenido"><span class="planes__contenido--negrita">100% personalizado</span> de
                     acuerdo a tus objetivos y a tu tipo de alimentación</p>
+                <p class="planes__contenido planes__contenido--mt"><a href="../html/preguntas.html"
+                        class="planes__preguntas-frecuentes planes__contenido--negrita bordes-redondeados"
+                        title="preguntas frecuentes">PREGUNTAS FRECUENTES</a></p>
                 <div class="planes__contenedor-elegir">
                     <h3 class="planes__elegir">PEDÍ TU PLAN</h3>
                     <button class="boton boton--planes"><a class="boton__link"
@@ -119,11 +135,12 @@
                 </div>
             </div>
         </section>
+
         <!-- logo whatsapp -->
         <div class="seccion__whatsapp bordes-redondeados--100 animate__flipInX">
             <a class="boton__whatsapp" id="whatsapp" target="_blank"
                 href="https://api.whatsapp.com/send?phone=5491168007406&text=Hola!%20Me%20enviás%20info%20sobre%20tus%20planes?"><i
-                    class="fab fa-whatsapp m-1 boton__whatsapp--logo"></i></a>
+                    class="fab fa-whatsapp m-1 boton__whatsapp--logo" title="Whatsapp link"></i></a>
             <a class="boton__whatsapp--hola boton__whatsapp--hola-oculto" target="_blank"
                 href="https://api.whatsapp.com/send?phone=5491168007406&text=Hola!%20Me%20enviás%20info%20sobre%20tus%20planes?">¿Entrenamos?</a>
         </div>
@@ -155,6 +172,7 @@
         </div>
     </footer>
 
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>

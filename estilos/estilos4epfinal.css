@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
 .body {
   min-width: 360px;
   max-width: 1500px;
@@ -54,7 +55,7 @@ html {
 }
 
 /* ---------FIN BODY----------- */
-/* ----------BARRA NAVEGACIÓN------- */
+/* ---BARRA NAVEGACIÓN BOOTSTRAP CON ESTILOS PROPIOS------- */
 .navbar-brand p {
   color: white;
   line-height: 0.5rem;
@@ -62,6 +63,7 @@ html {
   font-weight: 400;
   text-align: center;
   letter-spacing: .125rem;
+  margin-top: 0.8rem;
 }
 
 .nav-link.active {
@@ -76,8 +78,8 @@ html {
   background-color: #D90429;
 }
 
-/* --------FIN BARRA NAVEGACIÓN------ */
-/* -------TAMAÑO DEL MAIN----------- */
+/* --FIN BARRA NAVEGACIÓN------------------ */
+/* --TAMAÑO DEL MAIN----------- */
 .main {
   margin-bottom: 2rem;
 }
@@ -86,8 +88,77 @@ html {
   color: #212529;
 }
 
-/* ---------FIN MAIN---------- */
-/* -----------SECCION PRINCIPAL-------------- */
+/* --FIN MAIN---------- */
+.body {
+  min-width: 360px;
+  max-width: 1500px;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.planes__contenedor-index {
+  background-color: white;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.planes__contenedor-index, .planes__contenedor-contenido {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccion__contenedor, .planes__contenedor-contenido, .planes__contenedor-saber-mas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.breadcrumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#212529), color-stop(#2c3237), to(#212529));
+  background-image: linear-gradient(#212529, #2c3237, #212529);
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  margin-left: 1rem;
+}
+
+.breadcrumb-item .breadcrumb-link {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb-item .breadcrumb-link:hover {
+  color: #D90429;
+}
+
+.active-breadcrumb:hover {
+  background-color: #2c3237;
+}
+
+/*----- INICIO DE ESTILOS PAGINA INDEX -----*/
+/* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU-------------- */
 .seccion--font600 {
   font-weight: 600;
 }
@@ -96,21 +167,16 @@ html {
   font-weight: 400;
 }
 
-/* -------ESTILOS AL CAROUSEL----- */
+/* --ESTILOS PROPIOS AL CAROUSEL------- */
 .carousel-inner {
   height: 50vh;
 }
 
 .seccionppal__titulo {
-  width: 70%;
-  margin: auto;
   padding: 0.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   font-weight: 900;
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
-  word-spacing: 0.7rem;
 }
 
 .seccionppal__foto1 {
@@ -140,9 +206,9 @@ html {
   border-radius: 2rem;
 }
 
-/* -------FIN ESTILOS CAROUSEL------ */
-/* ----------- FIN SECCION PRINCIPAL-------------- */
-/* ----------------SECCION PLANES--------------- */
+/* --FIN ESTILOS CAROUSEL------ */
+/* --FIN SECCION PRINCIPAL-------------- */
+/* --INICIO SECCION TARJETAS PLANES------------ */
 .seccion {
   background-color: #212529;
   color: white;
@@ -167,12 +233,28 @@ html {
           align-items: center;
   line-height: 1.2rem;
   margin: 0 0.5rem;
-  -webkit-transition: 1.5s;
   transition: 1.5s;
+  -moz-transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
 }
 
 .planes__contenedor-index:hover {
-  scale: 1.05;
+  transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+}
+
+.planes__contenedor-titulo {
+  width: 100%;
+  font-weight: 600;
+  text-decoration: overline;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: #212529 solid;
+  text-align: center;
+  color: #212529;
 }
 
 .planes__contenedor-contenido {
@@ -186,17 +268,6 @@ html {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 0.5rem;
-}
-
-.planes__titulo-contenedor {
-  width: 100%;
-  font-weight: 600;
-  text-decoration: overline;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  border: #212529 solid;
-  text-align: center;
-  color: #212529;
 }
 
 .planes__contenido--negrita {
@@ -233,7 +304,7 @@ html {
   color: white;
 }
 
-/* --------------FIN SECCION PLANES--------------- */
+/* -- FIN SECCION TARJETAS PLANES--------- */
 .seccion__whatsapp {
   position: fixed;
   bottom: 2rem;
@@ -485,8 +556,15 @@ html {
   }
 }
 
-/* ADAPTACION A DISPOSITIVOS */
+/*-- ADAPTACION A DISPOSITIVOS -----------*/
 @media only screen and (max-width: 360px) {
+  .seccionppal__titulo {
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+  }
   .seccion__whatsapp {
     bottom: 2rem;
     right: 0.5rem;
@@ -506,6 +584,13 @@ html {
 }
 
 @media only screen and (min-width: 360px) {
+  .seccionppal__titulo {
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+  }
   .seccion__whatsapp {
     bottom: 2rem;
     right: 0.5rem;
@@ -521,6 +606,11 @@ html {
 }
 
 @media only screen and (min-width: 480px) {
+  .seccionppal__titulo {
+    font-size: 2.2rem;
+    letter-spacing: 0.33333rem;
+    word-spacing: 0.33333rem;
+  }
   .seccion__whatsapp {
     padding: 0 0.25rem;
     border: solid #01E675 0.125rem;
@@ -528,19 +618,40 @@ html {
   .seccion__whatsapphover {
     border: solid white 0.125rem;
   }
-  .boton__whatsapp--hola {
-    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .seccionppal__titulo {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.5rem;
+  }
+  .seccion__whatsapp {
+    padding: 0 1.05rem;
+    bottom: 5rem;
+    right: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .seccionppal__titulo {
+    font-size: 2.5rem;
+    word-spacing: 0.7rem;
+  }
   .seccion__whatsapp {
-    padding: 0 1.05rem;
     bottom: 4rem;
-    right: 0.5rem;
   }
   .boton__whatsapp--hola {
     display: inherit;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .seccionppal__titulo {
+    font-size: 3rem;
+  }
+}
+
+/*----- FIN ADAPTACION A DISPOSITIVOS -----*/
+/*----- FIN DE ESTILOS PAGINA INDEX -----*/
 /*# sourceMappingURL=estilos4epfinal.css.map */

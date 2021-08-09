@@ -2,6 +2,8 @@
 
 @import "variables-propias";
 
+// ESTILOS COMUNES PARA TODAS LAS PAGINAS-----------
+
 html {
   font-size: 100%;
 }
@@ -10,6 +12,7 @@ html {
 
 .body {
   @extend %body;
+
   &--color {
     background-color: $color-oscuro;
   }
@@ -17,7 +20,7 @@ html {
 
 /* ---------FIN BODY----------- */
 
-/* ----------BARRA NAVEGACIÓN------- */
+/* ---BARRA NAVEGACIÓN BOOTSTRAP CON ESTILOS PROPIOS------- */
 
 .navbar-brand p {
   color: $color-blanco;
@@ -26,6 +29,7 @@ html {
   font-weight: 400;
   text-align: center;
   letter-spacing: .125rem;
+  margin-top: $rem-standard+.3;
 }
 
 .nav-link {
@@ -42,9 +46,9 @@ html {
   background-color: $color-rojo-hover;
 }
 
-/* --------FIN BARRA NAVEGACIÓN------ */
+/* --FIN BARRA NAVEGACIÓN------------------ */
 
-/* -------TAMAÑO DEL MAIN----------- */
+/* --TAMAÑO DEL MAIN----------- */
 
 .main {
   margin-bottom: $rem-standard*4;
@@ -54,9 +58,15 @@ html {
   }
 }
 
-/* ---------FIN MAIN---------- */
+/* --FIN MAIN---------- */
 
-/* -----------SECCION PRINCIPAL-------------- */
+@import "indice-bradcrumb";
+
+// FIN DE ESTILOS COMUNES DE TODAS LAS PAGINAS-----------
+
+/*----- INICIO DE ESTILOS PAGINA INDEX -----*/
+
+/* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU-------------- */
 
 .seccion--font600 {
   font-weight: 600;
@@ -66,7 +76,7 @@ html {
   font-weight: 400;
 }
 
-/* -------ESTILOS AL CAROUSEL----- */
+/* --ESTILOS PROPIOS AL CAROUSEL------- */
 
 .carousel-inner {
   height: 50vh;
@@ -74,15 +84,10 @@ html {
 
 .seccionppal {
   &__titulo {
-    width: 70%;
-    margin: auto;
     padding: $rem-standard;
     color: $color-blanco;
     background-color: rgba(0, 0, 0, 0.3);
     font-weight: 900;
-    font-size: $fuente-normal*3;
-    letter-spacing: $rem-standard;
-    word-spacing: $rem-standard+.2;
   }
 
   &__foto {
@@ -115,11 +120,10 @@ html {
   }
 }
 
-/* -------FIN ESTILOS CAROUSEL------ */
+/* --FIN ESTILOS CAROUSEL------ */
+/* --FIN SECCION PRINCIPAL-------------- */
 
-/* ----------- FIN SECCION PRINCIPAL-------------- */
-
-/* ----------------SECCION PLANES--------------- */
+/* --INICIO SECCION TARJETAS PLANES------------ */
 
 .seccion {
   background-color: $color-oscuro;
@@ -137,8 +141,6 @@ html {
     width: 80%;
     margin: auto;
     @extend %caja-flex-centradax;
-    // display: flex;
-    // justify-content: center;
   }
 }
 
@@ -151,40 +153,42 @@ html {
     line-height: 1.2rem;
     margin: 0 $rem-standard;
     transition: 1.5s;
-   &:hover {
-     scale: 1.05;
+    -moz-transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+
+    &:hover {
+      transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
     }
+  }
+
+  &-titulo {
+    width: 100%;
+    font-weight: 600;
+    text-decoration: overline;
+    font-size: $fuente-normal+.5;
+    padding: $rem-standard;
+    border: $color-oscuro solid;
+    text-align: center;
+    color: $color-oscuro;
   }
 
   &-contenido {
     @extend %caja-flex-column;
     @extend %caja-flex-centradax;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     padding: $rem-standard*2;
   }
 
-&-saber-mas {
-  width: 100%;
-  height: 25%;
-@extend %caja-flex-centradax;
-  // display: flex;
-  // justify-content: center;
-align-items: flex-end;
-padding-bottom: $rem-standard;
-}
-}
-
-.planes__titulo-contenedor {
-  width: 100%;
-  font-weight: 600;
-  text-decoration: overline;
-  font-size: $rem-standard*3;
-  padding: $rem-standard;
-  border: $color-oscuro solid;
-  text-align: center;
-  color: $color-oscuro;
+  &-saber-mas {
+    width: 100%;
+    height: 25%;
+    @extend %caja-flex-centradax;
+    align-items: flex-end;
+    padding-bottom: $rem-standard;
+  }
 }
 
 .planes__contenido {
@@ -213,7 +217,7 @@ padding-bottom: $rem-standard;
   &__link {
     width: 100%;
     text-decoration: none;
-    font-size: $rem-standard*2;
+    font-size: $fuente-normal;
     color: $color-blanco;
     font-weight: bolder;
 
@@ -223,9 +227,9 @@ padding-bottom: $rem-standard;
   }
 }
 
-/* --------------FIN SECCION PLANES--------------- */
+/* -- FIN SECCION TARJETAS PLANES--------- */
 
-// --------LOGO DE WHATSAPP--------
+// --LOGO FIJO DE WHATSAPP-----------
 
 .seccion__whatsapp {
   position: fixed;
@@ -241,39 +245,53 @@ padding-bottom: $rem-standard;
   z-index: 100;
   animation: flipInX;
   animation-duration: 2s;
+
   &:hover {
     color: $color-blanco;
-    background-color: darken(#01E675,5%);
+    background-color: darken(#01E675, 5%);
   }
 }
 
-.boton__whatsapp  {
+.boton__whatsapp {
   &--hola {
-  font-size: 1rem;
-  color: $color-blanco;
-  text-decoration: none;
-  transition: 1s;
-  &:hover {
+    font-size: $fuente-normal;
     color: $color-blanco;
     text-decoration: none;
+    transition: 1s;
+
+    &:hover {
+      color: $color-blanco;
+      text-decoration: none;
     }
   }
- &--logo {
-   font-size: 2rem;
-   color: $color-blanco;
+
+  &--logo {
+    font-size: $fuente-normal*2;
+    color: $color-blanco;
   }
 }
+
+// -- FIN LOGO DE WHATSAPP--------
 
 @import "footer";
 
-/* ADAPTACION A DISPOSITIVOS */
-  
+/*-- ADAPTACION A DISPOSITIVOS -----------*/
+
 @media only screen and (max-width: 360px) {
+  .seccionppal__titulo {
+    width: 100%;
+    margin: auto;
+    font-size: $fuente-normal*2;
+    letter-spacing: $rem-standard/2;
+    word-spacing: $rem-standard/2;
+  }
+
   .seccion__whatsapp {
     bottom: 2rem;
     right: $rem-standard;
     padding: 0 $rem-standard/2.1;
     border: solid #01E675 $rem-standard/4;
+
     &hover {
       border: solid $color-blanco $rem-standard/4;
     }
@@ -283,6 +301,7 @@ padding-bottom: $rem-standard;
     &--hola {
       display: none;
     }
+
     &:hover {
       color: $color-blanco;
       text-decoration: none;
@@ -291,11 +310,20 @@ padding-bottom: $rem-standard;
 }
 
 @media only screen and (min-width: 360px) {
+  .seccionppal__titulo {
+    width: 100%;
+    margin: auto;
+    font-size: $fuente-normal*2;
+    letter-spacing: $rem-standard/2;
+    word-spacing: $rem-standard/2;
+  }
+
   .seccion__whatsapp {
     bottom: 2rem;
     right: $rem-standard;
     padding: 0 $rem-standard/2;
     border: solid #01E675 $rem-standard/4;
+
     &hover {
       border: solid $color-blanco $rem-standard/4;
     }
@@ -309,26 +337,44 @@ padding-bottom: $rem-standard;
 }
 
 @media only screen and (min-width: 480px) {
+  .seccionppal__titulo {
+    font-size: $fuente-normal*2.2;
+    letter-spacing: $rem-standard/1.5;
+    word-spacing: $rem-standard/1.5;
+  }
+
   .seccion__whatsapp {
     padding: 0 $rem-standard/2;
     border: solid #01E675 $rem-standard/4;
+
     &hover {
       border: solid $color-blanco $rem-standard/4;
     }
   }
+}
 
-  .boton__whatsapp {
-    &--hola {
-      display: none;
-    }
+@media only screen and (min-width: 600px) {
+  .seccionppal__titulo {
+    font-size: $fuente-normal*2.5;
+    letter-spacing: $rem-standard;
+    word-spacing: $rem-standard;
+  }
+
+  .seccion__whatsapp {
+    padding: 0 $rem-standard*2.1;
+    bottom: 5rem;
+    right: $rem-standard;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .seccionppal__titulo {
+    font-size: $fuente-normal*2.5;
+    word-spacing: $rem-standard+.2;
+  }
+
   .seccion__whatsapp {
-    padding: 0 $rem-standard*2.1;
     bottom: 4rem;
-    right: $rem-standard;
   }
 
   .boton__whatsapp {
@@ -337,3 +383,12 @@ padding-bottom: $rem-standard;
     }
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .seccionppal__titulo {
+    font-size: $fuente-normal*3;
+  }
+}
+
+/*----- FIN ADAPTACION A DISPOSITIVOS -----*/
+/*----- FIN DE ESTILOS PAGINA INDEX -----*/

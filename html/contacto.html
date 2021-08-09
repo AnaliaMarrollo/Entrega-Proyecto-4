@@ -62,6 +62,13 @@
     </header>
 
     <main class="main main--color">
+                    <!-- bradcrumb para SEO -->
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">INICIO</a></li>
+                            <li class="breadcrumb-item active active-breadcrumb" aria-current="page">CONTACTO</li>
+                        </ol>
+                    </nav>
         <section class="seccion seccion--font600 contacto">
             <h1 class="seccion__titulo">CONTACTO</h1>
             <div class="contacto__contenedor bordes-redondeados">
@@ -105,8 +112,8 @@
                             <option value="3">EMAIL</option>
                           </select>
                         </div>
-                    <input class="boton boton__link boton__link--mt animate__pulse" type="submit" value="ENVIAR CONSULTA">
-                    <input class="boton boton__link boton__link--mt animate__pulse" type="reset" value="LIMPIAR FORMULARIO"><br><br>
+                    <input class="boton boton__link boton__link--mt" type="submit" value="ENVIAR CONSULTA">
+                    <input class="boton boton__link boton__link--mt" type="reset" value="LIMPIAR FORMULARIO"><br><br>
                     <div class="contenedor__promociones">
                         <label for="promociones" class="label__promociones">QUIERO RECIBIR PROMOCIONES</label><br>
                         <input type="checkbox" c="promociones" id="promociones" checked>
