@@ -49,11 +49,6 @@
   height: 80vh;
 }
 
-.error__contenedor {
-  width: 60%;
-  height: 80%;
-}
-
 .error__titulo {
   font-size: 2rem;
   font-weight: 600;
@@ -66,8 +61,6 @@
 }
 
 .mancuerna {
-  width: 10%;
-  height: 20%;
   margin-bottom: 1rem;
   background-image: url(../imagenes/barbell.png);
   background-position: center;
@@ -79,5 +72,60 @@
 .mancuerna:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 360px) {
+  .error__contenedor {
+    width: 80%;
+    height: 80%;
+  }
+  .mancuerna {
+    width: 20%;
+    height: 10%;
+  }
+  .error__contenido {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .error__contenedor {
+    width: 70%;
+    height: 80%;
+  }
+  .mancuerna {
+    width: 15%;
+    height: 10%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .error__contenedor {
+    width: 60%;
+    height: 80%;
+  }
+  .mancuerna {
+    width: 20%;
+    height: 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) {
+  .error__contenido {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .mancuerna {
+    width: 25%;
+    height: 15%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mancuerna {
+    width: 15%;
+    height: 20%;
+  }
 }
 /*# sourceMappingURL=estiloserror404.css.map */
