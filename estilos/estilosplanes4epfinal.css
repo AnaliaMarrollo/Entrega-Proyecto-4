@@ -43,10 +43,6 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-left: 0.7rem;
-  -webkit-animation: shakeX;
-          animation: shakeX;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .planes__preguntas-frecuentes {
@@ -150,7 +146,4 @@
     margin: 0.5rem 1rem 0 1rem;
   }
 }
-
-/* ---FIN ADAPTACION A DISPOSITIVOS---- */
-/* ---FIN SECCION PLANES---- */
 /*# sourceMappingURL=estilosplanes4epfinal.css.map */

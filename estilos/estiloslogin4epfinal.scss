@@ -5,13 +5,13 @@
 /* --INICIO SECCION LOGIN---------- */
 
 .login {
-&__contenedor {
-  @extend %caja-blanca;
-  @extend %caja-flex-centrada;
-  text-align: center;
-  margin-top: $rem-standard*2;
+  &__contenedor {
+    @extend %caja-blanca;
+    @extend %caja-flex-centrada;
+    text-align: center;
+    margin-top: $rem-standard*2;
   }
-  
+
   &__datos {
     padding: $rem-standard;
     line-height: $rem-standard*2;
@@ -20,7 +20,7 @@
     text-decoration: overline;
     border: solid $rem-standard/4 $color-oscuro;
   }
-  
+
   &__input {
     color: $color-oscuro;
     text-align: center;
@@ -29,7 +29,7 @@
     padding-left: $rem-standard/2;
     border-radius: $rem-standard/2;
   }
-  
+
   &__recordar-pass {
     font-weight: 400;
     margin: $rem-standard 0;
@@ -47,25 +47,25 @@
     &__contenedor {
       width: 80%;
       margin: auto;
-      }
-      
-      &__datos {
-        width: 80%;
-        margin: auto;
-        margin-bottom: $rem-standard;
-      }
-      
-      &__input {
-        width: 80%;
-        margin: auto;
-        margin-bottom: $rem-standard;
-      }
-    
-      &__boton {
-        width: 70%;
-        margin: auto;
-      }
     }
+
+    &__datos {
+      width: 80%;
+      margin: auto;
+      margin-bottom: $rem-standard;
+    }
+
+    &__input {
+      width: 80%;
+      margin: auto;
+      margin-bottom: $rem-standard;
+    }
+
+    &__boton {
+      width: 70%;
+      margin: auto;
+    }
+  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -73,25 +73,25 @@
     &__contenedor {
       width: 80%;
       margin: auto;
-      }
-      
-      &__datos {
-        width: 80%;
-        margin: auto;
-        margin-bottom: $rem-standard;
-      }
-      
-      &__input {
-        width: 80%;
-        margin: auto;
-        margin-bottom: $rem-standard;
-      }
-    
-      &__boton {
-        width: 70%;
-        margin: auto;
-      }
     }
+
+    &__datos {
+      width: 80%;
+      margin: auto;
+      margin-bottom: $rem-standard;
+    }
+
+    &__input {
+      width: 80%;
+      margin: auto;
+      margin-bottom: $rem-standard;
+    }
+
+    &__boton {
+      width: 70%;
+      margin: auto;
+    }
+  }
 }
 
 @media only screen and (min-width: 468px) {
@@ -99,25 +99,25 @@
     &__contenedor {
       width: 60%;
       margin: auto;
-      }
-      
-      &__datos {
-        width: 70%;
-        margin: auto;
-        margin-bottom: $rem-standard;
-      }
-      
-      &__input {
-        width: 70%;
-        margin: auto;
-        margin-bottom: $rem-standard;
-      }
-    
-      &__boton {
-        width: 65%;
-        margin: auto;
-      }
     }
+
+    &__datos {
+      width: 70%;
+      margin: auto;
+      margin-bottom: $rem-standard;
+    }
+
+    &__input {
+      width: 70%;
+      margin: auto;
+      margin-bottom: $rem-standard;
+    }
+
+    &__boton {
+      width: 65%;
+      margin: auto;
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -125,16 +125,16 @@
     &__contenedor {
       width: 50%;
       margin: auto;
-      }
-      
-      &__datos {
-        margin-bottom: $rem-standard*2;
-      }
-      
-      &__input {
-        margin-bottom: $rem-standard*2;
-      }
     }
+
+    &__datos {
+      margin-bottom: $rem-standard*2;
+    }
+
+    &__input {
+      margin-bottom: $rem-standard*2;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -142,8 +142,8 @@
     &__contenedor {
       width: 40%;
       margin: auto;
-      }
     }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -151,8 +151,9 @@
     &__contenedor {
       width: 30%;
       margin: auto;
-      }
     }
+  }
 }
+
 // -- FIN ADAPTACION A DISPOSITIVOS------
 //  ---FIN LOGIN------------------

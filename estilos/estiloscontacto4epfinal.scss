@@ -78,6 +78,7 @@
   margin-top: $rem-standard;
   border: solid $color-oscuro $rem-standard/4 !important;
 }
+
 // fin selector de bootstrap
 
 .contenedor__promociones {
@@ -131,7 +132,6 @@ input[type=checkbox] {
     top: $rem-standard/1.2;
     z-index: 0;
   }
-
 }
 
 .checkbox__personalizado .checkbox__label {
@@ -198,6 +198,7 @@ input[type=checkbox] {
     margin: auto !important;
     font-size: $rem-standard*1.5 !important;
   }
+
   // fin selector de bootstrap
 
   .boton__link--mt {
@@ -205,7 +206,6 @@ input[type=checkbox] {
     margin-left: $rem-standard;
     margin-right: $rem-standard;
   }
-
 }
 
 @media only screen and (min-width: 360px) {
@@ -250,6 +250,7 @@ input[type=checkbox] {
     margin: auto !important;
     font-size: $rem-standard*1.5 !important;
   }
+
   // fin selector de bootstrap
 
   .boton__link--mt {
@@ -257,7 +258,6 @@ input[type=checkbox] {
     margin-left: $rem-standard;
     margin-right: $rem-standard;
   }
-
 }
 
 @media only screen and (min-width: 480px) {
@@ -295,6 +295,7 @@ input[type=checkbox] {
     margin: auto !important;
     font-size: $fuente-normal !important;
   }
+
   // fin selector de bootstrap
 
   .boton__link--mt {
@@ -336,12 +337,12 @@ input[type=checkbox] {
     width: 95% !important;
     margin: auto !important;
   }
+
   // fin selector de bootstrap
 
   .boton__link--mt {
     width: 95%;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -353,4 +354,3 @@ input[type=checkbox] {
 
 // FIN ADAPTACION A DISPOSITIVOS--------
 // FIN SECCION CONTACTO-------
-

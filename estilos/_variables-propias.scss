@@ -10,6 +10,11 @@ $color-rojo-hover: #D90429;
 $rem-standard: .5rem;
 $fuente-normal: 1rem;
 
+// SOMBRAS---------------
+$sombra-contenedor: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
+$sombra-nav: 0 ($rem-standard/2) $rem-standard*2 black;
+$sombra-foot: 0 (($rem-standard/2)*(-1)) ($rem-standard*2) black;
+
 // -----PROPIEDADES PARA USO DE EXTENDS------
 
 %body {
@@ -34,7 +39,7 @@ $fuente-normal: 1rem;
     color: $color-oscuro;
     border-radius: $rem-standard;
     padding: $rem-standard*2;
-    box-shadow: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
+    box-shadow: $sombra-contenedor;
 }
 
 %caja-flex {

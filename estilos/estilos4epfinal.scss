@@ -22,6 +22,10 @@ html {
 
 /* ---BARRA NAVEGACIÓN BOOTSTRAP CON ESTILOS PROPIOS------- */
 
+.navbar {
+  box-shadow: $sombra-nav;
+}
+
 .navbar-brand p {
   color: $color-blanco;
   line-height: $rem-standard;
@@ -66,7 +70,7 @@ html {
 
 /*----- INICIO DE ESTILOS PAGINA INDEX -----*/
 
-/* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU-------------- */
+/* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU---- */
 
 .seccion--font600 {
   font-weight: 600;

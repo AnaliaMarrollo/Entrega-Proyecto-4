@@ -20,6 +20,7 @@
         font-weight: 500;
         line-height: $rem-standard*3;
         margin: $rem-standard $rem-standard*3;
+
         &--mt {
             margin-top: $rem-standard*3;
         }
@@ -29,8 +30,6 @@
         font-size: $fuente-normal+.2;
         font-weight: 600;
         margin-left: $rem-standard+.2;
-        animation: shakeX;
-        animation-duration: 2s;
     }
 
     &__preguntas-frecuentes {
@@ -38,6 +37,7 @@
         text-decoration: none;
         border: $rem-standard/4 solid $color-oscuro;
         padding: $rem-standard/1.5;
+
         &:hover {
             color: $color-rojo-hover;
             border: $rem-standard/4 solid $color-rojo-hover;
@@ -49,17 +49,17 @@
 /* ---ESTILOS AL ACCORDION BOOSTRAP DE PREGUNTAS FRECUENTES---- */
 
 .accordion-button {
-    font-weight: 600;
+    font-weight: 600
 }
 
 .accordion-button:not(.collapsed) {
-        background-color: lighten($color-oscuro, 80%) !important;
-        color: $color-oscuro !important;
+    background-color: lighten($color-oscuro, 80%) !important;
+    color: $color-oscuro !important;
 }
 
 .accordion-button:focus {
-        border: none !important;
-        box-shadow: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 // --FIN ESTILOS ACCORDION DE BOOTSTRAP DE PREGUNTAS FRECUENTES------
@@ -106,20 +106,20 @@
 
 @media only screen and (min-width: 468px) {
     .planes {
-         &__contenedor-titulo--50 {
+        &__contenedor-titulo--50 {
             width: 70%;
             margin: auto;
         }
-}   
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .planes {
-    &__contenedor-titulo--50 {
-        width: 60%;
-        margin: auto;
+        &__contenedor-titulo--50 {
+            width: 60%;
+            margin: auto;
+        }
     }
-}
 
     .boton--planes {
         margin: $rem-standard*2 0 0 0;
@@ -156,5 +156,5 @@
     }
 }
 
-/* ---FIN ADAPTACION A DISPOSITIVOS---- */
-/* ---FIN SECCION PLANES---- */
+//---FIN ADAPTACION A DISPOSITIVOS---- */
+// ---FIN SECCION PLANES----

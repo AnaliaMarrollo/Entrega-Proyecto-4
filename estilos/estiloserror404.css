@@ -9,63 +9,66 @@
   color: inherit;
 }
 
-.error {
-  height: 100vh;
+.error__contenedor {
+  background-color: white;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+.error__contenedor, .error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .error__contenedor {
-  width: 80%;
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  color: #212529;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.error, .error__contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active--404 {
+  background-color: #C80425;
+  color: blanco;
+}
+
+.error {
+  height: 80vh;
+}
+
+.error__contenedor {
+  width: 60%;
+  height: 80%;
 }
 
 .error__titulo {
-  font-size: 4rem;
-  padding: .5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .error__contenido {
-  font-size: 5rem;
+  font-size: 1.2rem;
   margin: 1rem;
-}
-
-.error__contenido--sm {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 .mancuerna {
-  width: 20%;
+  width: 10%;
   height: 20%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   background-image: url(../imagenes/barbell.png);
   background-position: center;
   background-size: cover;
@@ -76,11 +79,5 @@
 .mancuerna:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-.boton__link--error {
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=estiloserror404.css.map */
