@@ -282,6 +282,10 @@ html {
 /*-- ADAPTACION A DISPOSITIVOS -----------*/
 
 @media only screen and (max-width: 360px) {
+  .carousel-caption {
+    margin-bottom: $rem-standard*10;
+  }
+
   .seccionppal__titulo {
     width: 100%;
     margin: auto;
@@ -314,6 +318,10 @@ html {
 }
 
 @media only screen and (min-width: 360px) {
+  .carousel-caption {
+    margin-bottom: $rem-standard*10;
+  }
+
   .seccionppal__titulo {
     width: 100%;
     margin: auto;
