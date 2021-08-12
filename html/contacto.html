@@ -72,7 +72,7 @@
         <section class="seccion seccion--font600 contacto">
             <h1 class="seccion__titulo">CONTACTO</h1>
             <div class="contacto__contenedor bordes-redondeados">
-                <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+                <form action="../enviar.php" method="POST">
                     <label class="contacto__datos-contacto
              " for="nombre">NOMBRE:</label>
                     <input class="contacto__input-contacto" type="text" name="nombre" id="nombre" placeholder=" Nombre"
@@ -91,7 +91,7 @@
                         required><br><br>
                     <label class="contacto__datos-contacto
                     " for="teléfono">TELÉFONO:</label>
-                    <input class="contacto__input-contacto" type="tel" name="teléfono" id="teléfono" minlength="10"
+                    <input class="contacto__input-contacto" type="tel" name="telefono" id="telefono" minlength="10"
                         maxlength="11" placeholder=" 011 + Nro. (Cel sin 15)"><br><br>
                     <label class="contacto__datos-contacto
              " for="tipodeconsulta">CONSULTA:</label>
@@ -105,8 +105,8 @@
                     <textarea class="contacto__consulta" name="consulta" id="consulta"
                         placeholder=" Enviame tu consulta" required></textarea><br>
                     <div class="contenedor__preferencia">
-                        <select class="form-select" aria-label="Default select example" required>
-                            <option selected>CÓMO PREFERÍS QUE TE CONTACTEMOS?</option>
+                        <select class="form-select" aria-label="Default select example" name="preferenciacontacto" required>
+                            <option selected disabled>CÓMO PREFERÍS QUE TE CONTACTEMOS?</option>
                             <option value="1">WHATSAPP</option>
                             <option value="2">LLAMADA TELEFÓNICA</option>
                             <option value="3">EMAIL</option>
@@ -118,7 +118,7 @@
                         <label for="promociones" class="label__promociones">QUIERO RECIBIR PROMOCIONES</label><br>
                         <input type="checkbox" c="promociones" id="promociones" checked>
                         <div class="checkbox__personalizado">
-                            <input type="checkbox" id="checkAvanzado" value="Valor" />
+                            <input type="checkbox" id="checkAvanzado" value="Valor" name="promociones"/>
                             <label class="checkbox__label" for="checkAvanzado"></label>
                         </div>
                     </div>
