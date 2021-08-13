@@ -72,7 +72,7 @@
         <section class="seccion seccion--font600 contacto">
             <h1 class="seccion__titulo">CONTACTO</h1>
             <div class="contacto__contenedor bordes-redondeados">
-                <form action="../enviar.php" method="POST" enctype="application/x-www-form-urlencoded" data-netlify="true">
+                <form action="../enviar.php" method="POST" enctype="application/x-www-form-urlencoded" netlify name="contacto-web">
                     <label class="contacto__datos-contacto
              " for="nombre">NOMBRE:</label>
                     <input class="contacto__input-contacto" type="text" name="nombre" id="nombre" placeholder=" Nombre"
@@ -102,14 +102,14 @@
                         <option>PLAN NUTRICIONAL</option>
                         <option>OTRA CONSULTA</option>
                     </select><br>
-                    <textarea class="contacto__consulta" name="consulta" id="consulta"
+                    <textarea class="contacto__consulta" name="mensaje" id="consulta"
                         placeholder=" Enviame tu consulta" required></textarea><br>
                     <div class="contenedor__preferencia">
-                        <select class="form-select" aria-label="Default select example" name="preferenciacontacto" required>
+                        <select class="form-select" aria-label="Default select example" name="preferencia-contacto" required>
                             <option selected disabled>CÓMO PREFERÍS QUE TE CONTACTEMOS?</option>
-                            <option value="1">WHATSAPP</option>
-                            <option value="2">LLAMADA TELEFÓNICA</option>
-                            <option value="3">EMAIL</option>
+                            <option>WHATSAPP</option>
+                            <option>LLAMADA TELEFÓNICA</option>
+                            <option>EMAIL</option>
                         </select>
                     </div>
                     <input class="boton boton__link boton__link--mt" type="submit" value="ENVIAR CONSULTA">
