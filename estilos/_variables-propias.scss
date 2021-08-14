@@ -2,8 +2,9 @@
 
 $color-blanco: white;
 $color-oscuro: #212529;
-$color-rojo: #C80425;
-$color-rojo-hover: #D90429;
+$color-rojo-claro: #FB2347;
+$color-rojo: #D90429;
+$color-rojo-hover: #C80425;
 
 // TAMAÑOS-------------
 
@@ -14,6 +15,7 @@ $fuente-normal: 1rem;
 $sombra-contenedor: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
 $sombra-nav: 0 ($rem-standard/2) $rem-standard*2 black;
 $sombra-foot: 0 (($rem-standard/2)*(-1)) ($rem-standard*2) black;
+$sombra-boton: 0 $rem-standard/4 $rem-standard/2 $color-oscuro;
 
 // -----PROPIEDADES PARA USO DE EXTENDS------
 
@@ -77,5 +79,26 @@ $sombra-foot: 0 (($rem-standard/2)*(-1)) ($rem-standard*2) black;
     align-items: flex-end;
 }
 
+%boton-rojo {
+    padding: $rem-standard;
+    background-color: $color-rojo;
+    border-radius: $rem-standard;
+    border: solid $rem-standard/4 $color-rojo;
+    box-shadow: $sombra-boton;
+    transition: 1s;
+    &:hover {
+        background-color: $color-rojo-hover;
+        color: $color-blanco;
+        transform: scale(1.1);
+    }
+}
+
+%boton-link {
+    text-decoration: none;
+    color: $color-blanco;
+    &:hover {
+        color: $color-blanco;
+    }
+}
 
 

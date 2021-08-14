@@ -46,6 +46,8 @@
   font-weight: 600;
   text-decoration: overline;
   border: solid 0.125rem #212529;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .login__input {
@@ -55,11 +57,14 @@
   padding: 0.125rem;
   padding-left: 0.25rem;
   border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
+          box-shadow: 0 0.125rem 0.25rem #212529;
 }
 
 .login__recordar-pass {
-  font-weight: 400;
+  font-weight: 600;
   margin: 0.5rem 0;
+  font-size: 0.83333rem;
 }
 
 .login__boton {

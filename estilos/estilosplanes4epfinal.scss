@@ -37,6 +37,7 @@
         text-decoration: none;
         border: $rem-standard/4 solid $color-oscuro;
         padding: $rem-standard/1.5;
+        box-shadow: $sombra-boton;
 
         &:hover {
             color: $color-rojo-hover;

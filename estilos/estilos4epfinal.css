@@ -45,6 +45,33 @@
           justify-content: center;
 }
 
+.boton, .footer__link-redes {
+  padding: 0.5rem;
+  background-color: #D90429;
+  border-radius: 0.5rem;
+  border: solid 0.125rem #D90429;
+  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
+          box-shadow: 0 0.125rem 0.25rem #212529;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.boton:hover, .footer__link-redes:hover {
+  background-color: #C80425;
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.boton__link, .footer__link-redes {
+  text-decoration: none;
+  color: white;
+}
+
+.boton__link:hover, .footer__link-redes:hover {
+  color: white;
+}
+
 html {
   font-size: 100%;
 }
@@ -73,14 +100,17 @@ html {
 
 .nav-link.active {
   text-decoration: overline;
+  text-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+.nav-link.active:hover {
+  background-color: #C80425;
 }
 
 .nav-link:hover {
-  background-color: #D90429;
-}
-
-.active:hover {
-  background-color: #D90429;
+  background-color: #C80425;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 /* --FIN BARRA NAVEGACIÓN------------------ */
@@ -138,6 +168,33 @@ html {
           justify-content: center;
 }
 
+.boton, .footer__link-redes {
+  padding: 0.5rem;
+  background-color: #D90429;
+  border-radius: 0.5rem;
+  border: solid 0.125rem #D90429;
+  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
+          box-shadow: 0 0.125rem 0.25rem #212529;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.boton:hover, .footer__link-redes:hover {
+  background-color: #C80425;
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.boton__link, .footer__link-redes {
+  text-decoration: none;
+  color: white;
+}
+
+.boton__link:hover, .footer__link-redes:hover {
+  color: white;
+}
+
 .breadcrumb {
   font-size: 0.83333rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#212529), color-stop(#2c3237), to(#212529));
@@ -157,7 +214,7 @@ html {
 }
 
 .breadcrumb-item .breadcrumb-link:hover {
-  color: #D90429;
+  color: #C80425;
 }
 
 .active-breadcrumb:hover {
@@ -223,7 +280,7 @@ html {
 }
 
 .seccion__titulo {
-  background-color: #C80425;
+  background-color: #D90429;
   text-align: center;
   font-weight: 900;
   text-decoration: overline;
@@ -263,6 +320,8 @@ html {
   border: #212529 solid;
   text-align: center;
   color: #212529;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .planes__contenedor-contenido {
@@ -289,27 +348,10 @@ html {
   line-height: 1rem;
 }
 
-.boton {
-  padding: 0.5rem;
-  border-style: none;
-  background-color: #C80425;
-  border-radius: 0.5rem;
-}
-
-.boton:hover {
-  background-color: #D90429;
-}
-
 .boton__link {
   width: 100%;
-  text-decoration: none;
   font-size: 1rem;
-  color: white;
   font-weight: bolder;
-}
-
-.boton__link:hover {
-  color: white;
 }
 
 /* -- FIN SECCION TARJETAS PLANES--------- */
@@ -450,7 +492,8 @@ html {
 }
 
 .footer__link:hover {
-  color: #D90429;
+  color: #C80425;
+  text-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .footer__link--sin-borde {
@@ -458,19 +501,12 @@ html {
 }
 
 .footer__link-redes {
-  background-color: #C80425;
-  color: white;
   font-size: 1.25rem;
   font-weight: 500;
-  text-decoration: none;
   text-align: center;
-  padding: .5rem;
   margin: 0 0.5rem;
-}
-
-.footer__link-redes:hover {
-  background-color: #D90429;
-  color: white;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 /* --ADAPTACION A DISPOSITIVOS------------- */

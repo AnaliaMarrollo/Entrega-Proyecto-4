@@ -39,15 +39,16 @@ html {
 .nav-link {
   &.active {
     text-decoration: overline;
+    text-shadow: $sombra-contenedor;
+    &:hover {
+      background-color: $color-rojo-hover;
+    }
   }
 
   &:hover {
     background-color: $color-rojo-hover;
+    box-shadow: $sombra-contenedor;
   }
-}
-
-.active:hover {
-  background-color: $color-rojo-hover;
 }
 
 /* --FIN BARRA NAVEGACIÓN------------------ */
@@ -178,6 +179,7 @@ html {
     border: $color-oscuro solid;
     text-align: center;
     color: $color-oscuro;
+    box-shadow: $sombra-contenedor;
   }
 
   &-contenido {
@@ -209,25 +211,13 @@ html {
 }
 
 .boton {
-  padding: $rem-standard;
-  border-style: none;
-  background-color: $color-rojo;
-  border-radius: $rem-standard;
-
-  &:hover {
-    background-color: $color-rojo-hover;
-  }
+@extend %boton-rojo;
 
   &__link {
     width: 100%;
-    text-decoration: none;
     font-size: $fuente-normal;
-    color: $color-blanco;
     font-weight: bolder;
-
-    &:hover {
-      color: $color-blanco;
-    }
+    @extend %boton-link;
   }
 }
 

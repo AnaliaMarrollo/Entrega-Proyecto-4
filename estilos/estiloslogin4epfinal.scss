@@ -19,6 +19,7 @@
     font-weight: 600;
     text-decoration: overline;
     border: solid $rem-standard/4 $color-oscuro;
+    box-shadow: $sombra-contenedor;
   }
 
   &__input {
@@ -28,11 +29,13 @@
     padding: $rem-standard/4;
     padding-left: $rem-standard/2;
     border-radius: $rem-standard/2;
+    box-shadow: $sombra-boton;
   }
 
   &__recordar-pass {
-    font-weight: 400;
+    font-weight: 600;
     margin: $rem-standard 0;
+    font-size: $fuente-normal/1.2;
   }
 
   &__boton {
