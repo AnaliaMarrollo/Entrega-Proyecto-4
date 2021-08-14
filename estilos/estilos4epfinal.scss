@@ -30,7 +30,6 @@ html {
   color: $color-blanco;
   line-height: $rem-standard;
   font-size: $fuente-normal;
-  font-weight: 400;
   text-align: center;
   letter-spacing: .125rem;
   margin-top: $rem-standard+.3;
@@ -73,13 +72,13 @@ html {
 
 /* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU---- */
 
-.seccion--font600 {
-  font-weight: 600;
-}
+// .seccion--font600 {
+//   font-weight: 600;
+// }
 
-.seccion--font400 {
-  font-weight: 400;
-}
+// .seccion--font400 {
+//   font-weight: 400;
+// }
 
 /* --ESTILOS PROPIOS AL CAROUSEL------- */
 
@@ -205,7 +204,7 @@ html {
   &-lista {
     list-style: square;
     color: $color-oscuro;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: $rem-standard*2;
   }
 }

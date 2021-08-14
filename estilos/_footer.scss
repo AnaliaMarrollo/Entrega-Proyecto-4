@@ -1,14 +1,10 @@
 /* --INICIA ESTILOS FOOTER-------------- */
 
 .footer__contenedor {
-  display: grid;
-  font-weight: 400;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   background-color: $color-oscuro;
   padding: $rem-standard*2 0;
-  grid-template-columns: (1fr);
-  grid-template-rows: (2fr 1fr 1fr 1fr);
   box-shadow: $sombra-foot;
 }
 
@@ -22,49 +18,30 @@
 }
 
 .footer__titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %caja-flex-centrada;
   grid-row: 2/3;
 }
 
 .footer__redes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %caja-flex-centrada;
   grid-row: 3/4;
-}
-
-.footer__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-row: 4/5;
-  padding-top: $rem-standard*2;
 }
 
 .footer__link {
   color: $color-blanco;
-  font-size: $rem-standard*2;
+  font-size: $fuente-normal;
   text-decoration: none;
-  border-left: solid $color-blanco .15rem;
-  margin-left: $rem-standard;
-  padding-left: $rem-standard;
 
   &:hover {
     color: $color-rojo-hover;
     text-shadow: $sombra-contenedor;
   }
 
-  &--sin-borde {
-    border: none;
-  }
 
   &-redes {
     @extend %boton-rojo;
     @extend %boton-link;
-    font-size: $rem-standard*2.5;
+    font-size: $fuente-normal+.25;
     font-weight: 500;
     text-align: center;
     margin: 0 $rem-standard;
@@ -143,7 +120,7 @@
       margin-left: $rem-standard;
       padding-left: $rem-standard;
       padding: 0 $rem-standard;
-      border-left: solid $color-blanco .15rem;
+      border-left: solid $color-blanco ($rem-standard/2)-.1;
 
       &--sin-borde {
         border: none;

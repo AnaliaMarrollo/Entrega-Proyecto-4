@@ -15,6 +15,7 @@
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   color: inherit;
+  font-weight: 400;
 }
 
 .planes__contenedor-index {
@@ -26,7 +27,7 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas {
+.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas, .footer__titulo, .footer__redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +44,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__titulo, .footer__redes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .boton, .footer__link-redes {
@@ -92,7 +102,6 @@ html {
   color: white;
   line-height: 0.5rem;
   font-size: 1rem;
-  font-weight: 400;
   text-align: center;
   letter-spacing: .125rem;
   margin-top: 0.8rem;
@@ -138,6 +147,7 @@ html {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   color: inherit;
+  font-weight: 400;
 }
 
 .planes__contenedor-index {
@@ -149,7 +159,7 @@ html {
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas {
+.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas, .footer__titulo, .footer__redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +176,15 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__titulo, .footer__redes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .boton, .footer__link-redes {
@@ -224,14 +243,6 @@ html {
 
 /*----- INICIO DE ESTILOS PAGINA INDEX -----*/
 /* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU---- */
-.seccion--font600 {
-  font-weight: 600;
-}
-
-.seccion--font400 {
-  font-weight: 400;
-}
-
 /* --ESTILOS PROPIOS AL CAROUSEL------- */
 .carousel-inner {
   height: 50vh;
@@ -344,7 +355,6 @@ html {
 .planes__contenido-lista {
   list-style: square;
   color: #212529;
-  font-weight: 400;
   line-height: 1rem;
 }
 
@@ -406,17 +416,10 @@ html {
 
 /* --INICIA ESTILOS FOOTER-------------- */
 .footer__contenedor {
-  display: -ms-grid;
-  display: grid;
-  font-weight: 400;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   background-color: #212529;
   padding: 1rem 0;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr 1fr 1fr 1fr;
-      grid-template-rows: 2fr 1fr 1fr 1fr;
   -webkit-box-shadow: 0 -0.25rem 1rem black;
           box-shadow: 0 -0.25rem 1rem black;
 }
@@ -433,71 +436,26 @@ html {
 }
 
 .footer__titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
 .footer__redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-}
-
-.footer__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-  padding-top: 1rem;
 }
 
 .footer__link {
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  border-left: solid white 0.15rem;
-  margin-left: 0.5rem;
-  padding-left: 0.5rem;
 }
 
 .footer__link:hover {
   color: #C80425;
   text-shadow: 0.25rem 0.25rem 0.5rem black;
-}
-
-.footer__link--sin-borde {
-  border: none;
 }
 
 .footer__link-redes {
