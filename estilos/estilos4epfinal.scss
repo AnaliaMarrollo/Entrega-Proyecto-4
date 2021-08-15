@@ -72,14 +72,6 @@ html {
 
 /* -- INICIA LA SECCION PRINCIPAL BE A BETTER YOU---- */
 
-// .seccion--font600 {
-//   font-weight: 600;
-// }
-
-// .seccion--font400 {
-//   font-weight: 400;
-// }
-
 /* --ESTILOS PROPIOS AL CAROUSEL------- */
 
 .carousel-inner {
@@ -265,6 +257,21 @@ html {
 }
 
 // -- FIN LOGO DE WHATSAPP--------
+
+// PROPIEDADES BOTON SUBIR ARRIBA
+.boton-arriba {
+  position: fixed;
+  bottom: $rem-standard*4;
+  left: -$rem-standard/4;
+  padding: $rem-standard;
+  color: #01E675;
+  background-color: transparent;
+  border: solid #01E675 $rem-standard/5;
+  box-shadow: $sombra-boton;
+  border-radius: $rem-standard/2;
+}
+
+
 
 @import "footer";
 
