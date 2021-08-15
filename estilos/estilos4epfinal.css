@@ -5,6 +5,7 @@
   min-width: 360px;
   max-width: 1500px;
   min-height: 100vh;
+  position: relative;
 }
 
 * {
@@ -123,9 +124,10 @@ html {
 }
 
 /* --FIN BARRA NAVEGACIÓN------------------ */
-/* --TAMAÑO DEL MAIN----------- */
+/* --PROPIEDADES DEL MAIN----------- */
 .main {
   margin-bottom: 2rem;
+  min-height: 100vh;
 }
 
 .main--color {
@@ -137,6 +139,7 @@ html {
   min-width: 360px;
   max-width: 1500px;
   min-height: 100vh;
+  position: relative;
 }
 
 * {
@@ -309,17 +312,13 @@ html {
           align-items: center;
   line-height: 1.2rem;
   margin: 0 0.5rem;
-  transition: 1.5s;
-  -moz-transition: 1.5s;
   -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .planes__contenedor-index:hover {
-  transform: scale(1.05);
-  -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .planes__contenedor-titulo {
@@ -328,7 +327,7 @@ html {
   text-decoration: overline;
   font-size: 1.5rem;
   padding: 0.5rem;
-  border: #212529 solid;
+  border: #212529 0.2rem solid;
   text-align: center;
   color: #212529;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
@@ -367,11 +366,8 @@ html {
 /* -- FIN SECCION TARJETAS PLANES--------- */
 .seccion__whatsapp {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
   background-color: #01E675;
-  border: solid #01E675 0.125rem;
-  padding: 0 1.25rem;
+  border: 0.125rem solid #01E675;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,19 +408,6 @@ html {
 .boton__whatsapp--logo {
   font-size: 2rem;
   color: white;
-}
-
-.boton-arriba {
-  position: fixed;
-  bottom: 2rem;
-  left: -0.125rem;
-  padding: 0.5rem;
-  color: #01E675;
-  background-color: transparent;
-  border: solid #01E675 0.1rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
-          box-shadow: 0 0.125rem 0.25rem #212529;
-  border-radius: 0.25rem;
 }
 
 /* --INICIA ESTILOS FOOTER-------------- */
@@ -591,17 +574,9 @@ html {
     bottom: 2rem;
     right: 0.5rem;
     padding: 0 0.2381rem;
-    border: solid #01E675 0.125rem;
-  }
-  .seccion__whatsapphover {
-    border: solid white 0.125rem;
   }
   .boton__whatsapp--hola {
     display: none;
-  }
-  .boton__whatsapp:hover {
-    color: white;
-    text-decoration: none;
   }
 }
 
@@ -620,10 +595,6 @@ html {
     bottom: 2rem;
     right: 0.5rem;
     padding: 0 0.25rem;
-    border: solid #01E675 0.125rem;
-  }
-  .seccion__whatsapphover {
-    border: solid white 0.125rem;
   }
   .boton__whatsapp--hola {
     display: none;
@@ -638,10 +609,6 @@ html {
   }
   .seccion__whatsapp {
     padding: 0 0.25rem;
-    border: solid #01E675 0.125rem;
-  }
-  .seccion__whatsapphover {
-    border: solid white 0.125rem;
   }
 }
 

@@ -19,23 +19,10 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.contenedor__preferencia, .contacto__contenedor, .contenedor__promociones {
+.contacto__contenedor, .contenedor__promociones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.contenedor__preferencia {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contenedor__preferencia {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contacto__contenedor, .contenedor__promociones {
@@ -61,23 +48,14 @@
   color: #212529;
   font-weight: 600;
   text-decoration: overline;
-  border: solid #212529 0.125rem;
+  border: #212529 0.125rem solid;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.contacto__datos-contacto--preferencia {
-  margin: auto;
-  border: solid #212529 0.125rem;
-  padding: 0.25rem;
-  text-align: center;
-  background-color: #212529;
-  color: white;
-}
-
 .contacto__input-contacto {
   color: #212529;
-  border: solid #212529 0.125rem;
+  border: 0.125rem solid #212529;
   padding: 0.25rem;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
@@ -88,7 +66,7 @@
 
 .contacto__input-select {
   color: #212529;
-  border: solid #212529 0.125rem;
+  border: 0.125rem solid #212529;
   padding-left: 0.5rem;
   padding: 0.38462rem;
   margin-left: 0.5rem;
@@ -97,16 +75,9 @@
           box-shadow: 0 0.125rem 0.25rem #212529;
 }
 
-.contacto__input-select--preferencia {
-  text-align: center;
-  margin-top: 0.5rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
-          box-shadow: 0 0.125rem 0.25rem #212529;
-}
-
 .contacto__consulta {
   color: #212529;
-  border: solid #212529 0.125rem;
+  border: 0.125rem solid #212529;
   padding: 0.5rem;
   margin-top: 1rem;
   border-radius: 0.25rem;
@@ -119,8 +90,6 @@
 }
 
 .form-select {
-  width: 96% !important;
-  margin: auto !important;
   margin-top: 0.5rem;
   border: solid #212529 0.125rem !important;
   -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
@@ -184,8 +153,8 @@ input[type=checkbox] {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 2rem;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.35);
   background-color: #D90429;
   cursor: pointer;
   position: absolute;
@@ -308,8 +277,6 @@ input[type=checkbox] {
     width: 95%;
   }
   .form-select {
-    width: 95% !important;
-    margin: auto !important;
     font-size: 1rem !important;
   }
   .boton__link--mt {

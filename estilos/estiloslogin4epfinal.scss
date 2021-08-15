@@ -18,14 +18,14 @@
     color: $color-oscuro;
     font-weight: 600;
     text-decoration: overline;
-    border: solid $rem-standard/4 $color-oscuro;
+    border: $borde-fino $color-oscuro;
     box-shadow: $sombra-contenedor;
   }
 
   &__input {
     color: $color-oscuro;
     text-align: center;
-    border: solid $rem-standard/4 $color-oscuro;
+    border: $borde-fino $color-oscuro;
     padding: $rem-standard/4;
     padding-left: $rem-standard/2;
     border-radius: $rem-standard/2;

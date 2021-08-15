@@ -43,36 +43,55 @@
 
 .active--404 {
   background-color: #D90429;
-  color: blanco;
+  color: white;
 }
 
 .error {
-  height: 80vh;
+  height: 50vh;
+}
+
+.error__contenedor {
+  position: relative;
+  color: white;
+  text-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .error__titulo {
-  font-size: 2rem;
+  position: absolute;
+  top: 10rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
 .error__contenido {
+  position: absolute;
+  bottom: 10rem;
   font-size: 1.2rem;
   margin: 1rem;
   text-transform: uppercase;
 }
 
-.mancuerna {
-  margin-bottom: 1rem;
-  background-image: url(../imagenes/barbell.png);
+.error__foto {
+  height: 100%;
+  width: 100%;
+  background-image: url(../imagenes/barra-discos.jpg);
   background-position: center;
   background-size: cover;
-  -webkit-transition: 2s;
-  transition: 2s;
+  border-radius: 0.5rem;
 }
 
-.mancuerna:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+@media only screen and (max-width: 360px) {
+  .error__contenedor {
+    width: 80%;
+    height: 80%;
+  }
+  .error__titulo {
+    font-size: 3rem;
+  }
+  .error__contenido {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -80,9 +99,8 @@
     width: 80%;
     height: 80%;
   }
-  .mancuerna {
-    width: 20%;
-    height: 10%;
+  .error__titulo {
+    font-size: 3rem;
   }
   .error__contenido {
     font-size: 1rem;
@@ -106,9 +124,8 @@
     width: 60%;
     height: 80%;
   }
-  .mancuerna {
-    width: 20%;
-    height: 15%;
+  .error__titulo {
+    font-size: 4rem;
   }
 }
 
@@ -117,16 +134,8 @@
     font-size: 1.2rem;
     text-align: center;
   }
-  .mancuerna {
-    width: 25%;
-    height: 15%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .mancuerna {
-    width: 15%;
-    height: 20%;
+  .error__titulo {
+    font-size: 4.5rem;
   }
 }
 /*# sourceMappingURL=estiloserror404.css.map */

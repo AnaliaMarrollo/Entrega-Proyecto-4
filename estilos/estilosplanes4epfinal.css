@@ -20,11 +20,6 @@
 }
 
 /* ---SECCION PLANES--- */
-.planes__contenedor {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .planes__contenedor-elegir {
   padding: 1rem;
   margin-top: 1rem;
@@ -67,8 +62,8 @@
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #eff1f3 !important;
-  color: #212529 !important;
+  background-color: white !important;
+  color: #D90429 !important;
 }
 
 .accordion-button:focus {

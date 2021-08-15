@@ -7,8 +7,6 @@
 .planes {
     &__contenedor {
         @extend %caja-blanca;
-        margin-top: $rem-standard*3;
-        margin-bottom: $rem-standard*3;
 
         &-elegir {
             padding: $rem-standard*2;
@@ -35,13 +33,13 @@
     &__preguntas-frecuentes {
         color: $color-oscuro;
         text-decoration: none;
-        border: $rem-standard/4 solid $color-oscuro;
+        border: $borde-fino $color-oscuro;
         padding: $rem-standard/1.5;
         box-shadow: $sombra-boton;
 
         &:hover {
             color: $color-rojo-hover;
-            border: $rem-standard/4 solid $color-rojo-hover;
+            border: $borde-fino $color-rojo-hover;
             background-color: $color-blanco;
         }
     }
@@ -50,12 +48,12 @@
 /* ---ESTILOS AL ACCORDION BOOSTRAP DE PREGUNTAS FRECUENTES---- */
 
 .accordion-button {
-    font-weight: 600
+    font-weight: 600;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: lighten($color-oscuro, 80%) !important;
-    color: $color-oscuro !important;
+    background-color: $color-blanco !important;
+    color: $color-rojo !important;
 }
 
 .accordion-button:focus {

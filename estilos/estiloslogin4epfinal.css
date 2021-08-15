@@ -46,7 +46,7 @@
   color: #212529;
   font-weight: 600;
   text-decoration: overline;
-  border: solid 0.125rem #212529;
+  border: 0.125rem solid #212529;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
@@ -54,7 +54,7 @@
 .login__input {
   color: #212529;
   text-align: center;
-  border: solid 0.125rem #212529;
+  border: 0.125rem solid #212529;
   padding: 0.125rem;
   padding-left: 0.25rem;
   border-radius: 0.25rem;

@@ -4,40 +4,60 @@
 
 .active--404 {
     background-color: $color-rojo;
-    color: blanco;
+    color: $color-blanco;
 }
 
 .error {
-    height: 80vh;
+    height: 50vh;
     @extend %caja-flex-centrada;
 }
 
 .error__contenedor {
+    position: relative;
     @extend %caja-blanca;
     @extend %caja-flex-centrada;
     @extend %caja-flex-column;
+    color: $color-blanco;
+    text-shadow: $sombra-contenedor;
 }
 
 .error__titulo {
-    font-size: $fuente-normal*2;
+    position: absolute;
+    top: 10rem;
+    font-size: $fuente-normal*4;
     font-weight: 600;
 }
 
 .error__contenido {
+    position: absolute;
+    bottom: 10rem;
     font-size: $fuente-normal*1.2;
     margin: $rem-standard*2;
     text-transform: uppercase;
 }
 
-.mancuerna {
-    margin-bottom: $rem-standard*2;
-    background-image: url(../imagenes/barbell.png);
-    background-position: center;
-    background-size: cover;
-    transition: 2s;
+.error__foto {
+height: 100%;
+width: 100%;
+background-image: url(../imagenes/barra-discos.jpg);
+background-position: center;
+background-size: cover;
+border-radius: $rem-standard;
 
-    &:hover {
-        transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 360px) {
+    .error__contenedor {
+        width: 80%;
+        height: 80%;
+    }
+
+    .error__titulo {
+        font-size: $fuente-normal*3;
+    }
+    .error__contenido {
+        font-size: $fuente-normal;
+        text-align: center;
     }
 }
 
@@ -47,11 +67,9 @@
         height: 80%;
     }
 
-    .mancuerna {
-        width: 20%;
-        height: 10%;
+    .error__titulo {
+        font-size: $fuente-normal*3;
     }
-
     .error__contenido {
         font-size: $fuente-normal;
         text-align: center;
@@ -77,10 +95,10 @@
         height: 80%;
     }
 
-    .mancuerna {
-        width: 20%;
-        height: 15%;
+    .error__titulo {
+        font-size: $fuente-normal*4;
     }
+
 }
 
 
@@ -90,15 +108,8 @@
         text-align: center;
     }
 
-    .mancuerna {
-        width: 25%;
-        height: 15%;
+    .error__titulo {
+        font-size: $fuente-normal*4.5;
     }
-}
 
-@media only screen and (min-width: 1024px) {
-    .mancuerna {
-        width: 15%;
-        height: 20%;
-    }
 }

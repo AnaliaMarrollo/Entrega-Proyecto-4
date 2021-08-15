@@ -19,24 +19,15 @@
   color: $color-oscuro;
   font-weight: 600;
   text-decoration: overline;
-  border: solid $color-oscuro $rem-standard/4;
+  border: $color-oscuro $borde-fino;
   box-shadow: $sombra-contenedor;
-
-  &--preferencia {
-    margin: auto;
-    border: solid $color-oscuro $rem-standard/4;
-    padding: $rem-standard/2;
-    text-align: center;
-    background-color: $color-oscuro;
-    color: $color-blanco;
-  }
 }
 
 .contacto__input {
 
   &-contacto {
     color: $color-oscuro;
-    border: solid $color-oscuro $rem-standard/4;
+    border: $borde-fino $color-oscuro;
     padding: $rem-standard/2;
     padding-left: $rem-standard;
     margin-left: $rem-standard;
@@ -46,24 +37,18 @@
 
   &-select {
     color: $color-oscuro;
-    border: solid $color-oscuro $rem-standard/4;
+    border: $borde-fino$color-oscuro;
     padding-left: $rem-standard;
     padding: $rem-standard/1.3;
     margin-left: $rem-standard;
     border-radius: $rem-standard/2;
     box-shadow: $sombra-boton;
-
-    &--preferencia {
-      text-align: center;
-      margin-top: $rem-standard;
-      box-shadow: $sombra-boton;
-    }
   }
 }
 
 .contacto__consulta {
   color: $color-oscuro;
-  border: solid $color-oscuro $rem-standard/4;
+  border: $borde-fino $color-oscuro;
   padding: $rem-standard;
   margin-top: $rem-standard*2;
   border-radius: $rem-standard/2;
@@ -71,21 +56,16 @@
 }
 
 .contenedor__preferencia {
-  @extend %caja-flex-column;
-  @extend %caja-flex-centradax;
   margin: $rem-standard 0;
 }
 
-// selector de bootstrap
+// selector de bootstrap---------
 .form-select {
-  width: 96% !important;
-  margin: auto !important;
   margin-top: $rem-standard;
   border: solid $color-oscuro $rem-standard/4 !important;
   box-shadow: $sombra-boton;  
 }
-
-// fin selector de bootstrap
+// fin selector de bootstrap-------
 
 .contenedor__promociones {
   @extend %caja-flex-centrada;
@@ -146,7 +126,7 @@ input[type=checkbox] {
   width: $rem-standard*2.5;
   height: $rem-standard*2.5;
   border-radius: $rem-standard*4;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px $rem-standard*4 $rem-standard*10 0px rgba(0, 0, 0, 0.35);
   background-color: $color-rojo;
   cursor: pointer;
   position: absolute;
@@ -160,6 +140,8 @@ input[type=checkbox] {
   left: auto;
   right: $rem-standard/1.5;
 }
+
+//--fin estilos checkbox--------
 
 /* ADAPTACION A DISPOSITIVOS */
 
@@ -205,7 +187,6 @@ input[type=checkbox] {
     margin: auto !important;
     font-size: $rem-standard*1.5 !important;
   }
-
   // fin selector de bootstrap
 
   .boton__link--mt {
@@ -257,7 +238,6 @@ input[type=checkbox] {
     margin: auto !important;
     font-size: $rem-standard*1.5 !important;
   }
-
   // fin selector de bootstrap
 
   .boton__link--mt {
@@ -298,8 +278,6 @@ input[type=checkbox] {
 
   // selector de bootstrap
   .form-select {
-    width: 95% !important;
-    margin: auto !important;
     font-size: $fuente-normal !important;
   }
 
@@ -310,8 +288,8 @@ input[type=checkbox] {
   }
 }
 
-
 @media only screen and (min-width: 768px) {
+
   .contacto__contenedor {
     width: 60%;
     margin: auto;
@@ -344,7 +322,6 @@ input[type=checkbox] {
     width: 95% !important;
     margin: auto !important;
   }
-
   // fin selector de bootstrap
 
   .boton__link--mt {

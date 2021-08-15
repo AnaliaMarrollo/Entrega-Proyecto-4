@@ -52,10 +52,11 @@ html {
 
 /* --FIN BARRA NAVEGACIÓN------------------ */
 
-/* --TAMAÑO DEL MAIN----------- */
+/* --PROPIEDADES DEL MAIN----------- */
 
 .main {
   margin-bottom: $rem-standard*4;
+  min-height: 100vh;
 
   &--color {
     color: $color-oscuro;
@@ -149,15 +150,9 @@ html {
     line-height: 1.2rem;
     margin: 0 $rem-standard;
     transition: 1.5s;
-    -moz-transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -o-transition: 1.5s;
 
     &:hover {
       transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -webkit-transform: scale(1.05);
-      -moz-transform: scale(1.05);
     }
   }
 
@@ -167,7 +162,7 @@ html {
     text-decoration: overline;
     font-size: $fuente-normal+.5;
     padding: $rem-standard;
-    border: $color-oscuro solid;
+    border: $color-oscuro $borde-normal;
     text-align: center;
     color: $color-oscuro;
     box-shadow: $sombra-contenedor;
@@ -196,7 +191,6 @@ html {
   &-lista {
     list-style: square;
     color: $color-oscuro;
-    // font-weight: 400;
     line-height: $rem-standard*2;
   }
 }
@@ -218,15 +212,12 @@ html {
 
 .seccion__whatsapp {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #01E675;
-  border: solid #01E675 $rem-standard/4;
-  padding: 0 $rem-standard*2.5;
+  background-color: $color-whatsapp;
+  border: $borde-fino $color-whatsapp;
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: $rem-standard/2 $rem-standard/2 $rem-standard black;
+  box-shadow: $sombra-contenedor;
   z-index: 100;
   animation: flipInX;
   animation-duration: 2s;
@@ -258,21 +249,6 @@ html {
 
 // -- FIN LOGO DE WHATSAPP--------
 
-// PROPIEDADES BOTON SUBIR ARRIBA
-.boton-arriba {
-  position: fixed;
-  bottom: $rem-standard*4;
-  left: -$rem-standard/4;
-  padding: $rem-standard;
-  color: #01E675;
-  background-color: transparent;
-  border: solid #01E675 $rem-standard/5;
-  box-shadow: $sombra-boton;
-  border-radius: $rem-standard/2;
-}
-
-
-
 @import "footer";
 
 /*-- ADAPTACION A DISPOSITIVOS -----------*/
@@ -291,24 +267,14 @@ html {
   }
 
   .seccion__whatsapp {
-    bottom: 2rem;
+    bottom: $rem-standard*4;
     right: $rem-standard;
     padding: 0 $rem-standard/2.1;
-    border: solid #01E675 $rem-standard/4;
-
-    &hover {
-      border: solid $color-blanco $rem-standard/4;
-    }
   }
 
   .boton__whatsapp {
     &--hola {
       display: none;
-    }
-
-    &:hover {
-      color: $color-blanco;
-      text-decoration: none;
     }
   }
 }
@@ -327,14 +293,9 @@ html {
   }
 
   .seccion__whatsapp {
-    bottom: 2rem;
+    bottom: $rem-standard*4;
     right: $rem-standard;
     padding: 0 $rem-standard/2;
-    border: solid #01E675 $rem-standard/4;
-
-    &hover {
-      border: solid $color-blanco $rem-standard/4;
-    }
   }
 
   .boton__whatsapp {
@@ -353,11 +314,6 @@ html {
 
   .seccion__whatsapp {
     padding: 0 $rem-standard/2;
-    border: solid #01E675 $rem-standard/4;
-
-    &hover {
-      border: solid $color-blanco $rem-standard/4;
-    }
   }
 }
 
@@ -370,7 +326,7 @@ html {
 
   .seccion__whatsapp {
     padding: 0 $rem-standard*2.1;
-    bottom: 5rem;
+    bottom: $rem-standard*10;
     right: $rem-standard;
   }
 }
@@ -382,7 +338,7 @@ html {
   }
 
   .seccion__whatsapp {
-    bottom: 4rem;
+    bottom: $rem-standard*8;
   }
 
   .boton__whatsapp {
@@ -397,6 +353,7 @@ html {
     font-size: $fuente-normal*3;
   }
 }
+
 
 /*----- FIN ADAPTACION A DISPOSITIVOS -----*/
 /*----- FIN DE ESTILOS PAGINA INDEX -----*/
