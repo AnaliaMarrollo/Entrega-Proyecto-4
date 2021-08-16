@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 
-.contacto__contenedor {
+.contacto__contenedor, .contacto__contenedor-form {
   background-color: white;
   color: #212529;
   border-radius: 0.5rem;
@@ -19,13 +19,40 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.contacto__contenedor, .contenedor__promociones {
+.contacto__contenedor-foto {
+  border-radius: 0.5rem;
+  padding: 0;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+.contacto__contenedor, .contacto__contenedor-form, .contenedor__promociones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacto__contenedor, .contenedor__promociones {
+.contacto__contenedor {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacto__contenedor-form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto__contenedor {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto__contenedor-form, .contenedor__promociones {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,10 +63,26 @@
 
 /* -- INICIO SECCION CONTACTO--- */
 .contacto__contenedor {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacto__contenedor-foto {
+  background-image: url(../imagenes/gym.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0.5rem;
+}
+
+.contacto__contenedor-form {
   margin-top: 0.5rem;
   padding-top: 2rem;
-  font-size: 1rem;
   text-align: left;
+}
+
+.contacto__titulo {
+  font-weight: 600;
 }
 
 .contacto__datos-contacto {
@@ -173,9 +216,18 @@ input[type=checkbox] {
 /* ADAPTACION A DISPOSITIVOS */
 @media only screen and (max-width: 360px) {
   .contacto__contenedor {
-    width: 95%;
+    width: 99%;
     margin: auto;
-    font-size: 0.75rem;
+  }
+  .contacto__contenedor-foto {
+    display: none;
+  }
+  .contacto__contenedor-form {
+    width: 100%;
+    font-size: 0.58824rem;
+  }
+  .contacto__titulo {
+    font-size: 0.83333rem;
   }
   .contacto__datos-contacto {
     width: 25%;
@@ -203,7 +255,10 @@ input[type=checkbox] {
   .form-select {
     width: 95% !important;
     margin: auto !important;
-    font-size: 0.75rem !important;
+    font-size: 0.55rem !important;
+  }
+  .label__promociones {
+    font-size: 0.55rem;
   }
   .boton__link--mt {
     width: 95%;
@@ -214,9 +269,18 @@ input[type=checkbox] {
 
 @media only screen and (min-width: 360px) {
   .contacto__contenedor {
-    width: 95%;
+    width: 99%;
     margin: auto;
-    font-size: 0.75rem;
+  }
+  .contacto__contenedor-foto {
+    display: none;
+  }
+  .contacto__contenedor-form {
+    width: 100%;
+    font-size: 0.58824rem;
+  }
+  .contacto__titulo {
+    font-size: 0.83333rem;
   }
   .contacto__datos-contacto {
     width: 25%;
@@ -244,20 +308,33 @@ input[type=checkbox] {
   .form-select {
     width: 95% !important;
     margin: auto !important;
-    font-size: 0.75rem !important;
+    font-size: 0.55rem !important;
+  }
+  .label__promociones {
+    font-size: 0.75rem;
   }
   .boton__link--mt {
     width: 95%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    font-size: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 480px) {
   .contacto__contenedor {
-    width: 85%;
+    width: 95%;
     margin: auto;
-    font-size: 1rem;
+  }
+  .contacto__contenedor-foto {
+    display: none;
+  }
+  .contacto__contenedor-form {
+    width: 100%;
+    font-size: 0.66667rem;
+  }
+  .contacto__titulo {
+    font-size: 0.90909rem;
   }
   .contacto__datos-contacto {
     width: 30%;
@@ -277,17 +354,42 @@ input[type=checkbox] {
     width: 95%;
   }
   .form-select {
-    font-size: 1rem !important;
+    font-size: 0.66667rem !important;
+  }
+  .label__promociones {
+    font-size: 0.8rem;
   }
   .boton__link--mt {
     width: 95%;
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .contacto__contenedor-form {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .form-select {
+    font-size: 1rem !important;
+  }
+  .boton__link--mt {
+    width: 95%;
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .contacto__contenedor {
-    width: 60%;
+    width: 95%;
     margin: auto;
+  }
+  .contacto__contenedor-foto {
+    display: inherit;
+    width: 45%;
+  }
+  .contacto__contenedor-form {
+    width: 50%;
+    font-size: 0.66667rem;
   }
   .contacto__datos-contacto {
     width: 28%;
@@ -307,8 +409,7 @@ input[type=checkbox] {
     width: 95%;
   }
   .form-select {
-    width: 95% !important;
-    margin: auto !important;
+    font-size: 0.66667rem !important;
   }
   .boton__link--mt {
     width: 95%;
@@ -317,8 +418,31 @@ input[type=checkbox] {
 
 @media only screen and (min-width: 1024px) {
   .contacto__contenedor {
-    width: 50%;
+    width: 90%;
     margin: auto;
+  }
+  .contacto__contenedor-foto {
+    width: 50%;
+  }
+  .contacto__contenedor-form {
+    width: 45%;
+    font-size: 1rem;
+  }
+  .contacto__titulo {
+    font-size: 1rem;
+  }
+  .form-select {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contacto__contenedor {
+    width: 90%;
+    margin: auto;
+  }
+  .contacto__contenedor-foto {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=estiloscontacto4epfinal.css.map */

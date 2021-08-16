@@ -5,12 +5,30 @@
 /* -- INICIO SECCION CONTACTO--- */
 
 .contacto__contenedor {
+  @extend %caja-flex-row;
   @extend %caja-blanca;
+  @extend %caja-flex-centradax;
+  justify-content: space-around;
+  &-foto {
+    @extend %caja-foto;
+    background-image: url(../imagenes/gym.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: $rem-standard;
+  }
+&-form {
+  @extend %caja-blanca;
+  @extend %caja-flex-column;
   @extend %caja-flex-centrada;
   margin-top: $rem-standard;
   padding-top: $rem-standard*4;
-  font-size: $fuente-normal;
   text-align: left;
+}
+}
+
+.contacto__titulo {
+  font-weight: 600;
 }
 
 .contacto__datos-contacto {
@@ -147,9 +165,19 @@ input[type=checkbox] {
 
 @media only screen and (max-width: 360px) {
   .contacto__contenedor {
-    width: 95%;
+    width: 99%;
     margin: auto;
-    font-size: $rem-standard*1.5;
+    &-foto {
+      display: none;
+    }
+    &-form {
+      width: 100%;
+      font-size: $fuente-normal/1.7;
+    }
+  }
+
+  .contacto__titulo {
+    font-size: $fuente-normal/1.2;
   }
 
   .contacto__datos-contacto {
@@ -185,9 +213,13 @@ input[type=checkbox] {
   .form-select {
     width: 95% !important;
     margin: auto !important;
-    font-size: $rem-standard*1.5 !important;
+    font-size: $rem-standard*1.1 !important;
   }
   // fin selector de bootstrap
+
+.label__promociones {
+  font-size: $rem-standard*1.1; 
+}
 
   .boton__link--mt {
     width: 95%;
@@ -198,9 +230,18 @@ input[type=checkbox] {
 
 @media only screen and (min-width: 360px) {
   .contacto__contenedor {
-    width: 95%;
+    width: 99%;
     margin: auto;
-    font-size: $rem-standard*1.5;
+    &-foto {
+      display: none;
+    }
+    &-form {
+      width: 100%;
+      font-size: $fuente-normal/1.7;
+    }
+  }
+  .contacto__titulo {
+    font-size: $fuente-normal/1.2;
   }
 
   .contacto__datos-contacto {
@@ -236,22 +277,37 @@ input[type=checkbox] {
   .form-select {
     width: 95% !important;
     margin: auto !important;
-    font-size: $rem-standard*1.5 !important;
+    font-size: $rem-standard*1.1 !important;
   }
   // fin selector de bootstrap
+
+  .label__promociones {
+    font-size: $rem-standard*1.5; 
+  } 
 
   .boton__link--mt {
     width: 95%;
     margin-left: $rem-standard;
     margin-right: $rem-standard;
+    font-size: $rem-standard*1.5;
   }
 }
 
 @media only screen and (min-width: 480px) {
   .contacto__contenedor {
-    width: 85%;
+    width: 95%;
     margin: auto;
-    font-size: $fuente-normal;
+    &-foto {
+      display: none;
+    }
+    &-form {
+      width: 100%;
+      font-size: $fuente-normal/1.5;
+    }
+  }
+
+  .contacto__titulo {
+    font-size: $fuente-normal/1.1;
   }
 
   .contacto__datos-contacto {
@@ -278,21 +334,50 @@ input[type=checkbox] {
 
   // selector de bootstrap
   .form-select {
-    font-size: $fuente-normal !important;
+    font-size: $fuente-normal/1.5 !important;
   }
-
   // fin selector de bootstrap
+
+  .label__promociones {
+    font-size: $rem-standard*1.6; 
+  }
 
   .boton__link--mt {
     width: 95%;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
+.contacto__contenedor {
+    &-form {
+      width: 100%;
+      font-size: $fuente-normal;
+    }
+  }
+    // selector de bootstrap
+    .form-select {
+      font-size: $fuente-normal !important;
+    }
+    // fin selector de bootstrap
+  
+    .boton__link--mt {
+      width: 95%;
+      font-size: $fuente-normal;
+    }
+}
 
+@media only screen and (min-width: 768px) {
   .contacto__contenedor {
-    width: 60%;
+    width: 95%;
     margin: auto;
+    &-foto {
+      display: inherit;
+      width: 45%;
+    }
+    &-form {
+      width: 50%;
+      font-size: $fuente-normal/1.5;
+    }
   }
 
   .contacto__datos-contacto {
@@ -319,8 +404,7 @@ input[type=checkbox] {
 
   // selector de bootstrap
   .form-select {
-    width: 95% !important;
-    margin: auto !important;
+    font-size: $fuente-normal/1.5 !important;
   }
   // fin selector de bootstrap
 
@@ -329,11 +413,36 @@ input[type=checkbox] {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+ @media only screen and (min-width: 1024px) {
   .contacto__contenedor {
-    width: 50%;
+    width: 90%;
     margin: auto;
+    &-foto {
+      width: 50%;
+    }
+    &-form {
+      width: 45%;
+      font-size: $fuente-normal;
+    }
   }
+  .contacto__titulo {
+    font-size: $fuente-normal;
+  }
+    // selector de bootstrap
+    .form-select {
+      font-size: $fuente-normal !important;
+    }
+    // fin selector de bootstrap
+ }
+
+@media only screen and (min-width: 1200px) {
+.contacto__contenedor {
+  width: 90%;
+  margin: auto;
+  &-foto {
+    width: 50%;
+  }
+}
 }
 
 // FIN ADAPTACION A DISPOSITIVOS--------

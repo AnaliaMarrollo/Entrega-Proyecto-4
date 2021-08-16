@@ -52,22 +52,28 @@ $borde-normal: $rem-standard/2.5 solid;
     box-shadow: $sombra-contenedor;
 }
 
-%caja-blanca-transparente {
-    background-color: $color-blanco-transparente;
-    color: $color-oscuro;
+%caja-foto {
     border-radius: $rem-standard;
-    padding: $rem-standard*2;
+    padding: 0;
     box-shadow: $sombra-contenedor;
 }
 
-%caja-negra-transparente {
-    background-color: $color-negro-transparente;
-    color: $color-blanco;
-    text-shadow: $sombra-contenedor;
-    border-radius: $rem-standard;
-    padding: $rem-standard*2;
-    box-shadow: $sombra-contenedor;
-}
+// %caja-blanca-transparente {
+//     background-color: $color-blanco-transparente;
+//     color: $color-oscuro;
+//     border-radius: $rem-standard;
+//     padding: $rem-standard*2;
+//     box-shadow: $sombra-contenedor;
+// }
+
+// %caja-negra-transparente {
+//     background-color: $color-negro-transparente;
+//     color: $color-blanco;
+//     text-shadow: $sombra-contenedor;
+//     border-radius: $rem-standard;
+//     padding: $rem-standard*2;
+//     box-shadow: $sombra-contenedor;
+// }
 
 %caja-flex {
     display: flex;
