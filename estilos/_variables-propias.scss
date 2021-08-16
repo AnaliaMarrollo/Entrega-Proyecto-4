@@ -6,6 +6,8 @@ $color-rojo-claro: #FB2347;
 $color-rojo: #D90429;
 $color-rojo-hover: #C80425;
 $color-whatsapp: #01E675;
+$color-blanco-transparente: rgba(255, 255, 255, .9);
+$color-negro-transparente: rgba(1, 1, 1, .7);
 
 // TAMAÑOS-------------
 
@@ -26,7 +28,6 @@ $borde-normal: $rem-standard/2.5 solid;
 
 %body {
     min-width: 360px;
-    max-width: 1500px;
     min-height: 100vh;
     position: relative;
 }
@@ -46,6 +47,23 @@ $borde-normal: $rem-standard/2.5 solid;
 %caja-blanca {
     background-color: $color-blanco;
     color: $color-oscuro;
+    border-radius: $rem-standard;
+    padding: $rem-standard*2;
+    box-shadow: $sombra-contenedor;
+}
+
+%caja-blanca-transparente {
+    background-color: $color-blanco-transparente;
+    color: $color-oscuro;
+    border-radius: $rem-standard;
+    padding: $rem-standard*2;
+    box-shadow: $sombra-contenedor;
+}
+
+%caja-negra-transparente {
+    background-color: $color-negro-transparente;
+    color: $color-blanco;
+    text-shadow: $sombra-contenedor;
     border-radius: $rem-standard;
     padding: $rem-standard*2;
     box-shadow: $sombra-contenedor;

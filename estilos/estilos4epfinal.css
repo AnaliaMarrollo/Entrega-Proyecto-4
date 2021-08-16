@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
 .body {
   min-width: 360px;
-  max-width: 1500px;
   min-height: 100vh;
   position: relative;
 }
@@ -28,7 +27,7 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas, .footer__titulo, .footer__redes {
+.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas, .footer__titulo, .footer__redes, .footer__copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +53,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__copyright {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .boton, .footer__link-redes {
@@ -95,6 +100,7 @@ html {
 /* ---------FIN BODY----------- */
 /* ---BARRA NAVEGACIÓN BOOTSTRAP CON ESTILOS PROPIOS------- */
 .navbar {
+  width: 100%;
   -webkit-box-shadow: 0 0.25rem 1rem black;
           box-shadow: 0 0.25rem 1rem black;
 }
@@ -128,6 +134,7 @@ html {
 .main {
   margin-bottom: 2rem;
   min-height: 100vh;
+  width: 100%;
 }
 
 .main--color {
@@ -137,7 +144,6 @@ html {
 /* --FIN MAIN---------- */
 .body {
   min-width: 360px;
-  max-width: 1500px;
   min-height: 100vh;
   position: relative;
 }
@@ -162,7 +168,7 @@ html {
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas, .footer__titulo, .footer__redes {
+.planes__contenedor-index, .planes__contenedor-contenido, .seccion__contenedor, .planes__contenedor-saber-mas, .footer__titulo, .footer__redes, .footer__copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +194,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__copyright {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .boton, .footer__link-redes {
@@ -415,6 +427,7 @@ html {
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   background-color: #212529;
+  color: white;
   padding: 1rem 0;
   -webkit-box-shadow: 0 -0.25rem 1rem black;
           box-shadow: 0 -0.25rem 1rem black;
@@ -463,6 +476,23 @@ html {
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
+.footer__copyright--p {
+  text-align: center;
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer__copyright--link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__copyright--link:hover {
+  color: #C80425;
+  text-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
 /* --ADAPTACION A DISPOSITIVOS------------- */
 @media only screen and (max-width: 360px) {
   .footer {
@@ -493,8 +523,8 @@ html {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .footer__mancuerna {
     grid: 1/2 1/2;
@@ -508,6 +538,9 @@ html {
   .footer__menu {
     display: none;
   }
+  .footer__copyright {
+    grid: 1/2 4/5;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -516,8 +549,8 @@ html {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
   .footer__menu {
     display: -webkit-box;
@@ -547,6 +580,9 @@ html {
   .footer__link--sin-borde {
     border: none;
   }
+  .footer__copyright {
+    grid: 1/2 5/6;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -571,7 +607,7 @@ html {
     word-spacing: 0.25rem;
   }
   .seccion__whatsapp {
-    bottom: 2rem;
+    bottom: 5rem;
     right: 0.5rem;
     padding: 0 0.2381rem;
   }
@@ -592,7 +628,7 @@ html {
     word-spacing: 0.25rem;
   }
   .seccion__whatsapp {
-    bottom: 2rem;
+    bottom: 5rem;
     right: 0.5rem;
     padding: 0 0.25rem;
   }
@@ -620,7 +656,7 @@ html {
   }
   .seccion__whatsapp {
     padding: 0 1.05rem;
-    bottom: 5rem;
+    bottom: 10rem;
     right: 0.5rem;
   }
 }
@@ -631,7 +667,7 @@ html {
     word-spacing: 0.7rem;
   }
   .seccion__whatsapp {
-    bottom: 4rem;
+    bottom: 7.5rem;
   }
   .boton__whatsapp--hola {
     display: inherit;
@@ -641,6 +677,9 @@ html {
 @media only screen and (min-width: 1024px) {
   .seccionppal__titulo {
     font-size: 3rem;
+  }
+  .seccion__whatsapp {
+    bottom: 5rem;
   }
 }
 

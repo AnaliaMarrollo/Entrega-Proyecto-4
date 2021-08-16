@@ -12,12 +12,27 @@
 }
 
 .sobremi__contenedor {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #212529;
   border-radius: 0.5rem;
   padding: 1rem;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
           box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+.sobremi__contenedor-foto, .sobremi__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sobremi__contenedor-foto {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* -- INICIO SECCION SOBRE MI------- */
@@ -38,46 +53,14 @@
 /*-- ADAPTACION A DISPOSITIVOS------- */
 @media only screen and (max-width: 360px) {
   .sobremi__contenedor {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .sobremi__texto {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 360px) {
-  .sobremi__contenedor {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .sobremi__texto {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .sobremi__contenedor {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .sobremi__contenedor-foto {
-    width: 40%;
+    width: 100%;
+    height: 50vh;
     background-image: url(../imagenes/fotosobremi.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -92,16 +75,89 @@
             filter: sepia(1);
   }
   .sobremi__texto {
-    width: 65%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .sobremi__contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sobremi__contenedor-foto {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imagenes/fotosobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    display: inherit;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .sobremi__contenedor-foto:hover {
+    -webkit-filter: sepia(1);
+            filter: sepia(1);
+  }
+  .sobremi__texto {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .sobremi__contenedor {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 50vh;
+  }
+  .sobremi__contenedor-foto {
+    width: 55%;
+    height: 90vh;
+  }
+  .sobremi__texto {
+    width: 90%;
   }
   .sobremi__texto--estilos {
     font-size: 1.1rem;
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .sobremi__contenedor-foto {
+    width: 55%;
+    height: 100vh;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .sobremi__contenedor-foto {
+    width: 55%;
+    height: 85vh;
     background-position: top;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sobremi__contenedor-foto {
+    width: 60%;
+    height: 75vh;
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sobremi__contenedor-foto {
+    width: 70%;
+    height: 75vh;
+    background-position: top;
+  }
+  .sobremi__texto {
+    width: 100%;
   }
 }
 
