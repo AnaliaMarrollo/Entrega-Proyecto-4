@@ -7,7 +7,7 @@
 .contacto__contenedor {
   @extend %caja-flex-row;
   @extend %caja-blanca;
-  @extend %caja-flex-centradax;
+  @extend %centradox;
   justify-content: space-around;
   &-foto {
     @extend %caja-foto;
@@ -20,7 +20,7 @@
 &-form {
   @extend %caja-blanca;
   @extend %caja-flex-column;
-  @extend %caja-flex-centrada;
+  @extend %centrado;
   margin-top: $rem-standard;
   padding-top: $rem-standard*4;
   text-align: left;

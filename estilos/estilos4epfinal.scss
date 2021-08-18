@@ -40,6 +40,7 @@ html {
   &.active {
     text-decoration: overline;
     text-shadow: $sombra-contenedor;
+
     &:hover {
       background-color: $color-rojo-hover;
     }
@@ -85,7 +86,7 @@ html {
   &__titulo {
     padding: $rem-standard;
     color: $color-blanco;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $color-negro-transparente;
     font-weight: 900;
   }
 
@@ -148,7 +149,7 @@ html {
   &-index {
     @extend %caja-blanca;
     @extend %caja-flex-column;
-    align-items: center;
+    @extend %centradoy;
     line-height: 1.2rem;
     margin: 0 $rem-standard;
     transition: 1.5s;
@@ -172,7 +173,7 @@ html {
 
   &-contenido {
     @extend %caja-flex-column;
-    @extend %caja-flex-centradax;
+    @extend %centradox;
     padding: $rem-standard*2;
   }
 
@@ -198,7 +199,7 @@ html {
 }
 
 .boton {
-@extend %boton-rojo;
+  @extend %boton-rojo;
 
   &__link {
     width: 100%;
@@ -354,12 +355,11 @@ html {
   .seccionppal__titulo {
     font-size: $fuente-normal*3;
   }
+
   .seccion__whatsapp {
     bottom: $rem-standard*10;
   }
-
 }
-
 
 /*----- FIN ADAPTACION A DISPOSITIVOS -----*/
 /*----- FIN DE ESTILOS PAGINA INDEX -----*/

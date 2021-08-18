@@ -6,13 +6,16 @@
 
 .sobremi {
   &__contenedor {
-    @extend %caja-flex;
-    @extend %caja-blanca-transparente;
+    @extend %caja-blanca;
+    @extend %caja-flex-centradax;
     margin: 0 $rem-standard*2;
     margin-top: $rem-standard*3;
 
     &-foto {
-      @extend %caja-flex-centrada;
+      box-shadow: $sombra-contenedor;
+    }
+    &-texto {
+      @extend %caja-blanca;
     }
   }
 
@@ -41,7 +44,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: $rem-standard;
-        display: inherit;
+        margin-top: $rem-standard*2;
         transition: 1s;
 
         &:hover {
@@ -65,11 +68,11 @@
         width: 100%;
         height: 50vh;
         background-image: url(../imagenes/fotosobremi.jpg);
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: $rem-standard;
-        display: inherit;
+        margin-top: $rem-standard*2;
         transition: 1s;
 
         &:hover {
@@ -84,35 +87,22 @@
   }
 }
 
-@media only screen and (min-width: 480px) {
+ @media only screen and (min-width: 480px) {
   .sobremi {
     &__contenedor {
-      flex-direction: row;
-      min-height: 50vh;
-
+  
       &-foto {
-        width: 55%;
-        height: 90vh;
+        height: 100vh;
+        }
       }
     }
-
-    &__texto {
-      width: 90%;
-
-      &--estilos {
-        font-size: $fuente-normal+.1;
-      }
-    }
-  }
-}
+  } 
 
 @media only screen and (min-width: 600px) {
   .sobremi {
-    &__contenedor {
-
-      &-foto {
-        width: 55%;
-        height: 100vh;
+    &__texto {
+      &--estilos {
+        font-size: $fuente-normal+.1;
       }
     }
   }
@@ -121,11 +111,8 @@
 @media only screen and (min-width: 768px) {
   .sobremi {
     &__contenedor {
-
       &-foto {
-        width: 55%;
-        height: 85vh;
-        background-position: top;
+        height: 90vh;
       }
     }
   }
@@ -134,29 +121,11 @@
 @media only screen and (min-width: 1024px) {
   .sobremi {
     &__contenedor {
-
+      flex-direction: row;
       &-foto {
-        width: 60%;
-        height: 75vh;
-        background-position: top;
+        margin-top: 0;
+        margin-left: $rem-standard*2;
       }
-    }
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .sobremi {
-    &__contenedor {
-      
-      &-foto {
-        width: 70%;
-        height: 75vh;
-        background-position: top;
-      }
-    }
-
-    &__texto {
-      width: 100%;
     }
   }
 }

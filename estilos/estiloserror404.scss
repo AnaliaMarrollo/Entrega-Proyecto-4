@@ -15,8 +15,8 @@
 .error__contenedor {
     position: relative;
     @extend %caja-blanca;
-    @extend %caja-flex-centrada;
     @extend %caja-flex-column;
+    @extend %centrado;
     color: $color-blanco;
     text-shadow: $sombra-contenedor;
 }
@@ -37,12 +37,13 @@
 }
 
 .error__foto {
-height: 100%;
-width: 100%;
-background-image: url(../imagenes/barra-discos.jpg);
-background-position: center;
-background-size: cover;
-border-radius: $rem-standard;
+    height: 100%;
+    width: 100%;
+    background-image: url(../imagenes/barra-discos.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: $rem-standard;
+    box-shadow: $sombra-contenedor;
 
 }
 
@@ -55,6 +56,7 @@ border-radius: $rem-standard;
     .error__titulo {
         font-size: $fuente-normal*3;
     }
+
     .error__contenido {
         font-size: $fuente-normal;
         text-align: center;
@@ -70,6 +72,7 @@ border-radius: $rem-standard;
     .error__titulo {
         font-size: $fuente-normal*3;
     }
+
     .error__contenido {
         font-size: $fuente-normal;
         text-align: center;

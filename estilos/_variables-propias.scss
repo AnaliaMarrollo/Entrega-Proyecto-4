@@ -6,8 +6,7 @@ $color-rojo-claro: #FB2347;
 $color-rojo: #D90429;
 $color-rojo-hover: #C80425;
 $color-whatsapp: #01E675;
-$color-blanco-transparente: rgba(255, 255, 255, .9);
-$color-negro-transparente: rgba(1, 1, 1, .7);
+$color-negro-transparente: rgba(0, 0, 0, .3);
 
 // TAMAÑOS-------------
 
@@ -15,12 +14,14 @@ $rem-standard: .5rem;
 $fuente-normal: 1rem;
 
 // SOMBRAS---------------
+
 $sombra-contenedor: ($rem-standard/2) ($rem-standard/2) $rem-standard black;
 $sombra-nav: 0 ($rem-standard/2) $rem-standard*2 black;
 $sombra-foot: 0 (($rem-standard/2)*(-1)) ($rem-standard*2) black;
 $sombra-boton: 0 $rem-standard/4 $rem-standard/2 $color-oscuro;
 
 // BORDES--------------
+
 $borde-fino: $rem-standard/4 solid;
 $borde-normal: $rem-standard/2.5 solid;
 
@@ -42,7 +43,7 @@ $borde-normal: $rem-standard/2.5 solid;
     font-weight: 400;
 }
 
-// contenedores---------------
+// --contenedores---------------
 
 %caja-blanca {
     background-color: $color-blanco;
@@ -57,23 +58,6 @@ $borde-normal: $rem-standard/2.5 solid;
     padding: 0;
     box-shadow: $sombra-contenedor;
 }
-
-// %caja-blanca-transparente {
-//     background-color: $color-blanco-transparente;
-//     color: $color-oscuro;
-//     border-radius: $rem-standard;
-//     padding: $rem-standard*2;
-//     box-shadow: $sombra-contenedor;
-// }
-
-// %caja-negra-transparente {
-//     background-color: $color-negro-transparente;
-//     color: $color-blanco;
-//     text-shadow: $sombra-contenedor;
-//     border-radius: $rem-standard;
-//     padding: $rem-standard*2;
-//     box-shadow: $sombra-contenedor;
-// }
 
 %caja-flex {
     display: flex;
@@ -99,10 +83,23 @@ $borde-normal: $rem-standard/2.5 solid;
     align-items: center;
 }
 
+%centradox {
+    justify-content: center;
+}
+
+%centradoy {
+    align-items: center;
+}
+
 %caja-flex-centrada {
     @extend %caja-flex;
     justify-content: center;
     align-items: center;
+}
+
+%centrado {
+    align-items: center;
+    justify-content: center;
 }
 
 %caja-flex-yfin {
@@ -117,6 +114,7 @@ $borde-normal: $rem-standard/2.5 solid;
     border: solid $rem-standard/4 $color-rojo;
     box-shadow: $sombra-boton;
     transition: 1s;
+
     &:hover {
         background-color: $color-rojo-hover;
         color: $color-blanco;
@@ -127,9 +125,8 @@ $borde-normal: $rem-standard/2.5 solid;
 %boton-link {
     text-decoration: none;
     color: $color-blanco;
+
     &:hover {
         color: $color-blanco;
     }
 }
-
-
