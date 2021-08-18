@@ -107,6 +107,14 @@ $borde-normal: $rem-standard/2.5 solid;
     align-items: flex-end;
 }
 
+%caja-contacto-input {
+    border: $borde-fino $color-oscuro;
+    border-radius: $rem-standard/2;
+    padding-left: $rem-standard;
+    margin-left: $rem-standard;
+    box-shadow: $sombra-boton;
+}
+
 %boton-rojo {
     padding: $rem-standard;
     background-color: $color-rojo;

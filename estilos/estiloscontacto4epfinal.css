@@ -46,12 +46,6 @@
           flex-direction: column;
 }
 
-.contacto__contenedor {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .contenedor__promociones {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -70,6 +64,15 @@
           justify-content: center;
 }
 
+.contacto__input {
+  border: 0.125rem solid #212529;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
+          box-shadow: 0 0.125rem 0.25rem #212529;
+}
+
 /* -- INICIO SECCION CONTACTO--- */
 .contacto__contenedor {
   -ms-flex-pack: distribute;
@@ -85,6 +88,7 @@
 }
 
 .contacto__contenedor-form {
+  color: #212529;
   margin-top: 0.5rem;
   padding-top: 2rem;
   text-align: left;
@@ -97,7 +101,6 @@
 .contacto__datos-contacto {
   padding: 0.5rem;
   line-height: 1rem;
-  color: #212529;
   font-weight: 600;
   text-decoration: overline;
   border: #212529 0.125rem solid;
@@ -105,30 +108,15 @@
           box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
-.contacto__input-contacto {
-  color: #212529;
-  border: 0.125rem solid #212529;
+.contacto__input--contacto {
   padding: 0.25rem;
-  padding-left: 0.5rem;
-  margin-left: 0.5rem;
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
-          box-shadow: 0 0.125rem 0.25rem #212529;
 }
 
-.contacto__input-select {
-  color: #212529;
-  border: 0.125rem solid #212529;
-  padding-left: 0.5rem;
+.contacto__input--select {
   padding: 0.38462rem;
-  margin-left: 0.5rem;
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem #212529;
-          box-shadow: 0 0.125rem 0.25rem #212529;
 }
 
 .contacto__consulta {
-  color: #212529;
   border: 0.125rem solid #212529;
   padding: 0.5rem;
   margin-top: 1rem;
@@ -246,14 +234,14 @@ input[type=checkbox] {
     width: 96%;
     margin-bottom: 0.5rem;
   }
-  .contacto__input-contacto {
+  .contacto__input--contacto {
     width: 68%;
     margin-right: 0.25rem;
   }
-  .contacto__input-select {
+  .contacto__input--select {
     width: 68%;
   }
-  .contacto__input-select--preferencia {
+  .contacto__input--select--preferencia {
     width: 96%;
     margin: auto;
   }
@@ -299,14 +287,14 @@ input[type=checkbox] {
     width: 96%;
     margin-bottom: 0.5rem;
   }
-  .contacto__input-contacto {
+  .contacto__input--contacto {
     width: 68%;
     margin-right: 0.25rem;
   }
-  .contacto__input-select {
+  .contacto__input--select {
     width: 68%;
   }
-  .contacto__input-select--preferencia {
+  .contacto__input--select--preferencia {
     width: 96%;
     margin: auto;
   }
@@ -349,14 +337,14 @@ input[type=checkbox] {
     width: 30%;
     margin-left: 0.25rem;
   }
-  .contacto__input-contacto {
+  .contacto__input--contacto {
     width: 62%;
     margin-right: 0.25rem;
   }
-  .contacto__input-select {
+  .contacto__input--select {
     width: 62%;
   }
-  .contacto__input-select--preferencia {
+  .contacto__input--select--preferencia {
     width: 95%;
   }
   .contacto__consulta {
@@ -404,14 +392,14 @@ input[type=checkbox] {
     width: 28%;
     margin-left: 0.25rem;
   }
-  .contacto__input-contacto {
+  .contacto__input--contacto {
     width: 65%;
     margin-right: 0.25rem;
   }
-  .contacto__input-select {
+  .contacto__input--select {
     width: 65%;
   }
-  .contacto__input-select--preferencia {
+  .contacto__input--select--preferencia {
     width: 95%;
   }
   .contacto__consulta {
@@ -441,7 +429,7 @@ input[type=checkbox] {
     font-size: 1rem;
   }
   .form-select {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 }
 

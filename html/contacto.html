@@ -12,9 +12,13 @@
         content="Contacto, entrenador personal, fitness, gym, gimnasio, entrenamiento personalizado, online, plan nutricional, planes a distancia">
     <meta name="ROBOTS" content="index, follow">
     <meta name="ROBOTS" content="all">
-    <meta name="Languaje" content="Spanish">
+    <meta name="Language" content="Spanish">
+    <meta name="resource-type" content="Document">
     <meta name="doc-type" content="web page">
     <meta name="GOOGLEBOT" content="index, follow, all">
+    <meta name="distribution" content="Global">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
     <meta name="author" content="Analia Marrollo">
     <meta name="title"
         content="Soy Alejandro Troncoso, licenciado y profesor de educación física. En este sitio vas a encontrar todos mis planes de entrenamiento y forma de trabajo.">
@@ -28,7 +32,7 @@
     <link rel="stylesheet" href="../estilos/estiloscontacto4epfinal.css">
     <!-- animaciones WOW -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
- <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <!-------CSS Bootstrap------->
     <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <!--------Jquery-------->
@@ -79,63 +83,67 @@
             <h1 class="seccion__titulo">CONTACTO</h1>
             <div class="contacto__contenedor">
                 <div class="contacto__contenedor-foto"></div>
-            <div class="contacto__contenedor-form">
-                <p class="contacto__titulo">Completá tus datos y enviame tu consulta:</p>
-                <form action="../enviar.php" method="POST" enctype="application/x-www-form-urlencoded" netlify name="contacto-web">
-                    <label class="contacto__datos-contacto
+                <div class="contacto__contenedor-form">
+                    <p class="contacto__titulo">Completá tus datos y enviame tu consulta:</p>
+                    <form action="../php/enviar.php" method="POST" enctype="application/x-www-form-urlencoded" netlify
+                        name="contacto-web">
+                        <label class="contacto__datos-contacto
              " for="nombre">NOMBRE:</label>
-                    <input class="contacto__input-contacto" type="text" name="nombre" id="nombre" placeholder=" Nombre"
-                        required><br><br>
-                    <label class="contacto__datos-contacto
+                        <input class="contacto__input contacto__input--contacto" type="text" name="nombre" id="nombre"
+                            placeholder=" Nombre" required><br><br>
+                        <label class="contacto__datos-contacto
          " for="apellido">APELLIDO:</label>
-                    <input class="contacto__input-contacto" type="text" name="apellido" id="apellido"
-                        placeholder=" Apellido" required><br><br>
-                    <label class="contacto__datos-contacto
+                        <input class="contacto__input contacto__input--contacto" type="text" name="apellido" id="apellido"
+                            placeholder=" Apellido" required><br><br>
+                        <label class="contacto__datos-contacto
             " for="edad">EDAD:</label>
-                    <input class="contacto__input-contacto" type="number" name="edad" id="edad" min="18" max="99"
-                        placeholder=" +18 años" required><br><br>
-                    <label class="contacto__datos-contacto
+                        <input class="contacto__input contacto__input--contacto" type="number" name="edad" id="edad" min="18" max="99"
+                            placeholder=" +18 años" required><br><br>
+                        <label class="contacto__datos-contacto
              " for="email">CORREO:</label>
-                    <input class="contacto__input-contacto" type="email" name="email" id="email" placeholder="@"
-                        required><br><br>
-                    <label class="contacto__datos-contacto
+                        <input class="contacto__input contacto__input--contacto" type="email" name="email" id="email" placeholder=" @"
+                            required><br><br>
+                        <label class="contacto__datos-contacto
                     " for="teléfono">TELÉFONO:</label>
-                    <input class="contacto__input-contacto" type="tel" name="telefono" id="telefono" minlength="10"
-                        maxlength="11" placeholder=" 011 + Nro. (Cel sin 15)"><br><br>
-                    <label class="contacto__datos-contacto
+                        <input class="contacto__input contacto__input--contacto" type="tel" name="telefono" id="telefono" minlength="10"
+                            maxlength="11" placeholder=" 011 + Nro. (Cel sin 15)"><br><br>
+                        <label class="contacto__datos-contacto
              " for="tipodeconsulta">CONSULTA:</label>
-                    <select class="contacto__input-select" name="tipodeconsulta" id="tipodeconsulta" required>
-                        <option>PLAN 4, 8 o 12 SEMANAS</option>
-                        <option>ONLINE</option>
-                        <option>PRESENCIAL</option>
-                        <option>PLAN NUTRICIONAL</option>
-                        <option>OTRA CONSULTA</option>
-                    </select><br>
-                    <textarea class="contacto__consulta" name="mensaje" id="consulta"
-                        placeholder=" Enviame tu consulta" required></textarea><br>
-                    <div class="contenedor__preferencia">
-                        <select class="form-select" aria-label="Default select example" name="preferencia-contacto" id="preferencia" required>
-                            <option selected disabled>CÓMO PREFERÍS QUE TE CONTACTEMOS?</option>
-                            <option>WHATSAPP</option>
-                            <option>LLAMADA TELEFÓNICA</option>
-                            <option>EMAIL</option>
-                        </select>
-                    </div>
-                    <input class="boton boton__link boton__link--mt" type="submit" value="ENVIAR CONSULTA">
-                    <input class="boton boton__link boton__link--mt" type="reset" value="LIMPIAR FORMULARIO"><br><br>
-                    <div class="contenedor__promociones">
-                        <label for="promociones" class="label__promociones">QUIERO RECIBIR PROMOCIONES</label><br>
-                        <input type="checkbox" c="promociones" id="promociones" checked>
-                        <div class="checkbox__personalizado">
-                            <input type="checkbox" id="checkAvanzado" value="QUIERO RECIBIR PROMOCIONES" name="promociones" checked/>
-                            <label class="checkbox__label" for="checkAvanzado"></label>
+                        <select class="contacto__input contacto__input--select" name="tipodeconsulta" id="tipodeconsulta" required>
+                            <option>PLAN 4, 8 o 12 SEMANAS</option>
+                            <option>ONLINE</option>
+                            <option>PRESENCIAL</option>
+                            <option>PLAN NUTRICIONAL</option>
+                            <option>OTRA CONSULTA</option>
+                        </select><br>
+                        <textarea class="contacto__consulta" name="mensaje" id="consulta"
+                            placeholder=" Enviame tu consulta" required></textarea><br>
+                        <div class="contenedor__preferencia">
+                            <select class="form-select" aria-label="Default select example" name="preferencia-contacto"
+                                id="preferencia" required>
+                                <option selected disabled>CÓMO PREFERÍS QUE TE CONTACTEMOS?</option>
+                                <option>WHATSAPP</option>
+                                <option>LLAMADA TELEFÓNICA</option>
+                                <option>EMAIL</option>
+                            </select>
                         </div>
-                    </div>
-                </form>
+                        <input class="boton boton__link boton__link--mt" type="submit" value="ENVIAR CONSULTA">
+                        <input class="boton boton__link boton__link--mt" type="reset"
+                            value="LIMPIAR FORMULARIO"><br><br>
+                        <div class="contenedor__promociones">
+                            <label for="promociones" class="label__promociones">QUIERO RECIBIR PROMOCIONES</label><br>
+                            <input type="checkbox" c="promociones" id="promociones" checked>
+                            <div class="checkbox__personalizado">
+                                <input type="checkbox" id="checkAvanzado" value="QUIERO RECIBIR PROMOCIONES"
+                                    name="promociones" checked />
+                                <label class="checkbox__label" for="checkAvanzado"></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
         </section>
-        
+
         <!-- logo whatsapp -->
         <div class="seccion__whatsapp bordes-redondeados--100 animate__flipInX">
             <a class="boton__whatsapp" id="whatsapp" target="_blank"
@@ -147,7 +155,9 @@
     </main>
 
     <footer class="footer footer__contenedor">
-        <a href="../index.html" title="inicio"><div class="footer__mancuerna" title="icono mancuerna"></div></a>
+        <a href="../index.html" title="inicio">
+            <div class="footer__mancuerna" title="icono mancuerna"></div>
+        </a>
         <div class="footer__titulo">
             <a href="../index.html" class="footer__link footer__link--sin-borde" title="ir al inicio">ALEJANDRO
                 TRONCOSO</a>
@@ -170,8 +180,9 @@
             <a href="../html/contacto.html" class="footer__link">Contacto</a>
         </div>
         <div class="footer_copyright">
-            <p class="footer__copyright--p">Copyright © | 2021 | PROFE TRONK | Todos los Derechos Reservados. Diseñado por <a href="https://github.com/AnaliaMarrollo" class="footer__copyright--link">Analía
-                Marrollo ♥</a></p>
+            <p class="footer__copyright--p">Copyright © | 2021 | PROFE TRONK | Todos los Derechos Reservados. Diseñado
+                por <a href="https://github.com/AnaliaMarrollo" class="footer__copyright--link">Analía
+                    Marrollo ♥</a></p>
         </div>
     </footer>
 
