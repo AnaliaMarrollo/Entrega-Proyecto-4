@@ -73,6 +73,16 @@
           box-shadow: 0 0.125rem 0.25rem #212529;
 }
 
+.contacto__datos-contacto {
+  padding: 0.5rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-decoration: overline;
+  border: #212529 0.125rem solid;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
 /* -- INICIO SECCION CONTACTO--- */
 .contacto__contenedor {
   -ms-flex-pack: distribute;
@@ -96,16 +106,6 @@
 
 .contacto__titulo {
   font-weight: 600;
-}
-
-.contacto__datos-contacto {
-  padding: 0.5rem;
-  line-height: 1rem;
-  font-weight: 600;
-  text-decoration: overline;
-  border: #212529 0.125rem solid;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
-          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .contacto__input--contacto {

@@ -34,12 +34,7 @@
 }
 
 .contacto__datos-contacto {
-  padding: $rem-standard;
-  line-height: $rem-standard*2;
-  font-weight: 600;
-  text-decoration: overline;
-  border: $color-oscuro $borde-fino;
-  box-shadow: $sombra-contenedor;
+  @extend %caja-contacto-login;
 }
 
 .contacto__input {

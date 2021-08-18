@@ -13,7 +13,19 @@
 
     &-foto {
       box-shadow: $sombra-contenedor;
+      background-image: url(../imagenes/fotosobremi.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: $rem-standard;
+      margin-top: $rem-standard*2;
+      transition: 1s;
+
+      &:hover {
+        filter: sepia(1);
+      }
     }
+
     &-texto {
       @extend %caja-blanca;
     }
@@ -39,17 +51,6 @@
       &-foto {
         width: 100%;
         height: 50vh;
-        background-image: url(../imagenes/fotosobremi.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: $rem-standard;
-        margin-top: $rem-standard*2;
-        transition: 1s;
-
-        &:hover {
-          filter: sepia(1);
-        }
       }
     }
 
@@ -67,17 +68,6 @@
       &-foto {
         width: 100%;
         height: 50vh;
-        background-image: url(../imagenes/fotosobremi.jpg);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: $rem-standard;
-        margin-top: $rem-standard*2;
-        transition: 1s;
-
-        &:hover {
-          filter: sepia(1);
-        }
       }
     }
 
@@ -87,16 +77,16 @@
   }
 }
 
- @media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .sobremi {
     &__contenedor {
-  
+
       &-foto {
         height: 100vh;
-        }
       }
     }
-  } 
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .sobremi {
@@ -122,6 +112,7 @@
   .sobremi {
     &__contenedor {
       flex-direction: row;
+
       &-foto {
         margin-top: 0;
         margin-left: $rem-standard*2;

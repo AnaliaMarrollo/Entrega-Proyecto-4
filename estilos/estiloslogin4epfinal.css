@@ -34,21 +34,20 @@
           align-items: center;
 }
 
+.login__datos {
+  padding: 0.5rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-decoration: overline;
+  border: #212529 0.125rem solid;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
+          box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
 /* --INICIO SECCION LOGIN---------- */
 .login__contenedor {
   text-align: center;
   margin-top: 1rem;
-}
-
-.login__datos {
-  padding: 0.5rem;
-  line-height: 1rem;
-  color: #212529;
-  font-weight: 600;
-  text-decoration: overline;
-  border: 0.125rem solid #212529;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
-          box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 .login__input {

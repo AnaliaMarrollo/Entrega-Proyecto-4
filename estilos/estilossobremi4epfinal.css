@@ -41,6 +41,19 @@
 .sobremi__contenedor-foto {
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem black;
           box-shadow: 0.25rem 0.25rem 0.5rem black;
+  background-image: url(../imagenes/fotosobremi.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sobremi__contenedor-foto:hover {
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
 }
 
 .sobremi__texto {
@@ -63,18 +76,6 @@
   .sobremi__contenedor-foto {
     width: 100%;
     height: 50vh;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .sobremi__contenedor-foto:hover {
-    -webkit-filter: sepia(1);
-            filter: sepia(1);
   }
   .sobremi__texto {
     width: 100%;
@@ -91,18 +92,6 @@
   .sobremi__contenedor-foto {
     width: 100%;
     height: 50vh;
-    background-image: url(../imagenes/fotosobremi.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .sobremi__contenedor-foto:hover {
-    -webkit-filter: sepia(1);
-            filter: sepia(1);
   }
   .sobremi__texto {
     width: 100%;

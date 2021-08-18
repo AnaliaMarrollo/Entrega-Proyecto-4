@@ -115,6 +115,15 @@ $borde-normal: $rem-standard/2.5 solid;
     box-shadow: $sombra-boton;
 }
 
+%caja-contacto-login {
+        padding: $rem-standard;
+        line-height: $rem-standard*2;
+        font-weight: 600;
+        text-decoration: overline;
+        border: $color-oscuro $borde-fino;
+        box-shadow: $sombra-contenedor;
+}
+
 %boton-rojo {
     padding: $rem-standard;
     background-color: $color-rojo;

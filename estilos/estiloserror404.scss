@@ -54,7 +54,7 @@
     }
 
     .error__titulo {
-        font-size: $fuente-normal*3;
+        font-size: $fuente-normal*2.8;
     }
 
     .error__contenido {
@@ -70,7 +70,7 @@
     }
 
     .error__titulo {
-        font-size: $fuente-normal*3;
+        font-size: $fuente-normal*2.8;
     }
 
     .error__contenido {
@@ -84,12 +84,6 @@
         width: 70%;
         height: 80%;
     }
-
-    .mancuerna {
-        width: 15%;
-        height: 10%;
-    }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -101,11 +95,9 @@
     .error__titulo {
         font-size: $fuente-normal*4;
     }
-
 }
 
-
-@media only screen and (min-width: 768px) and (max-height: 1024px) {
+@media only screen and (min-width: 768px) {
     .error__contenido {
         font-size: $fuente-normal*1.2;
         text-align: center;
@@ -114,5 +106,4 @@
     .error__titulo {
         font-size: $fuente-normal*4.5;
     }
-
 }

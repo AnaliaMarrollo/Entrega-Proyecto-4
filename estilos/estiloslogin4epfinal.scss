@@ -13,13 +13,7 @@
   }
 
   &__datos {
-    padding: $rem-standard;
-    line-height: $rem-standard*2;
-    color: $color-oscuro;
-    font-weight: 600;
-    text-decoration: overline;
-    border: $borde-fino $color-oscuro;
-    box-shadow: $sombra-contenedor;
+    @extend %caja-contacto-login;
   }
 
   &__input {

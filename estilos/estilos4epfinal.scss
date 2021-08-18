@@ -60,9 +60,8 @@ html {
   margin-bottom: $rem-standard*4;
   min-height: 100vh;
   width: 100%;
-
   &--color {
-    color: $color-oscuro;
+    background-color: $color-oscuro;
   }
 }
 
@@ -179,7 +178,7 @@ html {
 
   &-saber-mas {
     width: 100%;
-    height: 25%;
+    height: 100%;
     @extend %caja-flex-centradax;
     align-items: flex-end;
     padding-bottom: $rem-standard;
